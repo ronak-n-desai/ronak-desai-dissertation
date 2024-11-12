@@ -225,7 +225,7 @@
     \setboolean{@member}{true}\protected@xdef\@memberlist{#1}
   }
 }
-\newcommand\unit[1]{\gdef\@unit{#1}}
+\newcommand\unitA[1]{\gdef\@unit{#1}}
 \newcommand\graduationyear[1]{\gdef\@graduationyear{#1}}
 \newcommand\@authordegreees{\relax}
 \newcommand\authordegrees[1]{\gdef\@authordegrees{#1}}

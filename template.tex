@@ -18,7 +18,7 @@
 % (You can also use pdflatex if you prefer.)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[11pt, draft, onehalf, phd]{osudiss-2} 
+\documentclass[11pt, onehalf, phd]{osudiss-2} 
 % The `11pt' option is unnecessary since it is the default
 
 % `onehalf' sets the line spacing to one-and-a-half spacing instead of
@@ -52,11 +52,15 @@
 %required to have latex automatically generate subfigures (i.e. (a), (b) etc)
 \usepackage{subfig}
 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cleveref}
+\usepackage{siunitx}
+
 %load glossaries packages
 \usepackage[acronym, section=chapter]{glossaries}
 %\usepackage[xindy,acronym, section=chapter]{glossaries} - recommended if supported by your OS
 \makeglossaries %required to actually make a glossary
-\include{acronyms} %load list of acronyms contained in acronyms.tex
 
 %The following commands can be used to help deal with "overfull hbox" issues
 %See, for example, http://www.tex.ac.uk/cgi-bin/texfaq2html?label=overfull for details
@@ -93,22 +97,23 @@
 \hyphenation{eigen-state space-time} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Document Metadata %%%%%%%%%%%%%%%%%%%%%%%%%
-\title{Dissertation Title}
-\author{Your name}
-\advisorname{Professor Your advisor}
+\title{Enhancing Laser-Driven Ion Acceleration through Computational Methods}
+\author{Ronak Desai}
+\advisorname{Professor Chris Orban}
 \degree{Doctor of Philosophy} % Default value
-\member{Some Joe \#1}
-\member{Some Jane \#2}
-\member{Some other Person \#3}
-\authordegrees{B.S.}
-\graduationyear{2969}
-\unit{Graduate Program in Procrastination} % defaults to ``Graduate Program in Physics''
+\member{Professor Douglass Schumacher}
+\member{Professor Alexandra Landsman}
+\member{Professor Brian Skinner}
+\authordegrees{B.S., M.S.}
+\graduationyear{August 2025}
+\unitA{Graduate Program in Physics} % defaults to ``Graduate Program in Physics''
 
 %%%%%%%%%%%%%%%%%%%%%%%%% Begin Document %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
 \frontmatter
 
+\include{acronyms} %load list of acronyms contained in acronyms.tex
 \include{template-abstract}
 \dedication{To you, my love.} % Optional, and seriously not this lame
 \include{template-ack}
@@ -128,30 +133,27 @@
 \PrintListofAbbreviations{List of Abbreviations} %Title is in { } - change if desired
 
 \mainmatter
-\include{chap1}
+%\include{chap1}
 \include{chap2}
-\include{chap3}
+%\include{chap3}
 \include{chap4}
+%\include{chap5}
+%\include{chap6}
+%\include{chap7}
 
 \backmatter
 % We use BIBTeX for the bibliography---you don't have to
 \bibliographystyle{unsrt} % use your favorite BIBTeX style
-% \nocite{*} % To display all refs, even uncited refs (useful when editting)
-\bibliography{templatebib}
-
-% If for some reason you are anti-BIBTeX, then you would use the
-% following instead of the above:
-%\begin{thebibliography}{99}
-% ...
-%\end{thebibliography}
+% \nocite{*} % To display all refs, even uncited refs (useful when editing)
+\bibliography{ml,target,double,optimization,motivation,theory,pic,book,review,desai,exp}
 
 
 % Note: GS 2010 requires bibliography/references _before_ the appendix
 % if you believe their guidelines; however, conversations with GS
 % staff suggests _they don't care_. Go figure. So do what you like.
 
-\appendix
-\include{app1}
-\include{app2}
+%\appendix
+%\include{app1}
+%\include{app2}
 
 \end{document}

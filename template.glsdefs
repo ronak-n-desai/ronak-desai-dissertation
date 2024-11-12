@@ -1,0 +1,308 @@
+\glsdefs@newdocentry{AFM}%
+{%
+name={\acronymfont {\glsentryshort {AFM}}},%
+sort={AFM},%
+type={acronym},%
+first={AFM},%
+firstplural={AFMs},%
+text={AFM},%
+plural={AFMs},%
+description={atomic force microscopy},%
+descriptionplural={atomic force microscopy},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={atomic force microscopy},%
+longplural={atomic force microscopys},%
+short={AFM},%
+shortplural={AFMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BCS}%
+{%
+name={\acronymfont {\glsentryshort {BCS}}},%
+sort={BCS},%
+type={acronym},%
+first={BCS},%
+firstplural={BCSs},%
+text={BCS},%
+plural={BCSs},%
+description={Bardeen-Cooper-Schrieffer},%
+descriptionplural={Bardeen-Cooper-Schrieffer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bardeen-Cooper-Schrieffer},%
+longplural={Bardeen-Cooper-Schrieffers},%
+short={BCS},%
+shortplural={BCSs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{EPR}%
+{%
+name={\acronymfont {\glsentryshort {EPR}}},%
+sort={EPR},%
+type={acronym},%
+first={EPR},%
+firstplural={EPRs},%
+text={EPR},%
+plural={EPRs},%
+description={electron paramagnetic resonance},%
+descriptionplural={electron paramagnetic resonance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={electron paramagnetic resonance},%
+longplural={electron paramagnetic resonances},%
+short={EPR},%
+shortplural={EPRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{NMR}%
+{%
+name={\acronymfont {\glsentryshort {NMR}}},%
+sort={NMR},%
+type={acronym},%
+first={NMR},%
+firstplural={NMRs},%
+text={NMR},%
+plural={NMRs},%
+description={nuclear magnetic resonance},%
+descriptionplural={nuclear magnetic resonance},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={nuclear magnetic resonance},%
+longplural={nuclear magnetic resonances},%
+short={NMR},%
+shortplural={NMRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{QCD}%
+{%
+name={\acronymfont {\glsentryshort {QCD}}},%
+sort={QCD},%
+type={acronym},%
+first={QCD},%
+firstplural={QCDs},%
+text={QCD},%
+plural={QCDs},%
+description={quantum chromodynamics},%
+descriptionplural={quantum chromodynamics},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={quantum chromodynamics},%
+longplural={quantum chromodynamicss},%
+short={QCD},%
+shortplural={QCDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{QED}%
+{%
+name={\acronymfont {\glsentryshort {QED}}},%
+sort={QED},%
+type={acronym},%
+first={QED},%
+firstplural={QEDs},%
+text={QED},%
+plural={QEDs},%
+description={quantum electrodynamics},%
+descriptionplural={quantum electrodynamics},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={quantum electrodynamics},%
+longplural={quantum electrodynamicss},%
+short={QED},%
+shortplural={QEDs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{WKB}%
+{%
+name={\acronymfont {\glsentryshort {WKB}}},%
+sort={WKB},%
+type={acronym},%
+first={WKB},%
+firstplural={WKBs},%
+text={WKB},%
+plural={WKBs},%
+description={Wentzel-Kramers-Brillouin},%
+descriptionplural={Wentzel-Kramers-Brillouin},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Wentzel-Kramers-Brillouin},%
+longplural={Wentzel-Kramers-Brillouins},%
+short={WKB},%
+shortplural={WKBs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{FRET}%
+{%
+name={\acronymfont {\glsentryshort {FRET}}},%
+sort={FRET},%
+type={acronym},%
+first={FRET},%
+firstplural={FRETs},%
+text={FRET},%
+plural={FRETs},%
+description={fluorescence resonance energy transfer},%
+descriptionplural={fluorescence resonance energy transfer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={fluorescence resonance energy transfer},%
+longplural={fluorescence resonance energy transfers},%
+short={FRET},%
+shortplural={FRETs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ssDNA}%
+{%
+name={\acronymfont {\glsentryshort {ssDNA}}},%
+sort={ssDNA},%
+type={acronym},%
+first={ssDNA},%
+firstplural={ssDNAs},%
+text={ssDNA},%
+plural={ssDNAs},%
+description={single-stranded DNA},%
+descriptionplural={single-stranded DNA},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={single-stranded DNA},%
+longplural={single-stranded DNAs},%
+short={ssDNA},%
+shortplural={ssDNAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dsDNA}%
+{%
+name={\acronymfont {\glsentryshort {dsDNA}}},%
+sort={dsDNA},%
+type={acronym},%
+first={dsDNA},%
+firstplural={dsDNAs},%
+text={dsDNA},%
+plural={dsDNAs},%
+description={double-stranded DNA},%
+descriptionplural={double-stranded DNA},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={double-stranded DNA},%
+longplural={double-stranded DNAs},%
+short={dsDNA},%
+shortplural={dsDNAs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ssNA}%
+{%
+name={\acronymfont {\glsentryshort {ssNA}}},%
+sort={ssNA},%
+type={acronym},%
+first={ssNA},%
+firstplural={ssNAs},%
+text={ssNA},%
+plural={ssNAs},%
+description={single-stranded nucleic acid},%
+descriptionplural={single-stranded nucleic acid},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={single-stranded nucleic acid},%
+longplural={single-stranded nucleic acids},%
+short={ssNA},%
+shortplural={ssNAs},%
+counter={page},%
+parent={},%
+%
+}%
+

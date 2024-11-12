@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: template.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+A level-1 auxiliary file: acronyms.aux
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: template-abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: template-ack.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: template-vita.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap2.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap4.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 3 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: ml.bib
+Database file #2: target.bib
+Database file #3: double.bib
+Database file #4: optimization.bib
+Database file #5: motivation.bib
+Database file #6: theory.bib
+Database file #7: pic.bib
+Database file #8: book.bib
+Database file #9: review.bib
+Database file #10: desai.bib
+Database file #11: exp.bib
+You've used 53 entries,
+            1791 wiz_defined-function locations,
+            821 strings with 13812 characters,
+and the built_in function-call counts, 13098 in all, are:
+= -- 1036
+> -- 792
+< -- 2
++ -- 287
+- -- 234
+* -- 1115
+:= -- 2206
+add.period$ -- 159
+call.type$ -- 53
+change.case$ -- 48
+chr.to.int$ -- 0
+cite$ -- 53
+duplicate$ -- 482
+empty$ -- 1180
+format.name$ -- 234
+if$ -- 2774
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 56
+newline$ -- 268
+num.names$ -- 53
+pop$ -- 102
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 178
+stack$ -- 0
+substring$ -- 923
+swap$ -- 64
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 108
+width$ -- 55
+write$ -- 580

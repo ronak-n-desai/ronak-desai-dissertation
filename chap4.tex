@@ -1,7 +1,25 @@
-\chapter{Let It End}
+\chapter{Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration} \label{ch:4}
 
-\lipsum[1]
-\section{Please?}
+This chapter details the work I did in conducting PIC simulations to better understand the Enhanced Target Normal Sheath Acceleration (eTNSA) mechanism that our group tried to demonstrate using LLNL's Titan Laser in March of 2024. As a result, I will mostly focus on the simulation aspect, but include some relevant comparisons to the experiment. 
+\section{Theory}
 
-\lipsum
+\subsection{Prior Work}
+
+\citep{Markey_2010_PRL} first investigated experimentally using two pulses to enhance laser proton acceleration. These pulses had a temporal separation of 0.75-2.5ps and the idea behind it was that the partial pre-expansion of the target from the first pulse (of lesser energy) would enhance the laser absorption (McKenna Laser Part Beams 26 591 2008). This is offset by expansion in the rear surface (Fuchs et al PRL 99 015002 2007 or Borghesi PRL 92 055003 2004).
+
+Scott 2012 APL 101 discovered a similar enhancement using a target that is composed of a foil with a half circle to help reflect the fields back into the foil and increase absorption. 
+
+Explain what contrast is: peak of the laser pulse compared to the pedestal and maybe give a diagram.
+
+
+\citep{Ferri_2018_PoP} talks about how colliding two pulses with different levels of temporal delay can enhance proton acceleration. He finds that ultimately, 0 or a small delay is optimal and as the delay gets larger and larger, the enhancement just turns into single pulse. He finds acceleration process can be affected by the second pulse for time delays as long as 0.6ps for 3 micron targets and 1 ps for 6 micron targets. Since we're looking at a 15 micron target, I'd imagine this time would be around 2ps, but I could solve his equations to get a better estimate. This time coincides when the fastest ions have moved a distance of the order of the transverse extent of the electric sheath field.
+
+\citep{Ferri_2019_Nat_Comm} talks about how prior studies have attempted to increase proton energy by using two pulses. Whether explicitly (Markey) or through structured targets that reflect the pulse (Scott). The problem is that these approaches involve exploiting the delicate balance between plasma expansion on the front side (increasing absorption in electrons) and rear surface expansion (decreasing effectiveness of TNSA process which relies on non expanded rear). The double pulse approach enhances electric fields and hot electron generation process. They show 45 degrees is the optimal angle for single pulse, but lower angles fare much worse. For double pulse, angles are more resilient. AND a big difference is that the two pulses now have opposite incidence angles which is important because the pulses can now interfere with the reflections and produce a standing wave pattern at the front side of the target. 
+
+
+
+Explain RCF stacks
+\section{Simulations}
+
+\section{Discussion}
 

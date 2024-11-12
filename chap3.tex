@@ -1,16 +1,21 @@
-\chapter{What a Chapter!}
+\chapter{Computational Methods} \label{ch:3}
 
-\lipsum[2-10]
+\section{The Particle-In-Cell Method}
 
-\section{Whose Section is this Anyways?}
+The Particle-In-Cell (PIC) method involves solving Maxwell's Equations on a grid 
 
-\lipsum
-\section{I think I am Funny, But I am Not}
+\begin{align}
+	\nabla \cdot E &= \frac{\rho}{\epsilon_0}  \label{eq:gauss} \\
+	\nabla \times \vec{E} &= - \frac{\partial \vec{B}}{\partial t} \label{eq:faraday} \\
+	\nabla \cdot \vec{B} &= 0 \\
+	\nabla \times \vec{B} &= \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) \label{eq:ampere}
+\end{align}
+In practice, the relativistic versions of these equations are used, but the concepts remain the same. 
 
-\lipsum[1-3]
-\subsection{Running Out of Headings Here}
+\section{Machine Learning}
 
-Lorem ipsum~\cite{bib3}.  Lorem ipsum dolor sit amet. 
-\lipsum[1]
+\subsection{Polynomial Regression}
 
-\lipsum
+\subsection{Gaussian Process}
+
+\subsection{Neural Network}
