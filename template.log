@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  13 NOV 2024 09:06
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  13 NOV 2024 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,7 +726,8 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: xetex.def on input line 149.
 (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 ) (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
-(template-vita.aux) (chap2.aux) (chap4.aux))
+(template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
+(chap6.aux) (chap7.aux))
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
@@ -874,136 +875,138 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-]) (template.toc)
+]) (template.toc
+
+[6
+
+
+])
 \tf@toc=\write7
 \openout7 = `template.toc'.
 
 
 
-[6
+[7] (template.lof
 
+[8
 
-] (template.lof)
+])
 \tf@lof=\write8
 \openout8 = `template.lof'.
 
 
 
-[7
-
-] (template.lot)
+[9] (template.lot)
 \tf@lot=\write9
 \openout9 = `template.lot'.
 
 
 
-[8
+[10
 
 ]
 No file template.acr.
 
 
-[9
+[11
 
 ]
-\openout2 = `chap2.aux'.
+\openout2 = `chap1.aux'.
 
- (chap2.tex
+ (chap1.tex
 Chapter 1.
-
+)
 
 [1
 
 
 
 ]
+\openout2 = `chap2.aux'.
 
-[2]
+ (chap2.tex
+Chapter 2.
+
+
+[2
+
+
+
+
+]
 
 [3]
+
+[4]
 File: planning/images/plasma_oscillation.PNG Graphic file (type bmp)
 <planning/images/plasma_oscillation.PNG>
 
 
-[4]
-
 [5]
+
+[6]
 File: planning/images/debye_length.png Graphic file (type bmp)
 <planning/images/debye_length.png>
 
 
-[6]
-
 [7]
-
-LaTeX Warning: Reference `eq:ampere' on page 1 undefined on input line 205.
-
-
-LaTeX Warning: Reference `eq:faraday' on page 1 undefined on input line 205.
-
-
 
 [8]
 
 [9]
+
+[10]
 File: planning/images/absorption.png Graphic file (type bmp)
 <planning/images/absorption.png>
 
 
-[10]
-
 [11]
 
 [12]
+
+[13]
 File: planning/images/gibbon_hot_electron.PNG Graphic file (type bmp)
 <planning/images/gibbon_hot_electron.PNG>
 
 
-[13]
+[14]
 File: planning/images/tnsa.PNG Graphic file (type bmp)
 <planning/images/tnsa.PNG>
-
-
-[14]
-
-LaTeX Warning: Reference `eq:lorentz_mora' on page 1 undefined on input line 32
-7.
-
-
-LaTeX Warning: Reference `eq:continuity' on page 1 undefined on input line 327.
-
-
-
-LaTeX Warning: Reference `ch:5' on page 1 undefined on input line 327.
-
 
 
 [15]
 
 [16]
+
+[17]
 File: planning/images/acceleration_regimes.PNG Graphic file (type bmp)
 <planning/images/acceleration_regimes.PNG>
 
 
-[17])
-
-[18]
+[18])
 
 [19]
+
+[20]
+\openout2 = `chap3.aux'.
+
+ (chap3.tex
+Chapter 3.
+)
+
+[21
+
+
+
+
+]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
-Chapter 2.
+Chapter 4.
+File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
+<planning/images/Markey_Spectrum.PNG>
 
-
-[20
-
-
-
-
-])
-
-[21] (template.bbl
 
 [22
 
@@ -1011,31 +1014,131 @@ Chapter 2.
 
 
 ]
+File: planning/images/scott_half_cavity.PNG Graphic file (type bmp)
+<planning/images/scott_half_cavity.PNG>
+
 
 [23]
+File: planning/images/ferri_dub_pulse.PNG Graphic file (type bmp)
+<planning/images/ferri_dub_pulse.PNG>
+
 
 [24]
+File: planning/images/ferri_scale_energy.PNG Graphic file (type bmp)
+<planning/images/ferri_scale_energy.PNG>
 
-[25])
 
-[26] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
-(template-vita.aux) (chap2.aux) (chap4.aux))
+[25]
+File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
+<planning/images/yao_exp_stacks.PNG>
+
+
+[26]
+
+[27])
+
+[28]
+\openout2 = `chap5.aux'.
+
+ (chap5.tex
+Chapter 5.
+
+
+[29
+
+
+
+
+]
+
+[30]
+File: planning/images/fig1_mora.PNG Graphic file (type bmp)
+<planning/images/fig1_mora.PNG>
+File: planning/images/fig2_mora.PNG Graphic file (type bmp)
+<planning/images/fig2_mora.PNG>
+
+Overfull \hbox (21.87807pt too wide) in paragraph at lines 83--88
+ [][][][] 
+ []
+
+
+
+[31]
+
+[32]
+
+[33]
+
+[34]
+File: planning/images/density_profile.png Graphic file (type bmp)
+<planning/images/density_profile.png>
+
+
+[35]
+File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
+<planning/images/energy_dip_morrison.png>
+)
+
+[36]
+
+[37]
+\openout2 = `chap6.aux'.
+
+ (chap6.tex
+Chapter 6.
+)
+
+[38
+
+
+
+
+]
+\openout2 = `chap7.aux'.
+
+ (chap7.tex
+Chapter 7.
+)
+
+[39
+
+
+
+
+] (template.bbl
+
+[40
+
+
+
+
+]
+
+[41]
+
+[42]
+
+[43]
+
+[44]
+
+[45])
+
+[46] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
+(template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
+(chap6.aux) (chap7.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 23638 strings out of 409049
- 446802 string characters out of 5757194
+ 24014 strings out of 409049
+ 455296 string characters out of 5757194
  1936560 words of memory out of 5000000
- 45953 multiletter control sequences out of 15000+600000
+ 46285 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,11n,95p,2382b,1094s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,11n,116p,2382b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (36 pages).
+Output written on template.pdf (58 pages).

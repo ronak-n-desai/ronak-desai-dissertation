@@ -10,9 +10,19 @@ A level-1 auxiliary file: template-ack.aux
 Reallocating 'name_of_file' (item size: 1) to 18 items.
 A level-1 auxiliary file: template-vita.aux
 Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap1.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
 A level-1 auxiliary file: chap2.aux
 Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap3.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
 A level-1 auxiliary file: chap4.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap5.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap6.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+A level-1 auxiliary file: chap7.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: unsrt.bst
 Reallocating 'name_of_file' (item size: 1) to 3 items.
@@ -37,44 +47,44 @@ Database file #8: book.bib
 Database file #9: review.bib
 Database file #10: desai.bib
 Database file #11: exp.bib
-You've used 53 entries,
+You've used 68 entries,
             1791 wiz_defined-function locations,
-            821 strings with 13812 characters,
-and the built_in function-call counts, 13098 in all, are:
-= -- 1036
-> -- 792
+            913 strings with 18205 characters,
+and the built_in function-call counts, 17725 in all, are:
+= -- 1304
+> -- 1257
 < -- 2
-+ -- 287
-- -- 234
-* -- 1115
-:= -- 2206
-add.period$ -- 159
-call.type$ -- 53
-change.case$ -- 48
++ -- 447
+- -- 379
+* -- 1604
+:= -- 3047
+add.period$ -- 202
+call.type$ -- 68
+change.case$ -- 63
 chr.to.int$ -- 0
-cite$ -- 53
-duplicate$ -- 482
-empty$ -- 1180
-format.name$ -- 234
-if$ -- 2774
+cite$ -- 68
+duplicate$ -- 609
+empty$ -- 1513
+format.name$ -- 379
+if$ -- 3695
 int.to.chr$ -- 0
-int.to.str$ -- 53
-missing$ -- 56
-newline$ -- 268
-num.names$ -- 53
-pop$ -- 102
+int.to.str$ -- 68
+missing$ -- 69
+newline$ -- 341
+num.names$ -- 68
+pop$ -- 129
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 178
+skip$ -- 226
 stack$ -- 0
-substring$ -- 923
-swap$ -- 64
+substring$ -- 1160
+swap$ -- 79
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 108
-width$ -- 55
-write$ -- 580
+while$ -- 136
+width$ -- 70
+write$ -- 739

@@ -46,6 +46,47 @@ K.~V. Lezhnin, F.~F. Kamenets, V.~S. Beskin, M.~Kando, T.~Zh. Esirkepov, and
   acceleration by radiation pressure}.
 \newblock {\em Physics of Plasmas}, 22(3):033112, 03 2015.
 
+\bibitem{Markey_2010_PRL}
+K.~Markey, P.~McKenna, C.~M. Brenner, D.~C. Carroll, M.~M. G\"unther,
+  K.~Harres, S.~Kar, K.~Lancaster, F.~N\"urnberg, M.~N. Quinn, A.~P.~L.
+  Robinson, M.~Roth, M.~Zepf, and D.~Neely.
+\newblock Spectral enhancement in the double pulse regime of laser proton
+  acceleration.
+\newblock {\em Phys. Rev. Lett.}, 105:195008, Nov 2010.
+
+\bibitem{Scott_2012_APL}
+G.~G. Scott, J.~S. Green, V.~Bagnoud, C.~Brabetz, C.~M. Brenner, D.~C. Carroll,
+  D.~A. MacLellan, A.~P.~L. Robinson, M.~Roth, C.~Spindloe, F.~Wagner,
+  B.~Zielbauer, P.~McKenna, and D.~Neely.
+\newblock Multi-pulse enhanced laser ion acceleration using plasma half cavity
+  targets.
+\newblock {\em Applied Physics Letters}, 101(2):024101, 07 2012.
+
+\bibitem{Ferri_2019_Nat_Comm}
+J.~Ferri, E.~Siminos, and T.~Fülöp.
+\newblock Enhanced target normal sheath acceleration using colliding laser
+  pulses.
+\newblock {\em Communications Physics}, 2:40, 4 2019.
+
+\bibitem{Mora_2003_PRL}
+P.~Mora.
+\newblock Plasma expansion into a vacuum.
+\newblock {\em Phys. Rev. Lett.}, 90:185002, May 2003.
+
+\bibitem{Desai_2024_arX}
+Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,
+  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
+\newblock Applying machine learning methods to laser acceleration of protons:
+  Lessons learned from synthetic data, 2023.
+
+\bibitem{Morrison_2018_NJoP}
+John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
+  Gregory~K. {Ngirmang}, Neil~R. {Murphy}, Chris {Orban}, Enam~A. {Chowdhury},
+  and W.~M. {Roquemore}.
+\newblock {MeV proton acceleration at kHz repetition rate from ultra-intense
+  laser liquid interaction}.
+\newblock {\em New Journal of Physics}, 20(2):022001, February 2018.
+
 \bibitem{Chen_2015_Plasma}
 F.F. Chen.
 \newblock {\em Introduction to Plasma Physics and Controlled Fusion}.
@@ -187,11 +228,6 @@ C.~Perego, A.~Zani, D.~Batani, and M.~Passoni.
   653(1):89--93, 2011.
 \newblock Superstrong 2010.
 
-\bibitem{Mora_2003_PRL}
-P.~Mora.
-\newblock Plasma expansion into a vacuum.
-\newblock {\em Phys. Rev. Lett.}, 90:185002, May 2003.
-
 \bibitem{Mora_2005_PRE}
 P.~Mora.
 \newblock Thin-foil expansion into a vacuum.
@@ -274,12 +310,6 @@ J.~Ferri, L.~Senje, M.~Dalui, K.~Svensson, B.~Aurand, M.~Hansson, A.~Persson,
   laser pulses}.
 \newblock {\em Physics of Plasmas}, 25(4):043115, 04 2018.
 
-\bibitem{Ferri_2019_Nat_Comm}
-J.~Ferri, E.~Siminos, and T.~Fülöp.
-\newblock Enhanced target normal sheath acceleration using colliding laser
-  pulses.
-\newblock {\em Communications Physics}, 2:40, 4 2019.
-
 \bibitem{Fuchs_2005_Nat}
 J.~Fuchs, P.~Antici, E.~D'Humières, E.~Lefebvre, M.~Borghesi, E.~Brambrink,
   C.~Cecchetti, M.~Kaluza, V.~Malka, M.~Manclossi, S.~Meyroneinc, P.~Mora,
@@ -304,12 +334,88 @@ F.~Fiuza, A.~Stockem, E.~Boella, R.~A. Fonseca, L.~O. Silva, D.~Haberberger,
 \newblock {Ion acceleration from laser-driven electrostatic shocksa)}.
 \newblock {\em Physics of Plasmas}, 20(5):056304, 04 2013.
 
-\bibitem{Markey_2010_PRL}
-K.~Markey, P.~McKenna, C.~M. Brenner, D.~C. Carroll, M.~M. G\"unther,
-  K.~Harres, S.~Kar, K.~Lancaster, F.~N\"urnberg, M.~N. Quinn, A.~P.~L.
-  Robinson, M.~Roth, M.~Zepf, and D.~Neely.
-\newblock Spectral enhancement in the double pulse regime of laser proton
-  acceleration.
-\newblock {\em Phys. Rev. Lett.}, 105:195008, Nov 2010.
+\bibitem{Fuchs_2007_PRL}
+J.~Fuchs, C.~A. Cecchetti, M.~Borghesi, T.~Grismayer, E.~d'Humi\`eres,
+  P.~Antici, S.~Atzeni, P.~Mora, A.~Pipahl, L.~Romagnani, A.~Schiavi,
+  Y.~Sentoku, T.~Toncian, P.~Audebert, and O.~Willi.
+\newblock Laser-foil acceleration of high-energy protons in small-scale plasma
+  gradients.
+\newblock {\em Phys. Rev. Lett.}, 99:015002, Jul 2007.
+
+\bibitem{Robinson_2007_PPCF}
+A~P~L Robinson, D~Neely, P~McKenna, and R~G Evans.
+\newblock Spectral control in proton acceleration with multiple laser pulses.
+\newblock {\em Plasma Physics and Controlled Fusion}, 49(4):373, feb 2007.
+
+\bibitem{Rahman_2021_PoP}
+Nashad Rahman, Joseph~R. Smith, Gregory~K. Ngirmang, and Chris Orban.
+\newblock {Particle-in-cell modeling of a potential demonstration experiment
+  for double pulse enhanced target normal sheath acceleration}.
+\newblock {\em Physics of Plasmas}, 28(7):073103, 07 2021.
+
+\bibitem{Khan_2024_NJoP}
+Imran Khan and Vikrant Saxena.
+\newblock Tnsa based proton acceleration by two oblique laser pulses in the
+  presence of an axial magnetic field.
+\newblock {\em New Journal of Physics}, 26(8):083026, aug 2024.
+
+\bibitem{Arefiev_2016_NJoP}
+A~Arefiev, T~Toncian, and G~Fiksel.
+\newblock Enhanced proton acceleration in an applied longitudinal magnetic
+  field.
+\newblock {\em New Journal of Physics}, 18(10):105011, oct 2016.
+
+\bibitem{Morace_2019_Nat_Comm}
+A.~Morace, N.~Iwata, and Y.~Sentoku.
+\newblock Enhancing laser beam performance by interfering intense laser
+  beamlets.
+\newblock {\em Nat Commun}, 10:2995, 7 2019.
+
+\bibitem{Yao_2024_MaRaE}
+Weipeng Yao, Motoaki Nakatsutsumi, Sébastien Buffechoux, Patrizio Antici,
+  Marco Borghesi, Andrea Ciardi, Sophia~N. Chen, Emmanuel d’Humières,
+  Laurent Gremillet, Robert Heathcote, Vojtěch Horný, Paul McKenna, Mark~N.
+  Quinn, Lorenzo Romagnani, Ryan Royle, Gianluca Sarri, Yasuhiko Sentoku,
+  Hans-Peter Schlenvoigt, Toma Toncian, Olivier Tresca, Laura Vassura, Oswald
+  Willi, and Julien Fuchs.
+\newblock Optimizing laser coupling, matter heating, and particle acceleration
+  from solids using multiplexed ultraintense lasers.
+\newblock {\em Matter and Radiation at Extremes}, 9(4):047202, 04 2024.
+
+\bibitem{Desai_2024_CPP}
+Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,
+  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
+\newblock Applying machine learning methods to laser acceleration of protons:
+  Lessons learned from synthetic data, 2023.
+
+\bibitem{Passoni_2010_NJoP}
+M.~Passoni, L.~Bertagna, and A.~Zani.
+\newblock Target normal sheath acceleration: theory, comparison with
+  experiments and future perspectives.
+\newblock {\em New Journal of Physics}, 12(4):045012, apr 2010.
+
+\bibitem{Schreiber_2006_PRL}
+J.~Schreiber, F.~Bell, F.~Gr\"uner, U.~Schramm, M.~Geissler, M.~Schn\"urer,
+  S.~Ter-Avetisyan, B.~M. Hegelich, J.~Cobble, E.~Brambrink, J.~Fuchs,
+  P.~Audebert, and D.~Habs.
+\newblock Analytical model for ion acceleration by high-intensity laser pulses.
+\newblock {\em Phys. Rev. Lett.}, 97:045005, Jul 2006.
+
+\bibitem{Key_1998_PoP}
+M.~H. Key, M.~D. Cable, T.~E. Cowan, K.~G. Estabrook, B.~A. Hammel, S.~P.
+  Hatchett, E.~A. Henry, D.~E. Hinkel, J.~D. Kilkenny, J.~A. Koch, W.~L. Kruer,
+  A.~B. Langdon, B.~F. Lasinski, R.~W. Lee, B.~J. MacGowan, A.~MacKinnon, J.~D.
+  Moody, M.~J. Moran, A.~A. Offenberger, D.~M. Pennington, M.~D. Perry, T.~J.
+  Phillips, T.~C. Sangster, M.~S. Singh, M.~A. Stoyer, M.~Tabak, G.~L.
+  Tietbohl, M.~Tsukamoto, K.~Wharton, and S.~C. Wilks.
+\newblock Hot electron production and heating by hot electrons in fast ignitor
+  research.
+\newblock {\em Physics of Plasmas}, 5(5):1966--1972, 05 1998.
+
+\bibitem{Decker_1996_PoP}
+C.~D. Decker, W.~B. Mori, K.‐C. Tzeng, and T.~Katsouleas.
+\newblock {The evolution of ultra‐intense, short‐pulse lasers in underdense
+  plasmas}.
+\newblock {\em Physics of Plasmas}, 3(5):2047--2056, 05 1996.
 
 \end{thebibliography}
