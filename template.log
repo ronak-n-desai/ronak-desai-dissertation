@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  13 NOV 2024 17:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  15 NOV 2024 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,25 +981,23 @@ File: planning/images/tnsa.PNG Graphic file (type bmp)
 [17]
 File: planning/images/acceleration_regimes.PNG Graphic file (type bmp)
 <planning/images/acceleration_regimes.PNG>
+)
 
-
-[18])
-
-[19]
-
-[20]
+[18]
 \openout2 = `chap3.aux'.
 
  (chap3.tex
 Chapter 3.
 )
 
-[21
+[19
 
 
 
 
 ]
+
+[20]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
@@ -1008,7 +1006,7 @@ File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
 <planning/images/Markey_Spectrum.PNG>
 
 
-[22
+[21
 
 
 
@@ -1018,40 +1016,40 @@ File: planning/images/scott_half_cavity.PNG Graphic file (type bmp)
 <planning/images/scott_half_cavity.PNG>
 
 
-[23]
+[22]
 File: planning/images/ferri_dub_pulse.PNG Graphic file (type bmp)
 <planning/images/ferri_dub_pulse.PNG>
 
 
-[24]
+[23]
 File: planning/images/ferri_scale_energy.PNG Graphic file (type bmp)
 <planning/images/ferri_scale_energy.PNG>
 
+
+[24]
 
 [25]
 File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
 <planning/images/yao_exp_stacks.PNG>
 
 
-[26]
+[26])
 
-[27])
-
-[28]
+[27]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
 
 
-[29
+[28
 
 
 
 
 ]
 
-[30]
+[29]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1063,32 +1061,32 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 83--88
 
 
 
+[30]
+
 [31]
 
 [32]
 
 [33]
-
-[34]
 File: planning/images/density_profile.png Graphic file (type bmp)
 <planning/images/density_profile.png>
 
 
-[35]
+[34]
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
 )
 
-[36]
+[35]
 
-[37]
+[36]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 )
 
-[38
+[37
 
 
 
@@ -1100,19 +1098,21 @@ Chapter 6.
 Chapter 7.
 )
 
-[39
+[38
 
 
 
 
 ] (template.bbl
 
-[40
+[39
 
 
 
 
 ]
+
+[40]
 
 [41]
 
@@ -1120,11 +1120,9 @@ Chapter 7.
 
 [43]
 
-[44]
+[44])
 
-[45])
-
-[46] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
+[45] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux))
  ***********
@@ -1133,12 +1131,12 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24014 strings out of 409049
- 455296 string characters out of 5757194
+ 24022 strings out of 409049
+ 455418 string characters out of 5757194
  1936560 words of memory out of 5000000
- 46285 multiletter control sequences out of 15000+600000
+ 46293 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,11n,116p,2382b,1170s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,11n,116p,2382b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (58 pages).
+Output written on template.pdf (57 pages).

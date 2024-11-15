@@ -68,6 +68,17 @@ J.~Ferri, E.~Siminos, and T.~Fülöp.
   pulses.
 \newblock {\em Communications Physics}, 2:40, 4 2019.
 
+\bibitem{Yao_2024_MaRaE}
+Weipeng Yao, Motoaki Nakatsutsumi, Sébastien Buffechoux, Patrizio Antici,
+  Marco Borghesi, Andrea Ciardi, Sophia~N. Chen, Emmanuel d’Humières,
+  Laurent Gremillet, Robert Heathcote, Vojtěch Horný, Paul McKenna, Mark~N.
+  Quinn, Lorenzo Romagnani, Ryan Royle, Gianluca Sarri, Yasuhiko Sentoku,
+  Hans-Peter Schlenvoigt, Toma Toncian, Olivier Tresca, Laura Vassura, Oswald
+  Willi, and Julien Fuchs.
+\newblock Optimizing laser coupling, matter heating, and particle acceleration
+  from solids using multiplexed ultraintense lasers.
+\newblock {\em Matter and Radiation at Extremes}, 9(4):047202, 04 2024.
+
 \bibitem{Mora_2003_PRL}
 P.~Mora.
 \newblock Plasma expansion into a vacuum.
@@ -127,6 +138,12 @@ J.~P. Freidberg, R.~W. Mitchell, R.~L. Morse, and L.~I. Rudsinski.
 K.~G. Estabrook, E.~J. Valeo, and W.~L. Kruer.
 \newblock Two‐dimensional relativistic simulations of resonance absorption.
 \newblock {\em The Physics of Fluids}, 18(9):1151--1159, 09 1975.
+
+\bibitem{Grimes_1999_PRL}
+M.~K. Grimes, A.~R. Rundquist, Y.-S. Lee, and M.~C. Downer.
+\newblock Experimental identification of ``vacuum heating'' at
+  femtosecond-laser-irradiated metal surfaces.
+\newblock {\em Phys. Rev. Lett.}, 82:4010--4013, May 1999.
 
 \bibitem{Corkum_1993_PRL}
 P.~B. Corkum.
@@ -370,17 +387,6 @@ A.~Morace, N.~Iwata, and Y.~Sentoku.
 \newblock Enhancing laser beam performance by interfering intense laser
   beamlets.
 \newblock {\em Nat Commun}, 10:2995, 7 2019.
-
-\bibitem{Yao_2024_MaRaE}
-Weipeng Yao, Motoaki Nakatsutsumi, Sébastien Buffechoux, Patrizio Antici,
-  Marco Borghesi, Andrea Ciardi, Sophia~N. Chen, Emmanuel d’Humières,
-  Laurent Gremillet, Robert Heathcote, Vojtěch Horný, Paul McKenna, Mark~N.
-  Quinn, Lorenzo Romagnani, Ryan Royle, Gianluca Sarri, Yasuhiko Sentoku,
-  Hans-Peter Schlenvoigt, Toma Toncian, Olivier Tresca, Laura Vassura, Oswald
-  Willi, and Julien Fuchs.
-\newblock Optimizing laser coupling, matter heating, and particle acceleration
-  from solids using multiplexed ultraintense lasers.
-\newblock {\em Matter and Radiation at Extremes}, 9(4):047202, 04 2024.
 
 \bibitem{Desai_2024_CPP}
 Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,

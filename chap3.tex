@@ -5,17 +5,41 @@
 The Particle-In-Cell (PIC) method involves solving Maxwell's Equations on a grid 
 
 \begin{align}
-	\nabla \cdot E &= \frac{\rho}{\epsilon_0}  \label{eq:gauss} \\
+	\nabla \cdot \vec{E} &= \frac{\rho}{\epsilon_0}  \label{eq:gauss} \\
 	\nabla \times \vec{E} &= - \frac{\partial \vec{B}}{\partial t} \label{eq:faraday} \\
 	\nabla \cdot \vec{B} &= 0 \\
 	\nabla \times \vec{B} &= \mu_0 (\vec{J} + \epsilon_0 \frac{\partial \vec{E}}{\partial t}) \label{eq:ampere}
 \end{align}
 In practice, the relativistic versions of these equations are used, but the concepts remain the same. 
 
+\subsection{Field Solver: FDTD}
+
+\subsection{Particle Push: Boris Algorithm}
+
+\begin{equation}
+	\frac{v_{n + 1/2} - v_{n - 1/2}}{\Delta t} = \frac{q}{m}[E_n + v \times B]
+\end{equation}
+
+\subsection{EPOCH Code}
+
+\begin{quote}
+	Clearly Top-hat shape functions should never be used for laser-solid simulations.
+\end{quote}
+
+\subsection{Convergence Testing the EPOCH Code}
+
+
 \section{Machine Learning}
 
-\subsection{Polynomial Regression}
+\subsection{Simple Models}
 
-\subsection{Gaussian Process}
+\subsubsection{Polynomial Regression}
 
-\subsection{Neural Network}
+\subsubsection{Support Vector Regression}
+
+
+\subsection{Advanced Models}
+
+\subsubsection{Gaussian Process}
+
+\subsection{Neural Networks}

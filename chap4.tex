@@ -63,7 +63,7 @@ Unlike the methods described in \cref{sec:spatialalign} (which see enhanced prot
 	\label{fig:ferri_scale_energy}
 \end{figure}
 
-Furthermore, Ferri performed some simulations that explored the effect of changing the preplasma scale length $L$ at a fixed energy, and changing the total laser energy for the flat target\cite{Ferri_2019_Nat_Comm} which can be seen in \cref{fig:ferri_scale_energy}. He finds that a higher preplasma scale length generally increases the max proton energy up to a certain scale length of around $L = \SI{0.6}{\micro \meter}$. Additionally, the enhancement is seen for all scale lengths, but the gap between single and pulse diminishes for larger scale lengths. In the double pulse case, a more favorable scaling with laser energy is seen for both the hot electron temperature and maximum proton energy ($E_\text{0,tot}$ as opposed to $\sqrt{E_\text{0,tot}}$) when comparing double pulse against single. In addition, Ferri comments that, for pulses with total energy greater than 10 J, the proton layer on the rear side starts to entirely disconnect from the bulk of the target during the acceleration, causing proton energies to saturate and become lower than the expected linear scaling.
+Furthermore, Ferri performed some simulations that explored the effect of changing the preplasma scale length $L$ at a fixed energy, and changing the total laser energy for the flat target\cite{Ferri_2019_Nat_Comm} which can be seen in \cref{fig:ferri_scale_energy}. He finds that a higher preplasma scale length generally increases the max proton energy up to a certain scale length of around $L = \SI{0.6}{\micro \meter}$. The enhancement is seen for all scale lengths, but the gap between single and double pulse diminishes for larger scale lengths. In the double pulse case, a more favorable scaling with laser energy is seen for both the hot electron temperature and maximum proton energy ($E_\text{0,tot}$ as opposed to $\sqrt{E_\text{0,tot}}$) when comparing double pulse against single. In addition, Ferri comments that, for pulses with total energy greater than 10 J, the proton layer on the rear side starts to entirely disconnect from the bulk of the target during the acceleration, causing proton energies to saturate and become lower than the expected linear scaling.
 
 \subsubsection{Other Simulations}
 In 2021, eTNSA was again demonstrated through simulations in Rahman et. al.\cite{Rahman_2021_PoP} for a mJ class laser, around 2 orders of magnitude lower energy than the setup in Ferri's work. This mJ class laser is based on the experimental facility at the Wright Patterson Air Force Base (see \cref{ch:6} for more details) which utilizes a thinner target of $\sim \SI{460}{\nano \meter}$. Despite the major difference in laser and target parameters, the findings are similar -- increased hot electron temperature and proton energies with double pulse compared to single pulse. However, Rahman finds that the presence of a preplasma actually \emph{reduces} the maximum proton energy. But, like Ferri et. al., the gap between single and double pulse becomes smaller in the presence of a preplasma.
@@ -74,7 +74,7 @@ In 2024, Khan and Saxena\cite{Khan_2024_NJoP} revisit the double pulse scheme bu
 
 \subsubsection{Experiments}
 
-Due to multiple studies demonstrating eTNSA\cite{Ferri_2019_Nat_Comm,Rahman_2021_PoP,Khan_2024_NJoP}, experiments are needed to validate the PIC simulations. Morace et al.\cite{Morace_2019_Nat_Comm} showed that splitting a 270 J beam into multiple ``beamlets'' enhances the proton energy spectrum.
+Due to multiple studies demonstrating eTNSA\cite{Ferri_2019_Nat_Comm,Rahman_2021_PoP,Khan_2024_NJoP}, experiments are needed to validate the PIC simulations. Morace et al.\cite{Morace_2019_Nat_Comm} showed that splitting a 270 J beam ($\SI{2.5e18}{\watt \per \centi \meter \squared}$ peak intensity) into multiple ``beamlets'' on Al foil targets enhances the proton energy spectrum. These beamlets (dependent on the incidence angle) induced critical surface density modulations that strongly improved absorption into hot electrons. 
 
 \begin{figure}
 	\centering 
@@ -83,10 +83,10 @@ Due to multiple studies demonstrating eTNSA\cite{Ferri_2019_Nat_Comm,Rahman_2021
 	\label{fig:yao_exp_stacks}
 \end{figure}
 
-Yao et al.\cite{Yao_2024_MaRaE} investigated the double pulse effect by changing the transverse spatial separation between two temporally aligned pulses as shown in \cref{fig:yao_exp_stacks}. This figure shows two possible beams $\alpha$ and $\beta$ which come in at equal and opposite incidence angles with $\alpha$ angled in the $-y$ direction. Comparing (b) and (c) shows an enhancement of the double pulse electron energy when the pulses are spatially overlapped. In (a), the electron energy is recorded along the laser beam axis in contrast to (b) and (c) and this shows that most the electrons are getting accelerated along the laser beam axis. 
+Yao et al.\cite{Yao_2024_MaRaE} investigated the double pulse effect by changing the transverse spatial separation between two temporally aligned pulses as shown in \cref{fig:yao_exp_stacks}. This figure shows two possible beams $\alpha$ and $\beta$ which come in at equal and opposite incidence angles with $\alpha$ angled in the $-y$ direction. Comparing (b) and (c) shows an enhancement of the double pulse electron energy when the pulses are spatially overlapped. In (a), the electron energy is recorded along the laser beam axis in contrast to (b) and (c) and this shows that most the electrons are getting accelerated along the laser beam axis. This suggests that the $\vec{J} \times \vec{B}$ mechanism is taking place (in contrast to vacuum heating or resonance absorption which drives electrons in the  target normal direction). In terms of the protons, case 2 (spatially aligned double pulses) shows a more collimated central small beam which is absent in case 1 (spatially offset double pulses).
 
-%Explain RCF stacks
-\section{Simulations}
+\section{Results}
+Morace et. al.\cite{Morace_2019_Nat_Comm} was able to provide evidence ... Yao et. al.\cite{Yao_2024_MaRaE} was supported double pulse but didn't do a direct comparison with single pulse. Not enough experimental results out there, so we did an experiment ...
 
 \section{Discussion}
 

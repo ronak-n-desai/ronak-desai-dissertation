@@ -69,7 +69,7 @@ and the ion velocity at the front can also be obtained
 \begin{equation}
 	v_{i, front} = 2 c_s \ln(\omega_{p,i} t)
 \end{equation}
-The ion velocity can plug back into \cref{eq:lorentz_mora} to find out that $E_{front} = 2 E_{SS}$. Mora found an approximate solution to $E_{front}$ that matches $E_{front,0}$ and $E_{SS}$ in their respective cases ($t = 0$ and $\omega_{p,i} t \gg 1$) as 
+The ion velocity can plug back into \cref{eq:lorentz_mora} to find out that $E_\text{front,SS} = 2 E_{SS}$. Mora found an approximate solution to $E_{front}$ that matches $E_\text{front,0}$ and $E_\text{front,SS}$ in their respective cases ($t = 0$ and $\omega_{p,i} t \gg 1$) as 
 
 \begin{equation}
 	E_{front} \simeq \frac{2 E_0}{\sqrt{2 \exp(1) + (\omega_{p,i} t)^2}}
@@ -92,7 +92,7 @@ This formula not only reaches the correct values in the limiting cases, but also
 \begin{equation}
 	v_{i,front} = 2 c_s \ln(\tau + \sqrt{\tau^2 + 1})	
 \end{equation}
-where we've defined a normalized acceleration time $\tau \equiv \omega_{p,i} t / \sqrt{2 \exp(1)}$. Additionally, in the limit $\omega_{p,i} \gg 1$, \cref{eq:mora_xfront} becomes
+where we've defined a normalized acceleration time $\tau \equiv \omega_{p,i} t / \sqrt{2 \exp(1)}$. Additionally, in the limit $\omega_{p,i} t \gg 1$, \cref{eq:mora_xfront} becomes
 
 \begin{equation}
 	x_{i, front} \simeq c_s t [2 \ln(\omega_{p,i} t) + \ln(2) - 3] \label{eq:mora_xfront_simple}
@@ -106,12 +106,12 @@ The per-ion kinetic energy can now be calculated as
 Using \cref{eq:selfsimilardensity}, we can determine the number of accelerated ions between $x = -c_s t$ and $x = x$ as
 
 \begin{equation}
-	N_i \equiv \int_{-c_s t}^{x} n_i(x') dx' = -n_{i0} c_s t \exp(-\frac{x}{c_s t} - 1)
+	N_i \equiv \int_{-c_s t}^{x} n_i(x') dx' = n_{i0} c_s t [1 - \exp(-\frac{x}{c_s t} - 1)]
 \end{equation}
 and using \cref{eq:selfsimilarvelocity}, we can show that this is equivalent to 
 
 \begin{equation}
-	N_i(x) = n_{i0} c_s t [\exp(1-\sqrt{\frac{2 \mathcal{E}}{\mathcal{E}_0}})] \label{eq:numprotons}
+	N_i(x) = n_{i0} c_s t [1 - \exp(-\sqrt{\frac{2 \mathcal{E}}{\mathcal{E}_0}})] \label{eq:numprotons}
 \end{equation}
 where $\mathcal{E}_0 \equiv Z k_B T_e$. Now that the number of ions is expressed in terms of the energy $\mathcal{E}$, we can determine the number of accelerated ions per unit energy (per unit surface) as 
 
