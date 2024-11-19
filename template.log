@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  18 NOV 2024 14:08
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  19 NOV 2024 16:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,7 +988,7 @@ File: planning/images/acceleration_regimes.PNG Graphic file (type bmp)
 
  (chap3.tex
 Chapter 3.
-)
+
 
 [19
 
@@ -996,8 +996,20 @@ Chapter 3.
 
 
 ]
+File: planning/images/shape_functions.png Graphic file (type bmp)
+<planning/images/shape_functions.png>
+
 
 [20]
+File: planning/images/yee_grid.PNG Graphic file (type bmp)
+<planning/images/yee_grid.PNG>
+
+
+[21])
+
+[22]
+
+[23]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
@@ -1006,7 +1018,7 @@ File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
 <planning/images/Markey_Spectrum.PNG>
 
 
-[21
+[24
 
 
 
@@ -1016,40 +1028,40 @@ File: planning/images/scott_half_cavity.PNG Graphic file (type bmp)
 <planning/images/scott_half_cavity.PNG>
 
 
-[22]
+[25]
 File: planning/images/ferri_dub_pulse.PNG Graphic file (type bmp)
 <planning/images/ferri_dub_pulse.PNG>
 
 
-[23]
+[26]
 File: planning/images/ferri_scale_energy.PNG Graphic file (type bmp)
 <planning/images/ferri_scale_energy.PNG>
 
 
-[24]
+[27]
 
-[25]
+[28]
 File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
 <planning/images/yao_exp_stacks.PNG>
 
 
-[26])
+[29])
 
-[27]
+[30]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
 
 
-[28
+[31
 
 
 
 
 ]
 
-[29]
+[32]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1061,32 +1073,32 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 83--88
 
 
 
-[30]
-
-[31]
-
-[32]
-
 [33]
-File: planning/images/density_profile.png Graphic file (type bmp)
-<planning/images/density_profile.png>
-
 
 [34]
-File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
-<planning/images/energy_dip_morrison.png>
-)
 
 [35]
 
 [36]
+File: planning/images/density_profile.png Graphic file (type bmp)
+<planning/images/density_profile.png>
+
+
+[37]
+File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
+<planning/images/energy_dip_morrison.png>
+)
+
+[38]
+
+[39]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 )
 
-[37
+[40
 
 
 
@@ -1098,31 +1110,31 @@ Chapter 6.
 Chapter 7.
 )
 
-[38
+[41
 
 
 
 
 ] (template.bbl
 
-[39
+[42
 
 
 
 
 ]
 
-[40]
-
-[41]
-
-[42]
-
 [43]
 
-[44])
+[44]
 
-[45] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
+[45]
+
+[46]
+
+[47])
+
+[48] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux))
  ***********
@@ -1131,12 +1143,12 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 24022 strings out of 409049
- 455418 string characters out of 5757194
+ 24059 strings out of 409049
+ 456405 string characters out of 5757194
  1936560 words of memory out of 5000000
- 46293 multiletter control sequences out of 15000+600000
+ 46328 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,11n,116p,2382b,1168s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,11n,116p,2382b,1174s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (57 pages).
+Output written on template.pdf (60 pages).

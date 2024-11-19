@@ -345,11 +345,16 @@ E.~Esarey, C.~B. Schroeder, and W.~P. Leemans.
 \newblock Physics of laser-driven plasma-based electron accelerators.
 \newblock {\em Rev. Mod. Phys.}, 81:1229--1285, Aug 2009.
 
-\bibitem{Fiuza_2013_PoP}
-F.~Fiuza, A.~Stockem, E.~Boella, R.~A. Fonseca, L.~O. Silva, D.~Haberberger,
-  S.~Tochitsky, W.~B. Mori, and C.~Joshi.
-\newblock {Ion acceleration from laser-driven electrostatic shocksa)}.
-\newblock {\em Physics of Plasmas}, 20(5):056304, 04 2013.
+\bibitem{Birdsall_2004_PIC}
+C.K. Birdsall and A.B. Langdon.
+\newblock {\em Plasma Physics Via Computer Simulation}.
+\newblock Series In Plasma Physics. Taylor \& Francis, 2004.
+
+\bibitem{Arber_2015_PPCF}
+T~D Arber, K~Bennett, C~S Brady, A~Lawrence-Douglas, M~G Ramsay, N~J Sircombe,
+  P~Gillies, R~G Evans, H~Schmitz, A~R Bell, and C~P Ridgers.
+\newblock Contemporary particle-in-cell approach to laser-plasma modelling.
+\newblock {\em Plasma Physics and Controlled Fusion}, 57(11):113001, sep 2015.
 
 \bibitem{Fuchs_2007_PRL}
 J.~Fuchs, C.~A. Cecchetti, M.~Borghesi, T.~Grismayer, E.~d'Humi\`eres,

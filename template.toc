@@ -38,40 +38,40 @@
 \contentsline {subsubsection}{Wakefield Acceleration}{18}{subsubsection*.25}%
 \contentsline {chapter}{\numberline {3}Computational Methods}{19}{chapter.3}%
 \contentsline {section}{\numberline {3.1}The Particle-In-Cell Method}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Field Solver: FDTD}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Particle Push: Boris Algorithm}{19}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}EPOCH Code}{19}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Convergence Testing the EPOCH Code}{20}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Machine Learning}{20}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Simple Models}{20}{subsection.3.2.1}%
-\contentsline {subsubsection}{Polynomial Regression}{20}{subsubsection*.26}%
-\contentsline {subsubsection}{Support Vector Regression}{20}{subsubsection*.27}%
-\contentsline {subsection}{\numberline {3.2.2}Advanced Models}{20}{subsection.3.2.2}%
-\contentsline {subsubsection}{Gaussian Process}{20}{subsubsection*.28}%
-\contentsline {subsection}{\numberline {3.2.3}Neural Networks}{20}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Theory}{21}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Spatially Aligned Pulses}{21}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Spatially and Temporally Aligned Pulses}{23}{subsection.4.1.2}%
-\contentsline {subsubsection}{Ferri}{23}{subsubsection*.31}%
-\contentsline {subsubsection}{Other Simulations}{25}{subsubsection*.34}%
-\contentsline {subsubsection}{Experiments}{25}{subsubsection*.35}%
-\contentsline {section}{\numberline {4.2}Results}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Discussion}{27}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Machine Learning Methods Applied to Synthetic Ion Acceleration Data}{28}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modified Fuchs et. al. Model}{28}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Plasma Expansion into a Vacuum}{28}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Modified Fuchs Model}{32}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Further Model Modifications}{33}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Results}{36}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}First Analysis}{36}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Second Analysis}{36}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Discussion}{36}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Optimization and Control of a kHz Laser System}{37}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Background}{37}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Methods}{37}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Discussion}{37}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusion}{38}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary}{38}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Future Work}{38}{section.7.2}%
-\contentsline {chapter}{Bibliography}{39}{section*.40}
+\contentsline {subsection}{\numberline {3.1.1}Densities and Shape Factors}{20}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Field Solver and Particle Push}{21}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}EPOCH Code}{22}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Convergence Testing the EPOCH Code}{23}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Machine Learning}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Simple Models}{23}{subsection.3.2.1}%
+\contentsline {subsubsection}{Polynomial Regression}{23}{subsubsection*.28}%
+\contentsline {subsubsection}{Support Vector Regression}{23}{subsubsection*.29}%
+\contentsline {subsection}{\numberline {3.2.2}Advanced Models}{23}{subsection.3.2.2}%
+\contentsline {subsubsection}{Gaussian Process}{23}{subsubsection*.30}%
+\contentsline {subsection}{\numberline {3.2.3}Neural Networks}{23}{subsection.3.2.3}%
+\contentsline {chapter}{\numberline {4}Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration}{24}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Theory}{24}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Spatially Aligned Pulses}{24}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Spatially and Temporally Aligned Pulses}{26}{subsection.4.1.2}%
+\contentsline {subsubsection}{Ferri}{26}{subsubsection*.33}%
+\contentsline {subsubsection}{Other Simulations}{28}{subsubsection*.36}%
+\contentsline {subsubsection}{Experiments}{28}{subsubsection*.37}%
+\contentsline {section}{\numberline {4.2}Results}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Discussion}{30}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Machine Learning Methods Applied to Synthetic Ion Acceleration Data}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Modified Fuchs et. al. Model}{31}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Plasma Expansion into a Vacuum}{31}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Modified Fuchs Model}{35}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Further Model Modifications}{36}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Results}{39}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}First Analysis}{39}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Second Analysis}{39}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Discussion}{39}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Optimization and Control of a kHz Laser System}{40}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Background}{40}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Methods}{40}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Discussion}{40}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{41}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{41}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{41}{section.7.2}%
+\contentsline {chapter}{Bibliography}{42}{section*.42}
