@@ -51,7 +51,7 @@ It turns out that the higher order shape factors $S_n(x)$ can be represented by 
 \begin{equation}
 	S_n(x) \equiv \int_{-\infty}^\infty S_{n-1}(x')S_0(x-x') dx'
 \end{equation}
-the shape factors for $n \geq 2$ are commonly called n-splines. The third order spline is used in this work and weights particles over an area ($2 \Delta x$, $2 \Delta y$) and is represented in 1D by 
+and the shape factors for $n \geq 2$ are commonly called n-splines. The third order spline is used in this work and weights particles over an area ($4 \Delta x$, $4 \Delta y$) and is represented in 1D by 
 
 \begin{equation}
 	b_3(x) = \begin{cases}
@@ -61,6 +61,8 @@ the shape factors for $n \geq 2$ are commonly called n-splines. The third order 
 	\end{cases}
 \end{equation}
 where $\tilde{x} \equiv x / \Delta x$ normalizes the position $x$. See \cref{fig:shape_factors} for a comparison of the three shape factors. 
+
+These shape factors not only apply to the calculation of densities, but also to the electric and magnetic fields. In this way, the fields used to update particle positions and velocities are averaged over neighboring cells.
 
 \subsection{Field Solver and Particle Push}
 
@@ -74,14 +76,41 @@ where $\tilde{x} \equiv x / \Delta x$ normalizes the position $x$. See \cref{fig
 The PIC method is able to make efficient use of the second order accurate central difference approximation to compute derivatives. A simpler method like Euler integration is only first order accurate and will suffer in terms of accuracy. Higher order methods like 4th order Runge-Kutta have much higher computational costs in terms of operations per time step and memory consumption. The central difference scheme is accomplished by alternately calculating electric and magnetic fields, staggered by half a time step, in an approach called \emph{leapfrog integration}\cite{Birdsall_2004_PIC}. This can be seen in the right half of \cref{fig:yee_grid} where the calculations of $E$ and $J,B$ alternate in a ``leapfrog'' fashion. It turns out that this staggering also comes with some nice properties like automatically satisfying \cref{eq:gauss_magnetism}. By rearranging \cref{eq:faraday}, we can update the electric and magnetic fields through the following equations\cite{Arber_2015_PPCF}
 
 \begin{align}
-	\vec{E}^{n+\frac{1}{2}} &= \vec{E}^{n-\frac{1}{2}} + \Delta t (c^2 \nabla \times \vec{B}^n - \frac{1}{\epsilon_0} \vec{J}^n) \label{eq:E_update} \\
-	\vec{B}^{n+1} &= \vec{B}^{n} - \Delta t (\nabla \times \vec{E}^{n+\frac{1}{2}}) \label{eq:B_update}
+	\vec{E}^{n+1} &= \vec{E}^{n} + \Delta t (c^2 \nabla \times \vec{B}^{n+\frac{1}{2}} - \frac{1}{\epsilon_0} \vec{J}^{n+\frac{1}{2}}) \label{eq:E_update} \\
+	\vec{B}^{n+\frac{1}{2}} &= \vec{B}^{n-\frac{1}{2}} - \Delta t (\nabla \times \vec{E}^{n}) \label{eq:B_update}
 \end{align}
-Given the electric and magnetic fields, we can now update the particle positions through \cref{eq:lorentz_pic}. The standard approach to update velocities and positions in a time-centered way would involve kinematics equations $v^{n+1/2} = v^{n-1/2} + a^n \Delta t$ and $x^{n+1} = x^{n} + v^{n_1/2} \Delta t$. The acceleration is both a function of $x$ and $v$ (\cref{eq:lorentz_pic}) and so cannot be calculating accurately in a time-centered way. This can be fixed through the application of the Boris rotation algorithm which removes the 
+Given the electric and magnetic fields, we can now update the particle velocities through the force from \cref{eq:lorentz_pic}. 
 
 \begin{equation}
-	\frac{v_{n + 1/2} - v_{n - 1/2}}{\Delta t} = \frac{q}{m}[E_n + v \times B]
+	\frac{v^{n + \frac{1}{2}} - v^{n - \frac{1}{2}}}{\Delta t} = \frac{q}{m}[E_n + \frac{v^{n + \frac{1}{2}} + v^{n + \frac{1}{2}}}{2} \times B]
 \end{equation}
+The above time-centered equation does not appear to have an explicit solution for $v^{n + \frac{1}{2}}$. There are implicit methods that can solve this equation, but the most commonly used explicit method is given by the \emph{Boris Rotation Algorithm}. If we define 
+
+\begin{align}
+	v^{n + \frac{1}{2}} &= v^+ + \frac{q E^n}{2 m} \Delta t \label{eq:vplus} \\
+	v^{n - \frac{1}{2}} &= v^- - \frac{q E^n}{2 m} \Delta t \label{eq:vminus}
+\end{align}
+we can separate out the electric field dependence to get 
+
+\begin{equation}
+	\frac{v^+ - v^-}{\Delta t} = \frac{q}{m}[\frac{v^+ + v^-}{2} \times B]
+\end{equation}
+which can conveniently be calculated through a rotation\cite{Birdsall_2004_PIC} through the following steps:
+
+\begin{enumerate}
+	\item Compute $v^-$ from \cref{eq:vminus}.
+	\item Compute $\vec{t} \equiv \frac{q \Delta t}{2 m} \vec{B}^n $ (equivalent in magnitude to $\tan(\theta/2)$ where $\theta$ is the rotation angle)
+	\item Compute $\vec{s} = \frac{2 \vec{t}}{1 + t^2}$ (equivalent in magnitude to $\sin(\theta/2)$)
+	\item Compute $\vec{v}' = \vec{v}^- + \vec{v}^- \times \vec{t}$.
+	\item Compute $\vec{v}^{n+\frac{1}{2}}$ from \cref{eq:vplus}.
+\end{enumerate}
+Now, the particles can be advanced or ``pushed'' from
+
+\begin{equation}
+	x^{n+1} = x^{n} + v^{n+\frac{1}{2}} \Delta t \label{eq:particlepush}
+\end{equation}
+
+For completeness, the 
 
 \subsection{EPOCH Code}
 
@@ -89,8 +118,11 @@ Given the electric and magnetic fields, we can now update the particle positions
 	Clearly Top-hat shape functions should never be used for laser-solid simulations.
 \end{quote}
 
-\subsection{Convergence Testing the EPOCH Code}
+\subsubsection{Background}
 
+\subsubsection{Methods}
+
+\subsubsection{Results}
 
 \section{Machine Learning}
 
