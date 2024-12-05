@@ -1,112 +1,65 @@
 \chapter{Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}
 This appendix focuses on unpublished work that was done jointly with Ricky Oropeza and Joseph Smith. My contributions to this project were primarily done as a pre-candidacy student.
 
-\section{Background}
-
 Particle-in-Cell (PIC) simulations provide a useful but imperfect model of various plasma phenomena. In this work, the impact of the finite number of particles in a PIC simulation on the energy conservation is considered and explored through ultra-intense laser interactions with a thin, near solid density target in the Target Normal Sheath Acceleration (TNSA) regime. 
 
-\subsubsection{One}
-I have tried to consider the Hockney calculations regarding the E-Field Fluctuations, but I did not fully examine how this would turn into a heating model. Here, I will finish the calculation. In the Hockney 1971 paper, they state a formula for the time-averaged squared electric field fluctuations (which comes from Plasma Kinetic Theory by Montgomery and Tidman Ch. 8.2)
+\section{Background}
+
+Explicit PIC codes tend to gain energy over time through what can be attributed as numerical errors. In this section, we consider which plasma and simulation parameters affect this numerical energy gain and derive various scalings. 
+
+\subsection{Electric Field Fluctuations}
+
+In PIC simulations, we compute the velocities at the next timestep through \cref{eq:v_update} which is dependent on the time-step $\Delta t$. Due to using a finite grid, approximating real particles with macro particles, and using a finite $\Delta t$, we will develop some errors in calculating the electric field $\delta E$. The corresponding force miscalculation $\delta F = q \delta E \Delta t$ would deliver an impulse $m \delta v$ and result in a velocity difference \cite{Hockney_1988_PIC} of
+
+\begin{equation}
+	\delta v = \frac{q}{m} \Delta t \delta E
+\end{equation}
+We can make an assumption that these field calculation errors will be randomly distributed which can be treated as a random walk in velocity space. If we consider $\Delta v$ as the total deviation of the calculated velocity from the true value, we should expect $\langle \Delta v \rangle = 0$ due to the symmetry of this random walk. However, the squared deviations on average will increase over time; for $n$ time-steps (each with the same random error $\delta E$), we would have 
+
+\begin{equation}
+	\langle \Delta v^2 \rangle = n \delta v ^2 = n \frac{q^2}{m^2} \Delta t^2 \delta E^2
+\end{equation}
+We can see that the average change in kinetic energy $\Delta KE \equiv \frac{1}{2} m \langle v^2 \rangle$ increases linearly with the number of time-steps $n$ \cite{Hockney_1988_PIC}. Additionally, since $\Delta KE \propto \frac{1}{m}$, the heavier particles (i.e. ions) can usually be neglected when examining the artificial heating \cite{Hockney_1988_PIC}. Hockney postulates a related expression \cite{Hockney_1971_JoCP} for $\Delta KE$ in another work as 
+
+\begin{equation}
+	\Delta KE \sim \frac{q^2}{m} \langle E^2 \rangle \tau_\text{corr} \Delta t
+\end{equation}
+where $\tau_\text{corr}$ can be identified with the period of plasma oscillations $\sim \omega_{p,e}^{-1}$. Then, expressing the charge of one electron macro-particle as $q = e \frac{N}{N_{mac}} = \frac{e n}{n_{mac}} = \frac{e n \Delta x^2}{n_{ppc}}$, where $\Delta x$ is the cell size and $n_\text{ppc}$ is the number of electron macro-particles per cell, the kinetic energy increase becomes
+
+\begin{equation}
+	\Delta KE = (\frac{e}{m_e}) \frac{e n \Delta x^2}{n_{ppc}} \langle E^2 \rangle \frac{2 \pi}{\omega_{pe}} \Delta t 
+\end{equation}
+Hockney uses a result from Chapter 8.2 of Montgomery and Tidman \cite{Montgomery_1964_Plasma} for the squared electric field fluctuations
 
 \begin{equation} 
 	\frac{\langle E^2 \rangle}{8 \pi} = \frac{k_B T}{2} \int \int_{-\infty}^{+\infty} \frac{d k_x d k_y}{(2 \pi)^2} \frac{1}{(1 + (k_x^2 + k_y^2) \lambda_D^2)} 
 \end{equation}
-
-which is in units of energy per unit volume. We can convert this integral to polar coordinates by letting $k = \sqrt{k_x^2 + k_y^2}$ and integrating with respect to $k \cdot dk \cdot d\phi$. Also, we can convert the expression from CGS to SI Units
-
-\begin{equation}
-	\frac{\epsilon_0 \langle E^2 \rangle}{2} = \frac{k_B T}{4 \pi} \int_0^\infty \frac{k dk}{1 + k^2 \lambda_D^2}
-\end{equation}
-
-To solve this integral, we let $u \equiv k \lambda_D$ to get
-
-\begin{equation}
-	\langle E^2 \rangle = \frac{k_B T}{2 \pi \epsilon_0 \lambda_D^2} \int_0^\infty \frac{u du}{1 + u^2}
-\end{equation}
-
-which diverges at infinity, so we set limits to the integral 0 and $u_{max}$ which correspond to the maximum relevant wavenumber in our simulation. This can be solved analytically as 
+which can be solved by letting $u = k \lambda_D$ where $k = \sqrt{k_x^2 + k_y^2}$ and integrating with respect to the polar area element $k \; dk \; d \phi$
 
 \begin{equation}
 	\langle E^2 \rangle = \frac{k_B T}{4 \pi \epsilon_0 \lambda_D^2} \text{Log}(1 + u_{max^2}) \label{eq:e2}
 \end{equation}
+Here, $u_{max} = k_\text{max} \lambda_D$ corresponds to the maximum wavenumber $k_{max} = \frac{2 \pi}{\Delta x}$ considered which is limited by the resolution. 
 
-Here, $u_{max} = 2 \pi \frac{\lambda_D}{\Delta x} R$ where $R$ is some multiplicative factor that tells us where to implement our cutoff. $R = 1$ corresponds to saying that the maximum wavenumber considered is limited the the cell size: $k_{max} = \frac{2 \pi}{\Delta x}$. 
+\subsection{Empirical Heating Estimates}
 
-Also, from the Hockney 1971 Paper, they give an estimate of how the squared electric field fluctuations contribute to the kinetic energy increase of one macro particle
-
-\begin{equation}
-	\Delta KE = \frac{1}{2} m \langle \Delta v^2 \rangle  = \frac{q^2}{m} \langle E^2 \rangle \tau_{corr} t
-\end{equation}
-
-where we can identify $\tau_{corr} = \frac{2 \pi}{\omega_{pe}}$ with the plasma period and we already have $\langle E^2 \rangle$. Additionally, we can express the charge of one macroparticle as $q = e \frac{N}{N_{mac}} = \frac{e n}{n_{mac}} = \frac{e n \Delta x^2}{n_{ppc}}$ Combining this all together, we will get 
+Using \cref{eq:debye,eq:omegape}, $\Delta KE$ can now be expressed as 
 
 \begin{equation}
-	\Delta KE = (\frac{e}{m_e}) \frac{e n \Delta x^2}{n_{ppc}} \frac{k_B T}{4 \pi \epsilon_0 \lambda_D^2} \text{Log}(1 + u_{max}^2) \frac{2 \pi}{\omega_{pe}} t 
+	\Delta KE = \frac{n_e^{3/2} \Delta x^2}{n_{ppc}} \text{Log}(1 + u_{max}^2) \label{eq:logarber}
 \end{equation}
-
-now, we can substitute the expressions for the plasma oscillation frequency and debye length to arrive at 
+A more empirical estimate for the heating can be obtained by asserting a general scaling of the heating time $\tau_H \simeq \frac{n_\text{ppc}^\alpha}{\omega_{p,e}} \left(\frac{\lambda_{D,0}}{\Delta x}\right)^d$, where $d$ and $\alpha$ are constants that can be fit empirically through simulations. If we assert that the linear energy increase $\frac{dT}{dt} = T_0 / \tau_H$, we develop a formula (again using \cref{eq:debye,eq:omegape}) for the linear energy increase 
 
 \begin{equation}
-	\Delta KE = \frac{n_e^{3/2} \Delta x^2}{n_{ppc}} \text{Log}(1 + u_{max}^2) \sqrt{\frac{e^6}{4 m_e \epsilon_0^3}}
+	\frac{dT_{eV}}{dt_{ps}} = C_H \frac{T_{0,eV}^{1 - d/2} \Delta x_{nm}^d n_{23}^{(d + 1)/2}}{n_\text{ppc}^\alpha} \label{eq:generalizedarber}
 \end{equation}
-
-From here, I can do the same procedure I did with the arber formula and let $n \rightarrow 10^{29} n_{23}$, $\Delta x \rightarrow 10^{-9} \Delta x_{nm}$, and $t \rightarrow 10^{-12} t_{ps}$ to get 
+and when $\alpha = 1$ and $d = 2$, we obtain eq. (30) from Arber et al. \cite{Arber_2015_PPCF}
 
 \begin{equation}
-	\frac{\Delta T_{eV}}{\Delta t_{ps}} = (1.07 \times 10^7 eV) \frac{n_{23}^{3/2} \Delta x_{nm}^2}{n_{ppc}} \text{Log}(1 + u_{max}^2)
+	\frac{dT_{eV}}{dt_{ps}} = C_H \frac{\Delta x_{nm}^2 n_{23}^{3/2}}{n_\text{ppc}} \label{eq:arber}
 \end{equation}
+where $C_H$ is a constant determined by the shape function and the use of current smoothing. The cell size, number density, time, and temperature are expressed in nm, $10^{23} \text{cm}^{-3}$, ps, and eV due to being convenient units for PIC simulations. A more sophisticated empirical model could also account for two dimensionless timescales: $\omega_{p, e} \Delta t$ and $v_\text{th} \Delta t$, but Hockney \cite{Hockney_1971_JoCP} notes that these can be ignored by constraining $\omega_{p,e} \Delta t$ to be $\omega_{p,e} \Delta t = \text{min}((2 \lambda_D / \Delta x)^{-1}, 1)$ \cite{Hockney_1971_JoCP}.
 
-which, to me, does not line up with the heating constant we see in the Arber formula, so I will just call the constant out front $C_H$. Additionally, I will add another hyper-parameter that multiplies the debye ratio called $R$ and when $R=1$, we would arrive at the final formula:
+\section{Methods}
 
-\begin{equation}
-	\frac{\Delta T_{eV}}{\Delta t_{ps}} = C_H \frac{n_{23}^{3/2} \Delta x_{nm}^2}{n_{ppc}} \text{Log}(1 + 4 \pi^2 (R \frac{\lambda_D}{\Delta x})^2)
-\end{equation}
-
-which is identical to the Arber-Model, with the exception of the Log Term. When the cell size resolves the debye length ($\lambda_D > \Delta x$), the log term is very slowly growing as $\Delta x$ gets smaller, but this is overshadowed by the $\Delta x^2$ term outside of the Log. As a result, this would not behave much differently than the Arber formula when the cell size is small, which is in the regime where there is not much numerical heating anyway. 
-
-When the Debye Length is very poorly under-resolved ($\lambda_D \ll \Delta x$), we can simplify the expression as 
-
-\begin{equation}
-	\frac{\Delta T_{eV}}{\Delta t_{ps}} = C_H \frac{n_{23}^{3/2} \Delta x_{nm}^2}{n_{ppc}} 4 \pi^2 (R \frac{\lambda_D}{\Delta x})^2 = 4 \pi^2 R^2 C_H \frac{n_{23}^{3/2}}{n_{ppc}} \lambda_{D, nm}^2
-\end{equation}
-
-which is now no longer dependent on the cell size $\Delta x$. This is consistent with our observation that after a certain cell size is reached, the amount of heating becomes relatively constant.
-
-\subsubsection{Two}
-
-I read the Hockney papers to understand where the heating time formulas come from which are used by Arber for his formula. I realized that there is no particular reason why $(\lambda_D / \Delta x)$ has to be squared, so we should allow the possibility that it may not be squared. Maybe, this relationship breaks down when the simulation gets sufficiently under-resolved. Regardless, I decided to run some simulations that would allow me to explore how effective such a model to be. Let us assume, from the Arber Paper, that the heating time is only dependent on the dimensionless debye ratio and the inverse of the plasma frequency.
-
-\begin{equation} 
-	\tau_H \sim \frac{n_{ppc}}{\omega_{pe}} ( \lambda_D / \Delta x)^\alpha
-\end{equation}
-
-The two other dimensionless parameters are $\omega_{pe} \Delta t$ and $v_{th} \Delta t / \Delta x$ which we are going to ignore for now, but if necessary could be included in a more advanced model. From my previous sims, I am convinced that the dependence on $n_{ppc}$ is correct, so I will be leaving that as a constant. This would correspond to an Arber-like formula of 
-
-\begin{equation}
-	\frac{dT_{eV}}{dt_{ps}} = C_H T_{0,eV}^{1 - \alpha/2} \Delta x_{nm}^\alpha n_{23}^{(\alpha + 1)/2}
-\end{equation}
-
-where for a spline shape function, $C_H = \alpha_{H} / n_{ppc} = 2/25 = 0.08$. Here, I assumed that $n_{ppc}$ = 25 which is what I used for the sims in the next section. I want to test this model for a variety of different ratios. 
-
-\subsubsection{Three}
-
-In our PIC simulation, we compute the velocities at the next timestep $v_{i+1}$ by taking the velocity at the previous timestep $v_i$ and modifying it by some correction term that is proportional to the timestep length $\Delta t$. However, due to the fact that we use finite grid, approximate real particles with macro particles, use a finite time-step, errors in rounding, use of finite-difference, etc. we will develope some errors in our calculation of the (let's just consider electric) field $\delta E$. This would correspond to miscalculation in the force by $\delta F = e \delta E \Delta t$ which would deliver an impulse $m \delta v$. As a result, our error in calculating the velocity will be 
-
-\begin{equation}
-	\delta v = \frac{e}{m} \Delta t \delta E
-\end{equation}
-
-Now, we can make an assumption that these errors in the calculation of fields will be distributed in a random fashion, so that we can treat each velocity deviation as a random walk in velocity space. If we consider $\Delta v$ as the total deviation of the calculated velocity from the true value, we should expect $\langle \Delta v \rangle = 0$ due to the symmetry of this random walk. However, the squared deviations on average will increase over time (cite wikipedia). If we are considering $n$ time-steps (each with the same random error $\delta E$), we would have 
-
-\begin{equation}
-	\langle \Delta v^2 \rangle = n \delta v ^2 = n \frac{e^2}{m^2} \Delta t^2 \delta E^2
-\end{equation}
-
-Additionally, the average change in kinetic energy per particle would be given by 
-
-\begin{equation}
-	\langle h \rangle  = \frac{1}{2} m \langle (v_0 + \Delta v)^2 \rangle - \frac{1}{2} m \langle v_0^2 \rangle = \frac{1}{2} m (2 v_0 \langle \Delta v \rangle) + \frac{1}{2} m \langle \Delta v^2 \rangle = \frac{1}{2} m \langle \Delta v^2 \rangle
-\end{equation}
-
-due to $\langle \Delta v \rangle = 0$. We can clearly see that this means that the average kinetic energy per particle will increase linearly with the number of time-steps $n$. And, in fact, this is exactly what we see in PIC sims. 
-
+\section{Conclusion}

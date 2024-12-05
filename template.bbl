@@ -356,6 +356,14 @@ T~D Arber, K~Bennett, C~S Brady, A~Lawrence-Douglas, M~G Ramsay, N~J Sircombe,
 \newblock Contemporary particle-in-cell approach to laser-plasma modelling.
 \newblock {\em Plasma Physics and Controlled Fusion}, 57(11):113001, sep 2015.
 
+\bibitem{Welch_2004_LSP}
+D.R. Welch, D.V. Rose, R.E. Clark, T.C. Genoni, and T.P. Hughes.
+\newblock Implementation of an non-iterative implicit electromagnetic field
+  solver for dense plasma simulation.
+\newblock {\em Computer Physics Communications}, 164(1):183--188, 2004.
+\newblock Proceedings of the 18th International Conferene on the Numerical
+  Simulation of Plasmas.
+
 \bibitem{Fuchs_2007_PRL}
 J.~Fuchs, C.~A. Cecchetti, M.~Borghesi, T.~Grismayer, E.~d'Humi\`eres,
   P.~Antici, S.~Atzeni, P.~Mora, A.~Pipahl, L.~Romagnani, A.~Schiavi,
@@ -428,5 +436,21 @@ C.~D. Decker, W.~B. Mori, K.‐C. Tzeng, and T.~Katsouleas.
 \newblock {The evolution of ultra‐intense, short‐pulse lasers in underdense
   plasmas}.
 \newblock {\em Physics of Plasmas}, 3(5):2047--2056, 05 1996.
+
+\bibitem{Hockney_1988_PIC}
+R.W. Hockney and J.W. Eastwood.
+\newblock {\em Computer Simulation Using Particles}.
+\newblock CRC Press, 1988.
+
+\bibitem{Hockney_1971_JoCP}
+R.W Hockney.
+\newblock Measurements of collision and heating times in a two-dimensional
+  thermal computer plasma.
+\newblock {\em Journal of Computational Physics}, 8(1):19--44, 1971.
+
+\bibitem{Montgomery_1964_Plasma}
+D.C. Montgomery and D.A. Tidman.
+\newblock {\em Plasma Kinetic Theory}.
+\newblock McGraw-Hill advanced physics monograph series. McGraw-Hill, 1964.
 
 \end{thebibliography}

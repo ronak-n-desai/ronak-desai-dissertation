@@ -36,6 +36,8 @@ Reallocating 'name_of_file' (item size: 1) to 5 items.
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 Reallocating 'name_of_file' (item size: 1) to 4 items.
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+A level-1 auxiliary file: app1.aux
 Database file #1: ml.bib
 Database file #2: target.bib
 Database file #3: double.bib
@@ -47,44 +49,44 @@ Database file #8: book.bib
 Database file #9: review.bib
 Database file #10: desai.bib
 Database file #11: exp.bib
-You've used 70 entries,
+You've used 74 entries,
             1791 wiz_defined-function locations,
-            927 strings with 18587 characters,
-and the built_in function-call counts, 18208 in all, are:
-= -- 1347
-> -- 1285
+            955 strings with 19356 characters,
+and the built_in function-call counts, 19020 in all, are:
+= -- 1418
+> -- 1322
 < -- 2
-+ -- 457
-- -- 387
-* -- 1639
-:= -- 3127
-add.period$ -- 209
-call.type$ -- 70
-change.case$ -- 64
++ -- 471
+- -- 397
+* -- 1689
+:= -- 3260
+add.period$ -- 223
+call.type$ -- 74
+change.case$ -- 66
 chr.to.int$ -- 0
-cite$ -- 70
-duplicate$ -- 628
-empty$ -- 1557
-format.name$ -- 387
-if$ -- 3801
+cite$ -- 74
+duplicate$ -- 666
+empty$ -- 1641
+format.name$ -- 397
+if$ -- 3987
 int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 72
-newline$ -- 351
-num.names$ -- 70
-pop$ -- 135
+int.to.str$ -- 74
+missing$ -- 78
+newline$ -- 372
+num.names$ -- 74
+pop$ -- 148
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 232
+skip$ -- 244
 stack$ -- 0
-substring$ -- 1191
-swap$ -- 81
+substring$ -- 1227
+swap$ -- 85
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 140
-width$ -- 72
-write$ -- 761
+while$ -- 146
+width$ -- 76
+write$ -- 806

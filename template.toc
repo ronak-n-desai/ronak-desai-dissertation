@@ -80,6 +80,7 @@
 \contentsline {part}{Appendices}{\pageref {appendix.A}}{appendix.A}
 \contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{49}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Background}{49}{section.A.1}%
-\contentsline {subsubsection}{One}{49}{subsubsection*.47}%
-\contentsline {subsubsection}{Two}{51}{subsubsection*.48}%
-\contentsline {subsubsection}{Three}{52}{subsubsection*.49}%
+\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{49}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{50}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}Methods}{51}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Conclusion}{51}{section.A.3}%
