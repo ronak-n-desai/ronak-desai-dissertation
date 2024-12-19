@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  5 DEC 2024 11:52
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  19 DEC 2024 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,14 +727,7 @@ Package color Info: Driver file: xetex.def on input line 149.
 (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 ) (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
-(chap6.aux) (chap7.aux) (app1.aux
-
-LaTeX Warning: Label `eq:e2' multiply defined.
-
-
-LaTeX Warning: Label `eq:e2@cref' multiply defined.
-
-))
+(chap6.aux) (chap7.aux) (app1.aux))
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
@@ -748,7 +741,8 @@ LaTeX Font Info:    ... okay on input line 112.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 12.
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+
+(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 112.
@@ -921,82 +915,89 @@ No file template.acr.
 
  (chap1.tex
 Chapter 1.
-)
+
 
 [1
 
 
 
 ]
+File: planning/images/bragg_curve.PNG Graphic file (type bmp)
+<planning/images/bragg_curve.PNG>
+
+
+[2])
+
+[3]
 \openout2 = `chap2.aux'.
 
  (chap2.tex
 Chapter 2.
 
 
-[2
+[4
 
 
 
 
 ]
 
-[3]
-
-[4]
-File: planning/images/plasma_oscillation.PNG Graphic file (type bmp)
-<planning/images/plasma_oscillation.PNG>
-
-
 [5]
 
 [6]
-File: planning/images/debye_length.png Graphic file (type bmp)
-<planning/images/debye_length.png>
+File: planning/images/plasma_oscillation.PNG Graphic file (type bmp)
+<planning/images/plasma_oscillation.PNG>
 
 
 [7]
 
 [8]
+File: planning/images/debye_length.png Graphic file (type bmp)
+<planning/images/debye_length.png>
+
 
 [9]
 
 [10]
-File: planning/images/absorption.png Graphic file (type bmp)
-<planning/images/absorption.png>
-
 
 [11]
 
 [12]
+File: planning/images/absorption.png Graphic file (type bmp)
+<planning/images/absorption.png>
+
 
 [13]
+
+[14]
+
+[15]
 File: planning/images/gibbon_hot_electron.PNG Graphic file (type bmp)
 <planning/images/gibbon_hot_electron.PNG>
 
 
-[14]
+[16]
 File: planning/images/tnsa.PNG Graphic file (type bmp)
 <planning/images/tnsa.PNG>
 
 
-[15]
-
-[16]
-
 [17]
+
+[18]
+
+[19]
 File: planning/images/acceleration_regimes.PNG Graphic file (type bmp)
 <planning/images/acceleration_regimes.PNG>
 )
 
-[18]
+[20]
 \openout2 = `chap3.aux'.
 
  (chap3.tex
 Chapter 3.
 
 
-[19
+[21
 
 
 
@@ -1006,16 +1007,16 @@ File: planning/images/shape_functions.png Graphic file (type bmp)
 <planning/images/shape_functions.png>
 
 
-[20]
+[22]
 File: planning/images/yee_grid.PNG Graphic file (type bmp)
 <planning/images/yee_grid.PNG>
 
 
-[21]
-
-[22])
-
 [23]
+
+[24])
+
+[25]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
@@ -1024,7 +1025,7 @@ File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
 <planning/images/Markey_Spectrum.PNG>
 
 
-[24
+[26
 
 
 
@@ -1034,40 +1035,40 @@ File: planning/images/scott_half_cavity.PNG Graphic file (type bmp)
 <planning/images/scott_half_cavity.PNG>
 
 
-[25]
+[27]
 File: planning/images/ferri_dub_pulse.PNG Graphic file (type bmp)
 <planning/images/ferri_dub_pulse.PNG>
 
 
-[26]
+[28]
 File: planning/images/ferri_scale_energy.PNG Graphic file (type bmp)
 <planning/images/ferri_scale_energy.PNG>
 
 
-[27]
+[29]
 
-[28]
+[30]
 File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
 <planning/images/yao_exp_stacks.PNG>
 
 
-[29])
+[31])
 
-[30]
+[32]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
 
 
-[31
+[33
 
 
 
 
 ]
 
-[32]
+[34]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1079,32 +1080,32 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 83--88
 
 
 
-[33]
-
-[34]
-
 [35]
 
 [36]
+
+[37]
+
+[38]
 File: planning/images/density_profile.png Graphic file (type bmp)
 <planning/images/density_profile.png>
 
 
-[37]
+[39]
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
 )
 
-[38]
+[40]
 
-[39]
+[41]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 )
 
-[40
+[42
 
 
 
@@ -1116,64 +1117,81 @@ Chapter 6.
 Chapter 7.
 )
 
-[41
+[43
 
 
 
 
 ] (template.bbl
 
-[42
+[44
 
 
 
 
 ]
+Underfull \hbox (badness 1112) in paragraph at lines 102--106
+[]\TU/lmr/m/n/10.95 Mayo Clinic Staff.  Radiation therapy, 2024.  [][]$[][][][]
+[] [] [] [] [][][] [] [][][][][][][][][][] [] [][][] []
+ []
 
-[43]
+Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-[44]
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+[][][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][] [] [][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 133--135
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
+ [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
+ []
+
+
 
 [45]
 
 [46]
 
-[47])
+[47]
 
 [48]
+
+[49]
+
+[50])
+
+[51]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[49
+[52
 
 
 
 ]
 
-[50])
+[53])
 
-[51] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
+[54] (template.aux (acronyms.aux) (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
 LaTeX2e <2024-06-01> patch level 1
 L3 programming layer <2024-05-27>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 24121 strings out of 409049
- 457521 string characters out of 5757194
+ 24153 strings out of 409049
+ 458330 string characters out of 5757194
  1936560 words of memory out of 5000000
- 46383 multiletter control sequences out of 15000+600000
+ 46414 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,11n,116p,2382b,1174s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,11n,116p,2382b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (63 pages).
+Output written on template.pdf (66 pages).

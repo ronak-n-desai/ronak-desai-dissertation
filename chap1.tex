@@ -3,7 +3,7 @@
 %\begin{quote}
 %\lipsum[1]
 %\end{quote}
-\section{Lasers}
+\section{Lasers for Particle Acceleration}
 
 Explain what a laser stands for, stimulated emission, lasing medium, what the Ti:sapphire crystal does and why it is chosen, CPA
 
@@ -93,15 +93,36 @@ Explain what a laser stands for, stimulated emission, lasing medium, what the Ti
 %
 %A footnote\footnote{Another foot.}
 
-\section{High Energy Density Science}
+\section{Applications}
 
-\subsection{Fusion}
+This section highlights some of the most important applications of laser-based proton accelerators that motivates much the projects I have worked in during my PhD studies: proton therapy, 
 
 
-\subsection{Particle Acceleration}
+\subsection{Proton Acceleration: Proton Therapy}
+
+Due to having no cure, cancer is one of the largest medical challenges faced worldwide and generally requires the use of harsh treatments like invasive surgery, chemotherapy, and immunotherapy. Another relevant treatment is called radiotherapy and more than half of all people with cancer will receive it as a part of their medical care \cite{Mayo_2024_Cancer}. Typically, a large machine will provide a source of x-rays (a type of energetic ionizing radiation) that kills the tumor. However, this radiation does not discern whether the cells are cancerous or not -- healthy tissue along the radiation beam path surrounding the tumor will also be damaged. This damage can be mitigated by shooting many beams from different angles such that they overlap at the site of the tumor. In this way, the dose delivered in the beam overlap region will be significantly higher than the surrounding tissue. This approach is typically employed by situating the machine on a rotating ``gantry''
+
+As early as 1905, Bragg \cite{Bragg_1905_JOS} identified that charged particles have different properties than x-rays when passing through matter. Specifically, he identified that radium particles lost more energy (i.e. delivered a higher dose) at a lower speed. Physically, the slower the radium particles, the more time it has to interact with each of the individual atoms and the more energy it can deposit. This means that when the radium first enters a material at its highest speed, it is losing energy slowly in contrast to when it is at a slow speed and about to stop it is losing energy very quickly. In 1946, Wilson \cite{Wilson_1946_Rad} identified that this property of charged particles would enable a more concentrated dose to be delivered closer to the site of a tumor. In \autoref{fig:bragg_curve}, these differences are explicitly highlighted between x-rays and proton beams traveling through water. It can be seen that the proton beam is sharply peaked at a particular distance of around 23 centimeters, where the x-ray beam delivers a relatively higher dose at just a few centimeters. One can see the advantage of protons quite readily from this picture -- if a tumor is located 23 centimeters into the body, the protons, comparatively to the x-rays, will deliver more energy at the tumor site and less energy to the surrounding tissue. The shape of the proton beam curve in this graph is appropriately referred to as a ``Bragg Curve'' which peaks at the ``Bragg Peak''. 
+
+The specifics of the depth-dose curve depend on the material that the particles are traveling through as well as initial energy of the protons. These conditions are well-studied by empirical measurements of the stopping range of ions in matter (SRIM) \cite{Ziegler_2010_SRIM} and can be combined with other techniques to achieve a depth-dose curve that not only peaks at different depths, but also has a spread-out Bragg peak (SOBP) that expands the region where the highest dose is delivered. The most modern form of proton therapy is called intensity-modulated proton therapy (IMPT) whose intensities are modulated to optimally balance tumor dose and sparing of normal tissues \cite{Mohan_2022_PRO}. The first proton therapy center opened at the Loma Linda University Medical Center in California in 1990, but today there are more than 100 centers around the world with more that are planned or in the process of construction. \cite{Mohan_2022_PRO}. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{planning/images/bragg_curve.PNG}
+	\caption{The dose delivered as a function of depth traveled in water for two types of beams are depicted -- 200 MeV protons and 16 MV x-rays.}
+	\label{fig:bragg_curve}
+\end{figure}
+ 
+Right here in Columbus, The Ohio State Comprehensive Cancer Center (OSUCCC), in collaboration with Nationwide Children's Hospital opened a 55,000 square foot proton therapy center in December of 2023 \cite{OSU_CCC} that uses IMPT. Despite all the aformentioned benefits of proton therapy, the intial cost is tremendous -- the OSUCCC was a 100 million dollar investment. The significant cost demonstrates the value this could bring to Central Ohio. The facility is even outfitted with the capability to perform FLASH therapy -- a newer, experimental form of proton therapy that can be delivered in seconds that is still in clinical trials \cite{OSU_CCC} -- which shows the continued investment and innovation in this field. 
+
+The cost, however, cannot be overlooked. The conventional cyclotron accelerators used to accelerate the protons are extremely large and expensive. In recent years, it has been proposed that laser-based particle accelerators could be used to generate high energy protons. These facilities could in principle be smaller and less costly, but the technology is not adequately matured to be considered in the near future \cite{Linz_2016_LaPB}. Laser-based sources are typically only able to generate protons in the 10s of MeV reliably (as opposed to the 100s of MeV required for clinical operation), possess orders of magnitude smaller numbers of protons, and poor reproducibility of the laser pulse output. In addition, the conventional accelerators have already made significant strides in terms of reducing cost, increasing beam quality, and reducing size in recent years \cite{Linz_2016_LaPB} which is something laser-based sources will need to keep up with in the future. However, the potential of developing a smaller and lower cost proton accelerator remains an important motivating factor for many laser-plasma physicists for the coming years.
+
+\subsection{Imaging: Proton Radiography}
+
 
 
 \section{This Work}
+
 
 Talk about prior work 
 

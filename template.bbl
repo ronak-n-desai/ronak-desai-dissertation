@@ -98,6 +98,46 @@ John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
   laser liquid interaction}.
 \newblock {\em New Journal of Physics}, 20(2):022001, February 2018.
 
+\bibitem{Mayo_2024_Cancer}
+Mayo~Clinic Staff.
+\newblock Radiation therapy, 2024.
+\newblock
+  \url{https://www.mayoclinic.org/tests-procedures/radiation-therapy/about/pac-20385162}.
+
+\bibitem{Bragg_1905_JOS}
+W.~H. Bragg and R.~Kleeman.
+\newblock Xxxix. on the α particles of radium, and their loss of range in
+  passing through various atoms and molecules.
+\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
+  Journal of Science}, 10(57):318--340, 1905.
+
+\bibitem{Wilson_1946_Rad}
+Robert~R. Wilson.
+\newblock Radiological use of fast protons.
+\newblock {\em Radiology}, 47(5):487--491, 1946.
+\newblock PMID: 20274616.
+
+\bibitem{Ziegler_2010_SRIM}
+James~F. Ziegler, M.D. Ziegler, and J.P. Biersack.
+\newblock Srim – the stopping and range of ions in matter (2010).
+\newblock {\em Nuclear Instruments and Methods in Physics Research Section B:
+  Beam Interactions with Materials and Atoms}, 268(11):1818--1823, 2010.
+\newblock 19th International Conference on Ion Beam Analysis.
+
+\bibitem{Mohan_2022_PRO}
+Radhe Mohan.
+\newblock A review of proton therapy – current status and future directions.
+\newblock {\em Precision Radiation Oncology}, 6(2):164--176, 2022.
+
+\bibitem{OSU_CCC}
+\url{https://cancer.osu.edu/for-patients-and-caregivers/learn-about-cancers-and-treatments/clinical-services-at-the-james/radiation-oncology/treatment/proton-therapy}.
+\newblock Accessed: 2024-12-19.
+
+\bibitem{Linz_2016_LaPB}
+Ute Linz and Jose Alonso.
+\newblock Laser-driven ion accelerators for tumor therapy revisited.
+\newblock {\em Phys. Rev. Accel. Beams}, 19:124802, Dec 2016.
+
 \bibitem{Chen_2015_Plasma}
 F.F. Chen.
 \newblock {\em Introduction to Plasma Physics and Controlled Fusion}.
