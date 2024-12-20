@@ -49,44 +49,48 @@ Database file #8: book.bib
 Database file #9: review.bib
 Database file #10: desai.bib
 Database file #11: exp.bib
-You've used 81 entries,
+Warning--empty author in Simpson_2021_PPCF
+Warning--empty title in Simpson_2021_PPCF
+Warning--empty journal in Simpson_2021_PPCF
+You've used 83 entries,
             1791 wiz_defined-function locations,
-            1001 strings with 20668 characters,
-and the built_in function-call counts, 20404 in all, are:
-= -- 1546
-> -- 1362
+            1010 strings with 21055 characters,
+and the built_in function-call counts, 20930 in all, are:
+= -- 1578
+> -- 1401
 < -- 2
-+ -- 488
-- -- 407
-* -- 1780
-:= -- 3470
-add.period$ -- 245
-call.type$ -- 81
-change.case$ -- 72
++ -- 502
+- -- 419
+* -- 1843
+:= -- 3553
+add.period$ -- 249
+call.type$ -- 83
+change.case$ -- 73
 chr.to.int$ -- 0
-cite$ -- 81
-duplicate$ -- 721
-empty$ -- 1797
-format.name$ -- 407
-if$ -- 4301
+cite$ -- 86
+duplicate$ -- 739
+empty$ -- 1843
+format.name$ -- 419
+if$ -- 4407
 int.to.chr$ -- 0
-int.to.str$ -- 81
-missing$ -- 83
-newline$ -- 408
-num.names$ -- 80
-pop$ -- 166
+int.to.str$ -- 83
+missing$ -- 85
+newline$ -- 416
+num.names$ -- 81
+pop$ -- 172
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 269
+skip$ -- 277
 stack$ -- 0
-substring$ -- 1339
-swap$ -- 92
+substring$ -- 1375
+swap$ -- 93
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 158
-width$ -- 83
-write$ -- 882
+warning$ -- 3
+while$ -- 161
+width$ -- 85
+write$ -- 899
+(There were 3 warnings)

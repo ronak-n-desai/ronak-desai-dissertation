@@ -97,8 +97,16 @@ Explain what a laser stands for, stimulated emission, lasing medium, what the Ti
 
 This section highlights some of the most important applications of laser-based proton accelerators that motivates much the projects I have worked in during my PhD studies: proton therapy, 
 
+\acrfull{NIF}
 
-\subsection{Proton Acceleration: Proton Therapy}
+\acrshort{NIF}
+
+\acrfull{LANL}
+
+
+\acrshort{LANL}[hello]
+
+\subsection{Proton Therapy}
 
 Due to having no cure, cancer is one of the largest medical challenges faced worldwide and generally requires the use of harsh treatments like invasive surgery, chemotherapy, and immunotherapy. Another relevant treatment is called radiotherapy and more than half of all people with cancer will receive it as a part of their medical care \cite{Mayo_2024_Cancer}. Typically, a large machine will provide a source of x-rays (a type of energetic ionizing radiation) that kills the tumor. However, this radiation does not discern whether the cells are cancerous or not -- healthy tissue along the radiation beam path surrounding the tumor will also be damaged. This damage can be mitigated by shooting many beams from different angles such that they overlap at the site of the tumor. In this way, the dose delivered in the beam overlap region will be significantly higher than the surrounding tissue. This approach is typically employed by situating the machine on a rotating ``gantry''
 
@@ -117,8 +125,15 @@ Right here in Columbus, The Ohio State Comprehensive Cancer Center (OSUCCC), in 
 
 The cost, however, cannot be overlooked. The conventional cyclotron accelerators used to accelerate the protons are extremely large and expensive. In recent years, it has been proposed that laser-based particle accelerators could be used to generate high energy protons. These facilities could in principle be smaller and less costly, but the technology is not adequately matured to be considered in the near future \cite{Linz_2016_LaPB}. Laser-based sources are typically only able to generate protons in the 10s of MeV reliably (as opposed to the 100s of MeV required for clinical operation), possess orders of magnitude smaller numbers of protons, and poor reproducibility of the laser pulse output. In addition, the conventional accelerators have already made significant strides in terms of reducing cost, increasing beam quality, and reducing size in recent years \cite{Linz_2016_LaPB} which is something laser-based sources will need to keep up with in the future. However, the potential of developing a smaller and lower cost proton accelerator remains an important motivating factor for many laser-plasma physicists for the coming years.
 
-\subsection{Imaging: Proton Radiography}
+\subsection{Proton Radiography and Laser Fusion}
 
+All of us are familiar with the use of visible light to image things. A camera's flash will send out a burst of light and the camera will record the light reflected off an object to image it. Other frequencies of light not visible to the naked eye are used all the time to image things as well. High frequency sources like x-rays are used at the dentist due to their ability to probe matter within your body. Radio waves reflect well off of electrically conductive materials like the metals in vehicles which make them ideal for military applications. In an similar way, particles can be used to image objects by analyzing how they interact. Electron microscopes have been used extensively in the past century to image materials at a much higher resolution than an ordinary visible light microscope. From \autoref{fig:bragg_curve}, we know that protons interact with matter in a different way than electromagnetic radiation like x-rays. These differences can be exploited to image things that cannot be done well with other types of radiation. To give one example, a proton is a charged particle that gets deflected by electric and magnetic fields which can enable scientists to obtain information about these fields in a way that x-rays cannot.
+
+One example of proton radiography using laser-accelerated protons is through the National Ignitition Facility's Advanced Radiographic Capability (NIF-ARC). As it's name implies, NIF-ARC is typically used as light source to collect radiograph images of laser fusion experiments at NIF. These fusion experiments involve using a high powered lasers to compress a millimeter sized frozen pellet of hydrogen fuel (specifically, heavier isotopes of hydrogen called deuterium and tritium) to such high temperatures and pressures that the atomic nuclei fuse together into helium. The sun is an example of a high temperature and pressure environment that is able to sustain fusion as its vast source of energy, but we must be a little bit more clever on Earth to obtain conditions like that of in the core of our sun. A similar capability to NIF-ARC exists at the Laboratory for Laser Energetic's (LLE) OMEGA Extended Performance system (OMEGA-EP). The OMEGA-EP provides diagnostics for the main OMEGA laser which performs fusion experiments by directly irradiating a fusion pellet. This is in contrast to the NIF which indirectly compresses a fusion pellet by first irradiating a gold can that surrounds the pellet. These approaches are aptly called indirect and direct drive fusion and are depicted in FIGURE ...
+
+Conventional sources of protons for radiography purposes from linear accelerators like the pRad at Los Alamos National Laboratory (LANL). LANL uses radio frequency (RF) waves of around 200 MHz to accelerate particles up to 800 MeV (SOURCE). The limitation of conventional RF accelerators is the relatively low frequency. If we take the reciprocal of 200 MHz, we find that the separation between individual waves (the period) is around 5 nanoseconds. This may seem like a short time, but on the scale of femtosecond and picosecond ultra-intense pulses, this is a thousand or a million times longer! If one wanted to take proton radiographs of some experiment happening on a picosecond timescale, the conventional accelerator would not work. On the other hand, lasers typically used for laser-plasma experiments are in the infrared and have wavelengths of around 1 micron. A quick calculation tells us that the period is only around 3 femtoseconds. Since the lasers are pulsed at 3 femtoseconds, the emitted protons would also be pulsed at 3 femtoseconds which would theoretically allow us to capture 1 proton radiograph every 3 femtoseconds. Another advantage of these laser-accelerated proton beams is that they are emitted from a very small spot, on the order of microns, which is beneficial for obtaining a higher quality image.
+
+Proton radiography has been demonstrated successfully at the NIF through NIF-ARC \cite{Simpson_2021_PPCF} and at OMEGA through OMEGA-EP \cite{Zylstra_2012_RSI} through proton beams produced from laser-irradiated metallic foils.
 
 
 \section{This Work}

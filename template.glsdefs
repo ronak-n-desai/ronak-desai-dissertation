@@ -1,14 +1,14 @@
-\glsdefs@newdocentry{AFM}%
+\glsdefs@newdocentry{LLNL}%
 {%
-name={\acronymfont {\glsentryshort {AFM}}},%
-sort={AFM},%
+name={\acronymfont {\glsentryshort {LLNL}}},%
+sort={LLNL},%
 type={acronym},%
-first={AFM},%
-firstplural={AFMs},%
-text={AFM},%
-plural={AFMs},%
-description={atomic force microscopy},%
-descriptionplural={atomic force microscopy},%
+first={LLNL},%
+firstplural={LLNLs},%
+text={LLNL},%
+plural={LLNLs},%
+description={Lawrence Livermore National Laboratory},%
+descriptionplural={Lawrence Livermore National Laboratory},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -17,26 +17,26 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={atomic force microscopy},%
-longplural={atomic force microscopys},%
-short={AFM},%
-shortplural={AFMs},%
+long={Lawrence Livermore National Laboratory},%
+longplural={Lawrence Livermore National Laboratorys},%
+short={LLNL},%
+shortplural={LLNLs},%
 counter={page},%
 parent={},%
 %
 }%
 
-\glsdefs@newdocentry{BCS}%
+\glsdefs@newdocentry{LANL}%
 {%
-name={\acronymfont {\glsentryshort {BCS}}},%
-sort={BCS},%
+name={\acronymfont {\glsentryshort {LANL}}},%
+sort={LANL},%
 type={acronym},%
-first={BCS},%
-firstplural={BCSs},%
-text={BCS},%
-plural={BCSs},%
-description={Bardeen-Cooper-Schrieffer},%
-descriptionplural={Bardeen-Cooper-Schrieffer},%
+first={LANL},%
+firstplural={LANLs},%
+text={LANL},%
+plural={LANLs},%
+description={Los Alamos National Laboratory},%
+descriptionplural={Los Alamos National Laboratory},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -45,26 +45,26 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Bardeen-Cooper-Schrieffer},%
-longplural={Bardeen-Cooper-Schrieffers},%
-short={BCS},%
-shortplural={BCSs},%
+long={Los Alamos National Laboratory},%
+longplural={Los Alamos National Laboratorys},%
+short={LANL},%
+shortplural={LANLs},%
 counter={page},%
 parent={},%
 %
 }%
 
-\glsdefs@newdocentry{EPR}%
+\glsdefs@newdocentry{NIF}%
 {%
-name={\acronymfont {\glsentryshort {EPR}}},%
-sort={EPR},%
+name={\acronymfont {\glsentryshort {NIF}}},%
+sort={NIF},%
 type={acronym},%
-first={EPR},%
-firstplural={EPRs},%
-text={EPR},%
-plural={EPRs},%
-description={electron paramagnetic resonance},%
-descriptionplural={electron paramagnetic resonance},%
+first={NIF},%
+firstplural={NIFs},%
+text={NIF},%
+plural={NIFs},%
+description={National Ignition Facility},%
+descriptionplural={National Ignition Facility},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -73,26 +73,26 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={electron paramagnetic resonance},%
-longplural={electron paramagnetic resonances},%
-short={EPR},%
-shortplural={EPRs},%
+long={National Ignition Facility},%
+longplural={National Ignition Facilitys},%
+short={NIF},%
+shortplural={NIFs},%
 counter={page},%
 parent={},%
 %
 }%
 
-\glsdefs@newdocentry{NMR}%
+\glsdefs@newdocentry{RF}%
 {%
-name={\acronymfont {\glsentryshort {NMR}}},%
-sort={NMR},%
+name={\acronymfont {\glsentryshort {RF}}},%
+sort={RF},%
 type={acronym},%
-first={NMR},%
-firstplural={NMRs},%
-text={NMR},%
-plural={NMRs},%
-description={nuclear magnetic resonance},%
-descriptionplural={nuclear magnetic resonance},%
+first={RF},%
+firstplural={RFs},%
+text={RF},%
+plural={RFs},%
+description={Radio Frequency},%
+descriptionplural={Radio Frequency},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -101,10 +101,10 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={nuclear magnetic resonance},%
-longplural={nuclear magnetic resonances},%
-short={NMR},%
-shortplural={NMRs},%
+long={Radio Frequency},%
+longplural={Radio Frequencys},%
+short={RF},%
+shortplural={RFs},%
 counter={page},%
 parent={},%
 %
