@@ -1,8 +1,6 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: template.aux
-Reallocating 'name_of_file' (item size: 1) to 13 items.
-A level-1 auxiliary file: acronyms.aux
 Reallocating 'name_of_file' (item size: 1) to 22 items.
 A level-1 auxiliary file: template-abstract.aux
 Reallocating 'name_of_file' (item size: 1) to 17 items.
@@ -49,48 +47,44 @@ Database file #8: book.bib
 Database file #9: review.bib
 Database file #10: desai.bib
 Database file #11: exp.bib
-Warning--empty author in Simpson_2021_PPCF
-Warning--empty title in Simpson_2021_PPCF
-Warning--empty journal in Simpson_2021_PPCF
-You've used 83 entries,
+You've used 87 entries,
             1791 wiz_defined-function locations,
-            1010 strings with 21055 characters,
-and the built_in function-call counts, 20930 in all, are:
-= -- 1578
-> -- 1401
+            1033 strings with 22348 characters,
+and the built_in function-call counts, 22319 in all, are:
+= -- 1659
+> -- 1560
 < -- 2
-+ -- 502
-- -- 419
-* -- 1843
-:= -- 3553
-add.period$ -- 249
-call.type$ -- 83
-change.case$ -- 73
++ -- 556
+- -- 469
+* -- 1984
+:= -- 3825
+add.period$ -- 263
+call.type$ -- 87
+change.case$ -- 78
 chr.to.int$ -- 0
-cite$ -- 86
-duplicate$ -- 739
-empty$ -- 1843
-format.name$ -- 419
-if$ -- 4407
+cite$ -- 87
+duplicate$ -- 774
+empty$ -- 1925
+format.name$ -- 469
+if$ -- 4676
 int.to.chr$ -- 0
-int.to.str$ -- 83
-missing$ -- 85
-newline$ -- 416
-num.names$ -- 81
+int.to.str$ -- 87
+missing$ -- 89
+newline$ -- 438
+num.names$ -- 86
 pop$ -- 172
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 277
+skip$ -- 289
 stack$ -- 0
-substring$ -- 1375
-swap$ -- 93
+substring$ -- 1436
+swap$ -- 98
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 161
-width$ -- 85
-write$ -- 899
-(There were 3 warnings)
+warning$ -- 0
+while$ -- 170
+width$ -- 89
+write$ -- 948

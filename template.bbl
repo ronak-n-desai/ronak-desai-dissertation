@@ -1,5 +1,17 @@
 \begin{thebibliography}{10}
 
+\bibitem{Betti_2016_Nature}
+R.~Betti and O.~Hurricane.
+\newblock Inertial-confinement fusion with lasers.
+\newblock {\em Nature Physics}, 12:435--448, May 2016.
+
+\bibitem{Boivin_2022_NJoP}
+Frédéric Boivin, Simon Vallières, Sylvain Fourmaux, Stéphane Payeur, and
+  Patrizio Antici.
+\newblock Quantitative laser-based x-ray fluorescence and particle-induced
+  x-ray emission.
+\newblock {\em New Journal of Physics}, 24(5):053018, may 2022.
+
 \bibitem{Smith_2020_Thesis}
 Joseph Richard~Harrison Smith.
 \newblock {\em Advanced Simulations and Optimization of Intense Laser
@@ -138,8 +150,22 @@ Ute Linz and Jose Alonso.
 \newblock Laser-driven ion accelerators for tumor therapy revisited.
 \newblock {\em Phys. Rev. Accel. Beams}, 19:124802, Dec 2016.
 
+\bibitem{Schaeffer_2023_RevMod}
+Derek~B. Schaeffer, Archie F.~A. Bott, Marco Borghesi, Kirk~A. Flippo, William
+  Fox, Julien Fuchs, Chikang Li, Fredrick~H. S\'eguin, Hye-Sook Park, Petros
+  Tzeferacos, and Louise Willingale.
+\newblock Proton imaging of high-energy-density laboratory plasmas.
+\newblock {\em Rev. Mod. Phys.}, 95:045007, Dec 2023.
+
 \bibitem{Simpson_2021_PPCF}
-63(12):124006, nov 2021.
+R~A Simpson, D~A Mariscal, J~Kim, G~G Scott, G~J Williams, E~Grace, C~McGuffey,
+  S~Wilks, A~Kemp, N~Lemos, B~Z Djordjevic, E~Folsom, D~Kalantar, R~Zacharias,
+  B~Pollock, J~Moody, F~Beg, A~Morace, N~Iwata, Y~Sentoku, M~J-E Manuel,
+  M~Mauldin, M~Quinn, K~Youngblood, M~Gatu-Johnson, B~Lahmann, C~Haefner,
+  D~Neely, and T~Ma.
+\newblock Demonstration of tnsa proton radiography on the national ignition
+  facility advanced radiographic capability (nif-arc) laser.
+\newblock {\em Plasma Physics and Controlled Fusion}, 63(12):124006, nov 2021.
 
 \bibitem{Zylstra_2012_RSI}
 A.~B. Zylstra, C.~K. Li, H.~G. Rinderknecht, F.~H. Séguin, R.~D. Petrasso,
@@ -148,6 +174,11 @@ A.~B. Zylstra, C.~K. Li, H.~G. Rinderknecht, F.~H. Séguin, R.~D. Petrasso,
 \newblock Using high-intensity laser-generated energetic protons to radiograph
   directly driven implosions.
 \newblock {\em Review of Scientific Instruments}, 83(1):013511, 01 2012.
+
+\bibitem{Passoni_2019_SciRep}
+M.~Passoni, L.~Fedeli, and F.~Mirani.
+\newblock Superintense laser-driven ion beam analysis.
+\newblock {\em Scientific Reports}, 9, JUN 24 2019.
 
 \bibitem{Chen_2015_Plasma}
 F.F. Chen.

@@ -58,9 +58,10 @@
 \usepackage{siunitx}
 
 %load glossaries packages
-\usepackage[acronym, section=chapter]{glossaries}
-%\usepackage[xindy,acronym, section=chapter]{glossaries} - recommended if supported by your OS
+%\usepackage[acronym, section=chapter]{glossaries}
+\usepackage[acronym, automake, section=chapter]{glossaries} % recommended if supported by your OS
 \makeglossaries %required to actually make a glossary
+\include{acronyms}
 
 %The following commands can be used to help deal with "overfull hbox" issues
 %See, for example, http://www.tex.ac.uk/cgi-bin/texfaq2html?label=overfull for details
@@ -113,7 +114,7 @@
 
 \frontmatter
 
-\include{acronyms} %load list of acronyms contained in acronyms.tex
+%\include{acronyms} %load list of acronyms contained in acronyms.tex
 \include{template-abstract}
 \dedication{To you, my love.} % Optional, and seriously not this lame
 \include{template-ack}
@@ -129,8 +130,10 @@
 \listoftables 
 
 %print glossary - comment out if you don't want this.  Make sure you also add \glsdisablehyper if you don't want to print a glossary, but do use the %glossaries package to keep track of acronyms
+%\glsdisablehyper
 \clearpage %remove if you don't want a page break before list of abbreviations
-\PrintListofAbbreviations{List of Abbreviations} %Title is in { } - change if desired
+%\PrintListofAbbreviations{List of Abbreviations} %Title is in { } - change if desired
+\printacronyms
 
 \mainmatter
 \include{chap1}
