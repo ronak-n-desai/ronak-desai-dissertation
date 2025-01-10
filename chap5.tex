@@ -157,10 +157,10 @@ where $\varepsilon_\text{min} = \sqrt{2 E_\text{min} / k_B T_h}$ defines a minim
 \begin{equation}
 	E_\text{avg} \equiv \frac{E_\text{tot}}{N}
 \end{equation}
-The combination of \cref{eq:fuchs_maxE,eq:dNdE_Fuchs} have been tested across many of the early TNSA experiments of the early 2000s for a wide range of laser intensities and pulse durations with good accuracy (see fig. 4 from Fuchs \cite{Fuchs_2005_Nat}).
+The combination of \cref{eq:fuchs_maxE,eq:dNdE_Fuchs} have been tested across many of the early \gls{TNSA} experiments of the early 2000s for a wide range of laser intensities and pulse durations with good accuracy (see fig. 4 from Fuchs \cite{Fuchs_2005_Nat}).
 
 \subsection{Further Model Modifications} \label{sec:fuchsv2}
-When restricted to a particular laser system, the wavelength, pulse duration, and spot size are fixed. Considering the model in \cref{sec:fuchsv1}, only three adjustable parameters would be of interest -- target thickness $d$, peak intensity $I_0$ and target focal position $x$. To introduce complexity into our model, we wanted to consider the effect that a pre-expanded target would have on the proton acceleration. The pre-expansion may enhance the hot electron generation, but expansion on the rear side of the target would reduce the effectiveness of the TNSA process. We incorporate this effect by allowing the laser to have a finite contrast $\kappa$ which relates the intensity of the main laser pulse $I_0$ to the intensity of a secondary laser pulse $I_\text{pre}$ as $I_\text{pre} = \kappa$. This pre-pulse is treated as a spike in intensity that occurs $t_0$ before the arrival of the main pulse. The pre-expanded target would have a new effective thickness given by 
+When restricted to a particular laser system, the wavelength, pulse duration, and spot size are fixed. Considering the model in \cref{sec:fuchsv1}, only three adjustable parameters would be of interest -- target thickness $d$, peak intensity $I_0$ and target focal position $x$. To introduce complexity into our model, we wanted to consider the effect that a pre-expanded target would have on the proton acceleration. The pre-expansion may enhance the hot electron generation, but expansion on the rear side of the target would reduce the effectiveness of the \gls{TNSA} process. We incorporate this effect by allowing the laser to have a finite contrast $\kappa$ which relates the intensity of the main laser pulse $I_0$ to the intensity of a secondary laser pulse $I_\text{pre}$ as $I_\text{pre} = \kappa$. This pre-pulse is treated as a spike in intensity that occurs $t_0$ before the arrival of the main pulse. The pre-expanded target would have a new effective thickness given by 
 
 \begin{equation}
 	d_\text{eff} = d + 2 c_s t_0 \label{eq:d_eff}
@@ -197,6 +197,7 @@ Finally, this etching reduces the effective pulse duration by
 This model, however, is not without its flaws. First, our calculations assume a critical density of a tenth of the amount of the actual critical density. Second, instead of defining $d_\text{eff} = d_0 + 2 x_0$ (which would be the true effective density that remains above critical density), we substitute it with \cref{eq:d_eff}. Third, we modify the multiplier seen in \cref{eq:fuchs_multiplier} from 1.3 to 25 which is a significant departure. Finally, the proportionality $T_e \propto I$ with $T_\text{pre,0} = 50$ eV is chosen arbitrarily. Despite these drawbacks, we obtain model predictions similar to what is seen in \cref{fig:energy_dip_morrison} to account for the maximum proton energy dip at peak focus. The goal of creating this model modification is to add complexity to the underlying physics for the purposes of evaluating the effectiveness of machine learning models, not to invent new physics. 
 
 \section{Results}
+In this section, the results from two efforts will be analyzed. The first effort was published in \emph{Contributions to Plasma Physics} \cite{Desai_2024_CPP} in November of 2024 and the second is currently under consideration at \emph{APL Machine Learning}.
 
 \subsection{First Analysis}
 
