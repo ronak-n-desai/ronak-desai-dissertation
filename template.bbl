@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{Mohan_2022_PRO}
+Radhe Mohan.
+\newblock A review of proton therapy – current status and future directions.
+\newblock {\em Precision Radiation Oncology}, 6(2):164--176, 2022.
+
 \bibitem{Betti_2016_Nature}
 R.~Betti and O.~Hurricane.
 \newblock Inertial-confinement fusion with lasers.
@@ -110,6 +115,12 @@ John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
   laser liquid interaction}.
 \newblock {\em New Journal of Physics}, 20(2):022001, February 2018.
 
+\bibitem{Desai_2024_CPP}
+Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,
+  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
+\newblock Applying machine learning methods to laser acceleration of protons:
+  Lessons learned from synthetic data, 2023.
+
 \bibitem{Mayo_2024_Cancer}
 Mayo~Clinic Staff.
 \newblock Radiation therapy, 2024.
@@ -135,11 +146,6 @@ James~F. Ziegler, M.D. Ziegler, and J.P. Biersack.
 \newblock {\em Nuclear Instruments and Methods in Physics Research Section B:
   Beam Interactions with Materials and Atoms}, 268(11):1818--1823, 2010.
 \newblock 19th International Conference on Ion Beam Analysis.
-
-\bibitem{Mohan_2022_PRO}
-Radhe Mohan.
-\newblock A review of proton therapy – current status and future directions.
-\newblock {\em Precision Radiation Oncology}, 6(2):164--176, 2022.
 
 \bibitem{OSU_CCC}
 \url{https://cancer.osu.edu/for-patients-and-caregivers/learn-about-cancers-and-treatments/clinical-services-at-the-james/radiation-oncology/treatment/proton-therapy}.
@@ -483,11 +489,60 @@ A.~Morace, N.~Iwata, and Y.~Sentoku.
   beamlets.
 \newblock {\em Nat Commun}, 10:2995, 7 2019.
 
-\bibitem{Desai_2024_CPP}
-Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,
-  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
-\newblock Applying machine learning methods to laser acceleration of protons:
-  Lessons learned from synthetic data, 2023.
+\bibitem{PyTorch_2019}
+Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory
+  Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban
+  Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan
+  Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu~Fang, Junjie Bai, and Soumith
+  Chintala.
+\newblock Pytorch: An imperative style, high-performance deep learning library.
+\newblock In H.~Wallach, H.~Larochelle, A.~Beygelzimer, F.~d\textquotesingle
+  Alch\'{e}-Buc, E.~Fox, and R.~Garnett, editors, {\em Advances in Neural
+  Information Processing Systems}, volume~32. Curran Associates, Inc., 2019.
+
+\bibitem{Jalas_2021_PRL}
+S\"oren Jalas, Manuel Kirchen, Philipp Messner, Paul Winkler, Lars H\"ubner,
+  Julian Dirkwinkel, Matthias Schnepp, Remi Lehe, and Andreas~R. Maier.
+\newblock Bayesian optimization of a laser-plasma accelerator.
+\newblock {\em Phys. Rev. Lett.}, 126:104801, Mar 2021.
+
+\bibitem{Dolier_2022_NJoP}
+E~J Dolier, M~King, R~Wilson, R~J Gray, and P~McKenna.
+\newblock Multi-parameter bayesian optimisation of laser-driven ion
+  acceleration in particle-in-cell simulations.
+\newblock {\em New Journal of Physics}, 24(7):073025, jul 2022.
+
+\bibitem{Loughran_2023_HPLSE}
+B.~Loughran, M.~J.~V. Streeter, H.~Ahmed, S.~Astbury, M.~Balcazar, M.~Borghesi,
+  N.~Bourgeois, C.~B. Curry, S.~J.~D. Dann, S.~DiIorio, and et~al.
+\newblock Automated control and optimization of laser-driven ion acceleration.
+\newblock {\em High Power Laser Science and Engineering}, 11:e35, 2023.
+
+\bibitem{Djordjevic_2021_PPCF}
+B~Z Djordjević, A~J Kemp, J~Kim, J~Ludwig, R~A Simpson, S~C Wilks, T~Ma, and
+  D~A Mariscal.
+\newblock Characterizing the acceleration time of laser-driven ion acceleration
+  with data-informed neural networks.
+\newblock {\em Plasma Physics and Controlled Fusion}, 63(9):094005, aug 2021.
+
+\bibitem{Schmitz_2023_LaPB}
+B.~Schmitz, D.~Kreuter, O.~Boine-Frankenheim, and Daniele Margarone.
+\newblock Modeling of a liquid leaf target tnsa experiment using
+  particle-in-cell simulations and deep learning.
+\newblock {\em Laser and Particle Beams}, 2023:e3, 2023.
+
+\bibitem{George_2019_HPLSE}
+K.~M. George, J.~T. Morrison, S.~Feister, G.~K. Ngirmang, J.~R. Smith, A.~J.
+  Klim, J.~Snyder, D.~Austin, W.~Erbsen, K.~D. Frische, and et~al.
+\newblock High-repetition-rate (${\geqslant}$ khz) targets and optics from
+  liquid microjets for high-intensity laser–plasma interactions.
+\newblock {\em High Power Laser Science and Engineering}, 7:e50, 2019.
+
+\bibitem{Desai_2024_Zenodo}
+Ronak Desai.
+\newblock Datasets and code from "applying machine learning methods to laser
+  acceleration of protons: lessons learned from synthetic data".
+\newblock \url{https://doi.org/10.5281/zenodo.12752264}, July 2024.
 
 \bibitem{Passoni_2010_NJoP}
 M.~Passoni, L.~Bertagna, and A.~Zani.
@@ -518,6 +573,28 @@ C.~D. Decker, W.~B. Mori, K.‐C. Tzeng, and T.~Katsouleas.
 \newblock {The evolution of ultra‐intense, short‐pulse lasers in underdense
   plasmas}.
 \newblock {\em Physics of Plasmas}, 3(5):2047--2056, 05 1996.
+
+\bibitem{Miller_1984_AmStat}
+Don~M. Miller.
+\newblock Reducing transformation bias in curve fitting.
+\newblock {\em The American Statistician}, 38(2):124--126, 1984.
+
+\bibitem{2023_RAPIDS}
+RAPIDS~Development Team.
+\newblock {\em RAPIDS: Libraries for End to End GPU Data Science}, 2023.
+
+\bibitem{Gardner_2018_GPytorch}
+Jacob~R Gardner, Geoff Pleiss, David Bindel, Kilian~Q Weinberger, and
+  Andrew~Gordon Wilson.
+\newblock Gpytorch: Blackbox matrix-matrix gaussian process inference with gpu
+  acceleration.
+\newblock In {\em Advances in Neural Information Processing Systems}, 2018.
+
+\bibitem{Tietz_2017_Skorch}
+Marian Tietz, Thomas~J. Fan, Daniel Nouri, Benjamin Bossan, and {skorch
+  Developers}.
+\newblock {\em skorch: A scikit-learn compatible neural network library that
+  wraps PyTorch}, July 2017.
 
 \bibitem{Hockney_1988_PIC}
 R.W. Hockney and J.W. Eastwood.

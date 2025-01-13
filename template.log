@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  10 JAN 2025 16:44
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  13 JAN 2025 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -927,13 +927,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [8
 
-])
+]
+
+[9])
 \tf@lof=\write7
 \openout7 = `template.lof'.
 
 
-
-[9]
 
 [10] (template.lot)
 \tf@lot=\write8
@@ -1122,43 +1122,69 @@ Chapter 5.
 ]
 
 [37]
+
+[38]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
 <planning/images/fig2_mora.PNG>
 
-Overfull \hbox (21.87807pt too wide) in paragraph at lines 83--88
+Overfull \hbox (21.87807pt too wide) in paragraph at lines 89--94
  [][][][] 
  []
 
 
-
-[38]
 
 [39]
 
 [40]
 
 [41]
-File: planning/images/density_profile.png Graphic file (type bmp)
-<planning/images/density_profile.png>
-
 
 [42]
+File: planning/images/density_profile.png Graphic file (type bmp)
+<planning/images/density_profile.png>
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
 
 
-[43])
+[43]
 
 [44]
+
+[45]
+File: planning/images/paper1/test_mape_3levels.eps Graphic file (type eps)
+<planning/images/paper1/test_mape_3levels.eps>
+File: planning/images/paper1/test_mape_points=2.0k.eps Graphic file (type eps)
+<planning/images/paper1/test_mape_points=2.0k.eps>
+File: planning/images/paper1/time.eps Graphic file (type eps)
+<planning/images/paper1/time.eps>
+File: planning/images/paper1/fuchs_optim.pdf Graphic file (type pdf)
+<use planning/images/paper1/fuchs_optim.pdf>
+
+
+[46]
+
+[47]
+
+[48]
+File: planning/images/paper1/model_optim_noise=30_pts=2000.pdf Graphic file (ty
+pe pdf)
+<use planning/images/paper1/model_optim_noise=30_pts=2000.pdf>
+
+
+[49]
+
+[50])
+
+[51]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 )
 
-[45
+[52
 
 
 
@@ -1170,67 +1196,72 @@ Chapter 6.
 Chapter 7.
 )
 
-[46
+[53
 
 
 
 
 ] (template.bbl
 
-[47
+[54
 
 
 
 
 ]
-Underfull \hbox (badness 1112) in paragraph at lines 114--118
+Underfull \hbox (badness 1112) in paragraph at lines 125--129
 []\TU/lmr/m/n/10.95 Mayo Clinic Staff.  Radiation therapy, 2024.  [][]$[][][][]
 [] [] [] [] [][][] [] [][][][][][][][][][] [] [][][] []
  []
 
+
+
+[55]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 [][][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][] [] [][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--147
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
 
-[49]
+[56]
 
-[50]
+[57]
 
-[51]
+[58]
 
-[52]
+[59]
 
-[53])
+[60]
 
-[54]
+[61]
+
+[62])
+
+[63]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[55
+[64
 
 
 
 ]
 
-[56])
+[65])
 
-[57] (template.aux (template-abstract.aux) (template-ack.aux)
+[66] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
@@ -1239,12 +1270,12 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 25001 strings out of 409049
- 471627 string characters out of 5757194
- 1937560 words of memory out of 5000000
- 47260 multiletter control sequences out of 15000+600000
+ 25394 strings out of 409049
+ 479078 string characters out of 5757194
+ 1941560 words of memory out of 5000000
+ 47647 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,11n,116p,2382b,1214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,12n,116p,2382b,1290s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (71 pages).
+Output written on template.pdf (80 pages).

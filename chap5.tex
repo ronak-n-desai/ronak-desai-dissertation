@@ -1,6 +1,12 @@
 \chapter{Machine Learning Methods Applied to Synthetic Ion Acceleration Data} \label{ch:5}
 
-This chapter details the work I did developing and investigating a synthetic dataset based on a model by Fuchs \cite{Fuchs_2005_Nat}.
+In recent years, the application of \gls{ML} methods to \gls{HEDS} has exploded due to two main reasons. First, ultra-intense laser systems are now capable of firing many shots per second and also collecting data at a similar rate. This allows scientists to collect a lot of data, which cannot reasonably be handled in real-time by a human. Second, machine learning frameworks like PyTorch \cite{PyTorch_2019} are easily accessible and powerful so that scientists who are not machine learning researchers are capable of using them.
+
+One approach to applying machine learning with a limited amount of data is \gls{BO}. \GLS{BO}, based on the prior collected data points, attempts to find another suitable data point that is different than the prior data and expected to yield a more optimized output (according to some chosen criteria). Using \gls{BO}, Jalas et al. \cite{Jalas_2021_PRL} optimizes the quality of a laser-accelerated electron beam and Dolier et al. \cite{Dolier_2022_NJoP} optimizes the maximum proton energy using PIC simulations. Another notable effort is Loughran et al. \cite{Loughran_2023_HPLSE} who used this approach to demonstrate higher maximum cutoff proton energies from an experiment using a 1 Hz laser. While this approach is commendable, it does not scale well to laser repetition rates of 100 or more Hz. 
+
+Quite a few works have explored using neural networks to analyze and extract information from large datasets generated from \gls{PIC} simulations. Djordevic et al. \cite{Djordjevic_2021_PPCF} used these simulations to find an empirical estimate for the effective acceleration time by using a \gls{NN} model (which informs our choice of 1.3 in \autoref{eq:fuchs_multiplier}). Schmitz et al. \cite{Schmitz_2023_LaPB} also trained \gls{NN}s on \gls{PIC} simulation data to better understand optimal laser and target parameter combinations for their system at TU Darmstadt. One thing these studies have in common is that they only use data from \gls{PIC} simulations which don't necessarily reflect real experiments (especially so because they are 1D and 2D simulations with reduced dimensionality). 
+
+The \gls{WP-ELL} has a 1 kHz laser that can currently collect ion spectrometer at a maximum rate of 100 Hz \cite{George_2019_HPLSE}. Currently, the liquid target can be sustained for around 45 minutes before needing to be refilled which could theoretically result in 270,000 unique data points during one collection. Laser systems like this are still new and the stability of the liquid target often interferes with the goal of collecting quality data. As a result, we first focused our energy into doing a \gls{ML} analysis on data produced from a well-known model by Fuchs \cite{Fuchs_2005_Nat} based on parameters at . The goal of this analysis is not to make recommendations as to what input parameters should be used in experiment, but to provide a general framework that can be extended to real data and also to help others incorporate \gls{ML} in their work by sharing our code (see Zenodo \cite{Desai_2024_Zenodo} for the python code and datasets). By providing these files we hope to encourage others to compare other ML models against our results as a benchmark. This chapter details the work I did developing this synthetic dataset, comparing different \gls{ML} algorithms, and evaluating their potential effectiveness in a real experiment. 
 
 \section{Modified Fuchs et. al. Model}
 
@@ -197,9 +203,95 @@ Finally, this etching reduces the effective pulse duration by
 This model, however, is not without its flaws. First, our calculations assume a critical density of a tenth of the amount of the actual critical density. Second, instead of defining $d_\text{eff} = d_0 + 2 x_0$ (which would be the true effective density that remains above critical density), we substitute it with \cref{eq:d_eff}. Third, we modify the multiplier seen in \cref{eq:fuchs_multiplier} from 1.3 to 25 which is a significant departure. Finally, the proportionality $T_e \propto I$ with $T_\text{pre,0} = 50$ eV is chosen arbitrarily. Despite these drawbacks, we obtain model predictions similar to what is seen in \cref{fig:energy_dip_morrison} to account for the maximum proton energy dip at peak focus. The goal of creating this model modification is to add complexity to the underlying physics for the purposes of evaluating the effectiveness of machine learning models, not to invent new physics. 
 
 \section{Results}
+
 In this section, the results from two efforts will be analyzed. The first effort was published in \emph{Contributions to Plasma Physics} \cite{Desai_2024_CPP} in November of 2024 and the second is currently under consideration at \emph{APL Machine Learning}.
 
 \subsection{First Analysis}
+
+\subsubsection{Methods}
+Our first analysis explored a 25,000 point dataset (described in \autoref{sec:fuchsv1}) which had three output quantities: $E_\text{max}, E_\text{tot}, E_\text{avg}$. Three input quantities were varied: peak laser intensity $I_0$ (from  $10^{18} \text{W cm}^{-2}$ to $10^{19} \text{W cm}^{-2}$), target thickness $d$ (from $\SI{0.5}{\micro \meter}$ to $\SI{5}{\micro \meter}$), and distance from peak focus to the target $z$ (from $\SI{-30}{\micro \meter}$ to $\SI{30}{\micro \meter}$). The input quantities were randomly chosen (uniformly within their intervals) with the Fuchs et al. model evaluations yielding the three outputs. To make the problem non-trivial, noise was added to the outputs sampled from a log-normal distribution with a mean of the output value and standard deviation between 0 and 30 \% of the output value. Varying the noise, which would be present in an experimental dataset, will show how well a model can handle noise. Since we define the standard deviation as proportional to the mean (rather than some constant), the raw amount of noise becomes larger as the predictions get larger.
+
+As a pre-processing step, we first applied a logarithm to both the intensity and three outputs of the model. This was necessary due to our choice of sampling the intensity uniformly with respect to the exponent (i.e. 18-19) and the output energies are directly proportional to the intensity. Additionally, we applied z-score normalization to both the inputs and outputs which is standard in machine learning algorithms to keep all data points on the same order of magnitude. From the 25,000 total points, we used 20,000 for training and reserved a hold-out set of 5,000 for testing. We determined the scalings from the training set only to ensure there is no leakage of information into the testing set. Furthermore, we multiplied the unscaled outputs by a correction factor equal to the mean of the training outputs divided by the unscaled outputs to reduce and under-predicting bias introduced by the log-scaling of the outputs \cite{Miller_1984_AmStat}.
+
+We used three different \gls{ML} models in our study: \gls{SVR}, \gls{GPR}, \gls{NN} that were programmed using RAPIDS \cite{2023_RAPIDS}, GPyTorch \cite{Gardner_2018_GPytorch}, and Skorch \cite{Tietz_2017_Skorch} respectively in Python. These packages all contain functions to facilitate running \gls{GPU} accelerated scripts and were ran using the Pitzer cluster on the \gls{OSC}. All three approaches benefitted from hyperparameter optimization through the \texttt{GridSearchCV} module of scikit-learn. These choices are summarized in \autoref{tab:hps1}. For both the \gls{GPR} and \gls{SVR}, a \gls{RBF} kernel was used.
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+			\hline
+			NN & BS = 256, leaky ReLU, $N_h = 3$, $N_l = 64$, Adam, $\text{LR}=0.001$ \\
+			\hline
+			SVR & $\epsilon = 0.01$, $C = 2.5$, tolerance = $0.001$ \\
+			\hline
+			GPR & Iterations = 30, $\text{LR}=0.001$ \\
+			\hline
+	\end{tabular}
+	\caption{Average GPU memory consumption results when training on data with 20000 points.}
+	\label{tab:hps1}
+\end{table}
+
+\subsubsection{Results}
+
+Our first task was to evaluate how well the trained models can fit the underlying dataset as the number of data points is increased. We accomplished this by evaluating the models on a testing set which is which is proportional to the amount of training points in a 80-20 training-testing split. In \autoref{fig:mape_3levels}, the \gls{MAPE} is evaluated between the model outputs and the testing data outputs to assess the accuracy of each method for three different noise levels -- 0, 15, and 30 \%. Since, in this figure, the testing data contains noise, it is impossible to achieve 0 \% error. As a result, we've included a black line to show the error between the testing data and the theoretical value predicted by the Fuchs et al. model. We can clearly see that the all the \gls{ML} models don't appear to get better when we increase the number of data points.  Additionally, we can see that the \gls{NN} model has the worst accuracy and and more variability.
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.75\linewidth]{planning/images/paper1/test_mape_3levels.eps}
+	\caption{\gls{MAPE} versus number of training points from \gls{ML} model predictions for (a) max proton energy, (b) total proton energy, (c) average proton energy and noisy testing data. Each panel shows results from (solid) 0\%, (dashed) 15\% and (dotted) 30\% added noise in the data. Black lines with different line types indicate the \gls{MAPE} between the noisy and noiseless data. Because we only compare \gls{ML} models to noisy data in this figure, these black lines indicate the best that any \gls{ML} model could conceivably do. Figure and caption taken from Figure 3 of Desai et al. \cite{Desai_2024_CPP}.}
+	\label{fig:mape_3levels}
+\end{figure}
+
+Then, we kept the number of data points fixed at 2000 and varied the noise level from 0 to 30 \% and made a similar analysis in \autoref{fig:mape_noise}. These plots show how the \gls{NN} model doesn't do well without any noise. In addition to the noisy test data (solid line), the error with the same data without noise was also plotted as a dashed line. One interesting feature about this plot is that the \gls{NN} model seems more resilient to noise in the sense that it does not increase very much as the noise level increases. 
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.75\linewidth]{planning/images/paper1/test_mape_points=2.0k.eps}
+	\caption{Solid lines show the typical \gls{MAPE} in (a) maximum proton energy, (b) total proton energy, and (c) average proton energy when the \gls{ML} models (which were trained on 2000 synthetic data points with noise) are evaluated on data with different levels of noise. Dashed lines show the typical error when those same ML models are evaluated on noiseless test data. Black solid lines indicate the \gls{MAPE} between the noisy and noiseless data. Figure and caption taken from Figure 4 of Desai et al. \cite{Desai_2024_CPP}.}
+	\label{fig:mape_noise}
+\end{figure}
+
+Next, we compared the execution time of the different \gls{ML} and found that the \gls{SVR} runs the fastest, the \gls{GPR} runs the slowest, and the \gls{NN} runs at a speed somewhere in between. The \gls{GPR} scales roughly as $O(N^3)$ which can be contrasted with the \gls{NN}s $O(N)$. In terms of GPU memory utilized, the \gls{GPR} used the most at around 14 GB, whereas the \gls{SVR} and \gls{NN} used between 1 and 2 GB. 
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.6\linewidth]{planning/images/paper1/time.eps}
+	\caption{Comparing the execution time of the different \gls{ML} models averaged across noise levels in computing the maximum, total, and average proton energies. Figure and caption taken from Figure 5 of Desai et al. \cite{Desai_2024_CPP}.}
+	\label{fig:execution_time}
+\end{figure}
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.75\linewidth]{planning/images/paper1/fuchs_optim.pdf}
+	\caption{Parameters that produce maximum proton energy cutoffs in three different desired ranges: 1.0~MeV, 0.5~MeV and 0.25~MeV. Combinations of thickness and focal distance that produce these energy cutoffs (irrespective of the laser to proton conversion efficiency) are shown with dotted red lines. With each red line we also show with dotted gray lines the thicknesses and focal distances that produce proton energy cutoffs that are +15\% or -15\% of the cutoff goal. Green shaded areas show regions where the laser to proton conversion efficiency is high (i.e. within 5\% of the optimal value). A green star shows the ideal conditions for maximizing the proton conversion efficiency. The blue region corresponds to using all the terms in \autoref{eq:fuchsv1_function} and the blue star indicates the ideal conditions according to that minimization scheme. Figure and caption taken from Figure 6 of Desai et al. \cite{Desai_2024_CPP}.}
+	\label{fig:banana}
+\end{figure}
+
+We highlighted a useful application of these models by designing an optimization task -- to determine a set of inputs that would produce a proton energy spectrum up to a specified maximum energy. Additionally, these inputs would correspond to a high number of proton in that energy range as well. We characterize the balance of these two quantities -- the maximum cutoff energy $KE_\text{cutoff}$ and the laser to proton conversion efficiency $\eta_\text{proton}$ -- as 
+
+\begin{equation}
+	f(KE_{\rm cutoff},\eta_{proton}) = \frac{|KE_{\rm cutoff} - KE_{\rm cutoff,goal}|}{KE_{\rm cutoff, goal}} + \frac{C}{\eta_{proton}} + g( KE_{\rm cutoff},KE_{\rm cutoff,goal})  \\ \label{eq:fuchsv1_function}
+\end{equation}
+
+where $C$ is a parameter that can influence the relative strength of $\eta_\text{proton}$ in comparison to $KE_\text{cutoff}$. These features can seen in \autoref{fig:banana} where three different energy cutoffs were chosen to optimize towards: 1, 0.5, and 0.25 MeV. The green region focuses on regions of the parameter space that closely match the given cutoff, while the blue region additionally factors in the $\eta_\text{proton}$. For practical reasons, we impose a penalty term $g(KE_\text{cutoff}, KE_\text{cutoff, goal})$ that prevents choosing points that have $KE\text{cutoff}$ more than 15 \% of the specified cutoff. These plots are generated from the Fuchs et al. model with 0 added noise, so they should be regarded as the ideal results that can be compared with the \gls{ML} models.
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.95\linewidth]{planning/images/paper1/model_optim_noise=30_pts=2000.pdf}
+	\caption{Parameters that produce maximum proton energy cutoffs according to three trained ML Models on 2000 data points with 30 $\%$ added noise: (a) GPR, (b) SVR, (c) NN compared against the red and gray lines plotted in Fig.\ref{fig:banana}. The green and blue shaded regions are scatter plots of a subset of evaluated points that fall within 5 $\%$ of the model's predicted optimum according to the same criteria in Fig. \ref{fig:banana}. Figure and caption taken from Figure 7 of Desai et al. \cite{Desai_2024_CPP}.}
+	\label{fig:banana3}
+\end{figure}
+
+We generated the same plots as \autoref{fig:banana} with trained \gls{ML} models on 2000 training data points with 30 \% added noise which can be seen in \autoref{fig:banana3}. These results show the \gls{GPR} matching the closest to \autoref{fig:banana} and the \gls{SVR} performs almost as well. On the other hand, the \gls{NN} clearly has more erratic shapes which is not surprising due to its lower accuracy from the preceding analysis in \autoref{fig:mape_noise}. 
+
+\subsubsection{Conclusion}
+
+We tested three different machine learning models on a synthetic data set for laser-accelerated protons by training these models on up to 20000 synthetic data points. The data set was generated using a modified Fuchs et al. \cite{Fuchs_2005_Nat} model that included Gaussian noise to simulate the kind of noise that could be present in a real experiment. The machine learning models were \acrfull{GPR}, \acrfull{SVR} and a three-hidden-layer \acrfull{NN}. 
+
+Of the three methods, the \gls{NN} models were the least accurate and this was especially true when the number of training points was low. This included an exercise where we used the \gls{ML} models to predict optimum conditions for proton acceleration at different cutoff energies. The poor accuracy of the \gls{NN} model likely stems from the large number of free parameters that must be precisely determined for the model to become highly accurate.
+
+In terms of performance on one \gls{GPU}, \gls{SVR} was by far the fastest model for execution time. \gls{GPR} was the slowest, taking 30 seconds to train on 20000 data points. The neural network used the least amount of \gls{GPU} memory while \gls{GPR} consumed 5-10 times more \gls{GPU} memory than the other models. Generally the performance results suggest that quasi-real time training of these models on kHz repetition rate laser systems should be feasible, especially with \gls{SVR}.
+
+We stress that these results should not be regarded as the final word on the usefulness of these ML models in the context of laser acceleration of protons. More complex data sets may yield different results. Moreover, there are certainly ML models that deserve attention that we did not study here. 
 
 \subsection{Second Analysis}
 
