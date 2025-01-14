@@ -206,7 +206,7 @@ This model, however, is not without its flaws. First, our calculations assume a 
 
 In this section, the results from two efforts will be analyzed. The first effort was published in \emph{Contributions to Plasma Physics} \cite{Desai_2024_CPP} in November of 2024 and the second is currently under consideration at \emph{APL Machine Learning}.
 
-\subsection{First Analysis}
+\subsection{First Analysis} \label{sec:first_analysis}
 
 \subsubsection{Methods}
 Our first analysis explored a 25,000 point dataset (described in \autoref{sec:fuchsv1}) which had three output quantities: $E_\text{max}, E_\text{tot}, E_\text{avg}$. Three input quantities were varied: peak laser intensity $I_0$ (from  $10^{18} \text{W cm}^{-2}$ to $10^{19} \text{W cm}^{-2}$), target thickness $d$ (from $\SI{0.5}{\micro \meter}$ to $\SI{5}{\micro \meter}$), and distance from peak focus to the target $z$ (from $\SI{-30}{\micro \meter}$ to $\SI{30}{\micro \meter}$). The input quantities were randomly chosen (uniformly within their intervals) with the Fuchs et al. model evaluations yielding the three outputs. To make the problem non-trivial, noise was added to the outputs sampled from a log-normal distribution with a mean of the output value and standard deviation between 0 and 30 \% of the output value. Varying the noise, which would be present in an experimental dataset, will show how well a model can handle noise. Since we define the standard deviation as proportional to the mean (rather than some constant), the raw amount of noise becomes larger as the predictions get larger.
@@ -293,6 +293,32 @@ In terms of performance on one \gls{GPU}, \gls{SVR} was by far the fastest model
 
 We stress that these results should not be regarded as the final word on the usefulness of these ML models in the context of laser acceleration of protons. More complex data sets may yield different results. Moreover, there are certainly ML models that deserve attention that we did not study here. 
 
-\subsection{Second Analysis}
+\subsection{Second Analysis} \label{sec:second_analysis}
+
+\subsubsection{Methods}
+In the \autoref{sec:first_analysis}, we tried to address training a relatively small model on only 20000 data points. Furthermore, this model was relatively simple -- a regression algorithm could fit the model quite accurately with only a few thousand points. Also, we found that the \gls{NN} model performed poorly due to lack of model complexity and too few data points. A real experimental dataset would be much more complex and thus require more data to understand its underlying trends. As a result, our second project added complexity in the form of pre-expansion of the target explained in \autoref{sec:fuchsv2}. 
+
+From this new modified model, we generated a training dataset of 152500 points by sampling from a uniform grid of points in a 4D parameter space. The three inputs in \autoref{sec:first_analysis} are the same where we reduced the maximum of the target thickness to $\SI{5}{\micro \meter}$. This grid included thicknesses in steps of $\SI{0.5}{\micro \meter}$, focal positions in steps of $\SI{1}{\micro \meter}$ and intensities in steps of $\SI{1.8e17}{\watt \per \centi \meter \squared}$. The relevant quantity to control the extent of the pre-plasma is the contrast $\kappa$ which was varied in steps of $1.8 \times 10^{-8}$. The 250000 point testing dataset was generated from the same interval, but without noise and by randomly sampling instead of generating on a grid.
+
+We used the same outputs as before: $E_\text{max}$, $E_\text{tot}$, and $E_\text{avg}$. Since the new contrast parameter can make the proton energies get arbitrarily low, we set a floor to these outputs energies of 1 keV, 1 nJ, and 1 keV respectively. This was motivated by acknowledging that detectors have a finite precision in their energy resolution, but also by preventing the \gls{MAPE} metric from getting a division by zero error.
+
+Like the previous work in \autoref{sec:first_analysis}, we used a \gls{NN} model, but we modified the other two. Instead of the \gls{SVR}, we used the simpler \gls{POLY} due to its simplicity. The data in \autoref{sec:first_analysis} could be fit accurately to a simple \gls{POLY} model but, as we'll see later, does not work well with the added complexity in the new model. Second, we replaced the exact \gls{GPR} with the \gls{SVGP} (see \cite{Hensman_2014_SVGP}) which assumes a variational distribution over some amount of inducing points, restricting the training data to a representative subset. This allows the \gls{SVGP} to be trained on data sets of order one million points in mini-batches just like the \gls{NN}. As before, we summarize the hyperparameters in the following \autoref{tab:hps2}.  
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		NN & BS = 256, leaky ReLU, $N_h = 3$, $N_l = 64$, Adam, $\text{LR}=0.001$ \\
+		\hline
+		POLY & $\epsilon = 0.01$, $C = 2.5$, tolerance = $0.001$ \\
+		\hline
+		SVGP & Iterations = 30, $\text{LR}=0.001$ \\
+		\hline
+	\end{tabular}
+	\caption{HPS TABLE}
+	\label{tab:hps2}
+\end{table}
+
+\subsubsection{Results}
 
 \section{Discussion}

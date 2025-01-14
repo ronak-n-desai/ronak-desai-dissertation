@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Mohan_2022_PRO}
 Radhe Mohan.
@@ -595,6 +595,10 @@ Marian Tietz, Thomas~J. Fan, Daniel Nouri, Benjamin Bossan, and {skorch
   Developers}.
 \newblock {\em skorch: A scikit-learn compatible neural network library that
   wraps PyTorch}, July 2017.
+
+\bibitem{Hensman_2014_SVGP}
+James Hensman, Alex Matthews, and Zoubin Ghahramani.
+\newblock Scalable variational gaussian process classification, 2014.
 
 \bibitem{Hockney_1988_PIC}
 R.W. Hockney and J.W. Eastwood.
