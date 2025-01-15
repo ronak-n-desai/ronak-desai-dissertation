@@ -1,9 +1,31 @@
 \chapter{Optimization and Control of a kHz Laser System} \label{ch:6}
 
-Experimental Layout: \gls{CCD} covered with aluminum which stops low energy protons and ions of lower charge to mass ratio (need to confirm this is true)
+The work of \autoref{ch:5} has illustrated the usefulness of machine learning methods in the field of ion acceleration and what sort of quantities might be optimized. To generate enough data for the \gls{ML} algorithms, the facilities need to use both a high-repetition rate laser (i.e. many shots per second) and a continuously refreshing target (i.e. a flowing liquid or tape drive target). Using such a system, no research group has yet obtained a stable and tunable MeV source of protons required for applications. Using a solid Kapton tape, Loughran et al. \cite{Loughran_2023_HPLSE} used \gls{BO} at \gls{RAL}, but only on around 60 bursts of shots. Using a flowing liquid target, multi-MeV deuteron acceleration \cite{Treffert_2022_APL} was demonstrated from a flowing liquid target at \gls{CSU}, but only operated over 2 minutes for a total of 60 shots.
+
+At the Wright-Patterson Air Force Base, a 1 kHz, mJ class laser system exists that is capable of producing MeV protons \cite{Morrison_2018_NJoP}. In comparison to the two previously mentioned studies at \gls{CSU} and \gls{RAL}, a 1 kHz laser shoots one thousand to two thousand times more shots per second! A laser system that shoots one thousand times more shots per second, however, will also roughly have a thousand times less laser energy per shot. Morrison et al. \cite{Morrison_2018_NJoP} was able to achieve 2 MeV protons on this kHz system at \gls{WP-ELL}, while higher energy Hz laser systems can easily achieve tens of MeV. 
+
+To enhance the MeV proton yield within the existing mJ class laser system, the \gls{TNSA} mechanism needs to be optimized as much as possible. This can be done in multiple ways:
+
+\begin{itemize}
+\item As explained in \autoref{ch:4}, multiple pulses can yield higher proton energies with the same amount of laser energy through \gls{eTNSA}. Even when the pulses are not spatially aligned, the preplasma induced from the first pulse can enhance the absorption in from the second pulse and yield higher proton energies as long as the rear side of the target is relatively undisturbed \cite{Macchi_2013_RevModPhys}. Relevant parameters here would be pre-pulse contrast, time delay between pulses, and a variety of other spectral properties of the pulse could even be optimized through the use of an instrument like the DAZZLER (see Loughran et al. \cite{Loughran_2023_HPLSE} for an example). 
+
+\item Generally, thinner targets see enhanced proton acceleration via the vacuum heating mechanism which is a well known scaling captured in the Fuchs et al. \cite{Fuchs_2005_Nat} model explored in \autoref{ch:5}. However, targets that are too thin may break up before the acceleration takes place. Relevant parameters here would be the thickness, composition, and shape of the target. 
+\end{itemize}
+
+Evidently, many parameters influence the laser-target interaction in a very non-linear way which cannot be easily seen through the raw data. In this chapter, I give an overview of the kHz laser system at \gls{WP-ELL} and particularly focus on the \gls{DAQ} developed by fellow graduate student Nathaniel Tamminga and \gls{CSUCI} professor Scott Feister. Then, the code and machine learning framework that I developed to send optimized parameters back to the \gls{DAQ} is described. Finally, some results from this elementary machine learning feedback loop are discussed. 
 
 \section{Background}
 
-\section{Methods}
+\subsection{Extreme Light Laboratory}
 
-\section{Discussion}
+\subsection{Data Acquisition Framework}
+
+\section{Optimization Experiments}
+
+\subsection{Setup}
+
+\subsection{June 6, 2024}
+
+\subsection{August 8, 2024}
+
+\section{Conclusion}

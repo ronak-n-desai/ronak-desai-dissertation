@@ -4,8 +4,9 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Average GPU memory consumption results when training on data with 20000 points.}}{46}{table.caption.50}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces HPS TABLE}}{52}{table.caption.59}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Average GPU memory consumption results when training on data with 20000 points.}}{46}{table.caption.49}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces HPS TABLE}}{53}{table.caption.55}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison metrics evaluated from \autoref {fig:obn_fn_model}. The RMSE row shows the root mean squared error between the colormap values of the ML models and the analytic model for each value of $\beta $. The $\Delta _\text {opt}$ row calculates the Euclidean distance between the predicted optimum and true optimum (i.e. distance in $\mu $m between the cyan and white stars in \autoref {fig:obn_fn_model}).}}{56}{table.caption.60}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

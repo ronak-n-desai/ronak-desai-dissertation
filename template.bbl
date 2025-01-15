@@ -101,11 +101,11 @@ P.~Mora.
 \newblock Plasma expansion into a vacuum.
 \newblock {\em Phys. Rev. Lett.}, 90:185002, May 2003.
 
-\bibitem{Desai_2024_arX}
-Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,
-  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
-\newblock Applying machine learning methods to laser acceleration of protons:
-  Lessons learned from synthetic data, 2023.
+\bibitem{Desai_2025_APL}
+John~J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph~R. Smith, Alona
+  Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
+\newblock Towards automated learning with ultra-intense laser
+  systems\\operating in the khz repetition rate regime, 2025.
 
 \bibitem{Morrison_2018_NJoP}
 John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
@@ -116,10 +116,11 @@ John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
 \newblock {\em New Journal of Physics}, 20(2):022001, February 2018.
 
 \bibitem{Desai_2024_CPP}
-Ronak Desai, Thomas Zhang, Ricky Oropeza, John~J. Felice, Joseph~R. Smith,
-  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
-\newblock Applying machine learning methods to laser acceleration of protons:
-  Lessons learned from synthetic data, 2023.
+John~J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph~R. Smith, Alona
+  Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
+\newblock Towards automated learning with ultra-intense laser
+  systems\\operating in the khz repetition rate regime.
+\newblock {\em Contributions to Plasma Physics}, page e202400080, 2024.
 
 \bibitem{Mayo_2024_Cancer}
 Mayo~Clinic Staff.
@@ -544,6 +545,12 @@ Ronak Desai.
   acceleration of protons: lessons learned from synthetic data".
 \newblock \url{https://doi.org/10.5281/zenodo.12752264}, July 2024.
 
+\bibitem{Desai_2025_Zenodo}
+Ronak Desai and John~J. Felice.
+\newblock Datasets and code from ``towards automated learning with
+  ultra-intense laser systems operating in the khz repetition rate regime'',
+  October 2024.
+
 \bibitem{Passoni_2010_NJoP}
 M.~Passoni, L.~Bertagna, and A.~Zani.
 \newblock Target normal sheath acceleration: theory, comparison with
@@ -595,6 +602,11 @@ Marian Tietz, Thomas~J. Fan, Daniel Nouri, Benjamin Bossan, and {skorch
   Developers}.
 \newblock {\em skorch: A scikit-learn compatible neural network library that
   wraps PyTorch}, July 2017.
+
+\bibitem{Wang_2019_GPytorch}
+Ke~Alexander Wang, Geoff Pleiss, Jacob~R. Gardner, Stephen Tyree, Kilian~Q.
+  Weinberger, and Andrew~Gordon Wilson.
+\newblock Exact gaussian processes on a million data points, 2019.
 
 \bibitem{Hensman_2014_SVGP}
 James Hensman, Alex Matthews, and Zoubin Ghahramani.
