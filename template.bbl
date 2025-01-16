@@ -612,6 +612,15 @@ Ke~Alexander Wang, Geoff Pleiss, Jacob~R. Gardner, Stephen Tyree, Kilian~Q.
 James Hensman, Alex Matthews, and Zoubin Ghahramani.
 \newblock Scalable variational gaussian process classification, 2014.
 
+\bibitem{Treffert_2022_APL}
+F.~Treffert, C.~B. Curry, H.-G.~J. Chou, C.~J. Crissman, D.~P. DePonte,
+  F.~Fiuza, G.~D. Glenn, R.~C. Hollinger, R.~Nedbailo, J.~Park,
+  C.~Schoenwaelder, H.~Song, S.~Wang, J.~J. Rocca, M.~Roth, S.~H. Glenzer, and
+  M.~Gauthier.
+\newblock {High-repetition-rate, multi-MeV deuteron acceleration from
+  converging heavy water microjets at laser intensities of 1021 W/cm2}.
+\newblock {\em Applied Physics Letters}, 121(7):074104, 08 2022.
+
 \bibitem{Hockney_1988_PIC}
 R.W. Hockney and J.W. Eastwood.
 \newblock {\em Computer Simulation Using Particles}.

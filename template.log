@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  15 JAN 2025 15:40
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  16 JAN 2025 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1205,7 +1205,7 @@ File: planning/images/paper2/fig6.eps Graphic file (type eps)
 File: planning/images/paper2/fig7.eps Graphic file (type eps)
 <planning/images/paper2/fig7.eps>
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 356--359
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 353--356
  [][] 
  []
 
@@ -1217,7 +1217,7 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 356--359
 File: planning/images/paper2/fig10.eps Graphic file (type eps)
 <planning/images/paper2/fig10.eps>
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 398--400
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 395--396
  [][] 
  []
 
@@ -1237,28 +1237,30 @@ File: planning/images/paper2/fig11.eps Graphic file (type eps)
 
  (chap6.tex
 Chapter 6.
-)
+
 
 [62
 
 
 
 
-]
+])
+
+[63]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
 Chapter 7.
 )
 
-[63
+[64
 
 
 
 
 ] (template.bbl
 
-[64
+[65
 
 
 
@@ -1277,7 +1279,7 @@ Smith, Alona
 
 
 
-[65]
+[66]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
 Underfull \hbox (badness 10000) in paragraph at lines 152--154
@@ -1293,8 +1295,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
 
 
-[66]
-
 [67]
 
 [68]
@@ -1305,24 +1305,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
 [71]
 
-[72])
+[72]
 
-[73]
+[73])
+
+[74]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[74
+[75
 
 
 
 ]
 
-[75])
+[76])
 
-[76] (template.aux (template-abstract.aux) (template-ack.aux)
+[77] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
@@ -1335,12 +1337,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25533 strings out of 409049
- 482115 string characters out of 5757194
+ 25633 strings out of 409049
+ 483562 string characters out of 5757194
  1940560 words of memory out of 5000000
- 47779 multiletter control sequences out of 15000+600000
+ 47879 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  91i,12n,116p,2382b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (92 pages).
+Output written on template.pdf (93 pages).

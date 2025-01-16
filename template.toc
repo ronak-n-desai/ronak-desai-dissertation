@@ -76,17 +76,22 @@
 \contentsline {subsection}{\numberline {5.3.4}Constrained Data Campaign}{58}{subsection.5.3.4}%
 \contentsline {section}{\numberline {5.4}Conclusion}{60}{section.5.4}%
 \contentsline {chapter}{\numberline {6}Optimization and Control of a kHz Laser System}{62}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Background}{62}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Methods}{62}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Discussion}{62}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusion}{63}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary}{63}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Future Work}{63}{section.7.2}%
-\contentsline {chapter}{Bibliography}{64}{section*.63}
+\contentsline {section}{\numberline {6.1}Background}{63}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Extreme Light Laboratory}{63}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Data Acquisition Framework}{63}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Optimization Experiments}{63}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Setup}{63}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}June 6, 2024}{63}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}August 8, 2024}{63}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Conclusion}{63}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{64}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{64}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{64}{section.7.2}%
+\contentsline {chapter}{Bibliography}{65}{section*.63}
 \contentsline {part}{Appendices}{\pageref {appendix.A}}{appendix.A}
-\contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{74}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Background}{74}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{74}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{75}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}Methods}{76}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Conclusion}{76}{section.A.3}%
+\contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{75}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Background}{75}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{75}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{76}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}Methods}{77}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Conclusion}{77}{section.A.3}%
