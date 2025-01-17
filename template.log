@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  16 JAN 2025 09:22
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  17 JAN 2025 17:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1244,23 +1244,40 @@ Chapter 6.
 
 
 
-])
+]
+File: planning/images/daq/experimental_chamber.PNG Graphic file (type bmp)
+<planning/images/daq/experimental_chamber.PNG>
+
 
 [63]
+
+[64]
+File: planning/images/daq/target.PNG Graphic file (type bmp)
+<planning/images/daq/target.PNG>
+
+
+[65]
+
+LaTeX Warning: Reference `fig:pixel_energy' on page 66 undefined on input line 
+46.
+
+)
+
+[66]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
 Chapter 7.
 )
 
-[64
+[67
 
 
 
 
 ] (template.bbl
 
-[65
+[68
 
 
 
@@ -1279,27 +1296,21 @@ Smith, Alona
 
 
 
-[66]
+[69]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 [][][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][] [] [][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 152--154
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-
-[67]
-
-[68]
-
-[69]
 
 [70]
 
@@ -1307,24 +1318,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 152--154
 
 [72]
 
-[73])
+[73]
 
 [74]
+
+[75]
+
+[76])
+
+[77]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[75
+[78
 
 
 
 ]
 
-[76])
+[79])
 
-[77] (template.aux (template-abstract.aux) (template-ack.aux)
+[80] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
@@ -1337,12 +1354,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 25633 strings out of 409049
- 483562 string characters out of 5757194
+ 25690 strings out of 409049
+ 484924 string characters out of 5757194
  1940560 words of memory out of 5000000
- 47879 multiletter control sequences out of 15000+600000
+ 47933 multiletter control sequences out of 15000+600000
  565951 words of font info for 77 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,12n,116p,2382b,1292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,12n,116p,2382b,1290s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (93 pages).
+Output written on template.pdf (96 pages).

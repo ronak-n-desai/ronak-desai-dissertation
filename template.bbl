@@ -122,6 +122,13 @@ John~J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph~R. Smith, Alona
   systems\\operating in the khz repetition rate regime.
 \newblock {\em Contributions to Plasma Physics}, page e202400080, 2024.
 
+\bibitem{George_2019_HPLSE}
+K.~M. George, J.~T. Morrison, S.~Feister, G.~K. Ngirmang, J.~R. Smith, A.~J.
+  Klim, J.~Snyder, D.~Austin, W.~Erbsen, K.~D. Frische, and et~al.
+\newblock High-repetition-rate (${\geqslant}$ khz) targets and optics from
+  liquid microjets for high-intensity laser–plasma interactions.
+\newblock {\em High Power Laser Science and Engineering}, 7:e50, 2019.
+
 \bibitem{Mayo_2024_Cancer}
 Mayo~Clinic Staff.
 \newblock Radiation therapy, 2024.
@@ -532,13 +539,6 @@ B.~Schmitz, D.~Kreuter, O.~Boine-Frankenheim, and Daniele Margarone.
   particle-in-cell simulations and deep learning.
 \newblock {\em Laser and Particle Beams}, 2023:e3, 2023.
 
-\bibitem{George_2019_HPLSE}
-K.~M. George, J.~T. Morrison, S.~Feister, G.~K. Ngirmang, J.~R. Smith, A.~J.
-  Klim, J.~Snyder, D.~Austin, W.~Erbsen, K.~D. Frische, and et~al.
-\newblock High-repetition-rate (${\geqslant}$ khz) targets and optics from
-  liquid microjets for high-intensity laser–plasma interactions.
-\newblock {\em High Power Laser Science and Engineering}, 7:e50, 2019.
-
 \bibitem{Desai_2024_Zenodo}
 Ronak Desai.
 \newblock Datasets and code from "applying machine learning methods to laser
@@ -620,6 +620,13 @@ F.~Treffert, C.~B. Curry, H.-G.~J. Chou, C.~J. Crissman, D.~P. DePonte,
 \newblock {High-repetition-rate, multi-MeV deuteron acceleration from
   converging heavy water microjets at laser intensities of 1021 W/cm2}.
 \newblock {\em Applied Physics Letters}, 121(7):074104, 08 2022.
+
+\bibitem{Snyder_2020_SciRep}
+J.~Snyder, J.~T. Morrison, S.~Feister, K.~D. Frische, K.~M. George, M.~Le,
+  C.~Orban, G.~Ngirmang, E.~Chowdhury, and W.~Roquemore.
+\newblock Background pressure effects on mev protons accelerated via
+  relativistically intense laser-plasma interactions.
+\newblock {\em Scientific Reports}, 10, 2020.
 
 \bibitem{Hockney_1988_PIC}
 R.W. Hockney and J.W. Eastwood.
