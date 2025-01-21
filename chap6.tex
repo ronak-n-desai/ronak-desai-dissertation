@@ -37,24 +37,126 @@ The sheet target, described in detail in George et al. \cite{George_2019_HPLSE},
 	\label{fig:liquid_leaf}
 \end{figure}
 
-The electrons and ions accelerated normal to the rear of the sheet target travel through a Lanex Ring into the magnetic spectrometer: essentially a magnet that deflects negative particles to the left and positive particles to the right (in reference to \autoref{fig:experimental_chamber}). Using the fact that the cycltron radius of a charged particle in a magnetic field varies based on its velocity, the final location of the deflected particle determines its kinetic energy. The \gls{CCD} detectors are coated with scintillating material which converts the particle energy into a light signal that the \gls{CCD}s are capable of detecting.  
+The electrons and ions accelerated normal to the rear of the sheet target travel through a Lanex Ring into the magnetic spectrometer. This spectrometer uses a magnet that deflects negative particles to the left and positive particles to the right (in reference to \autoref{fig:experimental_chamber}). Using the fact that the cyclotron radius of a charged particle in a magnetic field varies based on its velocity, the final location of the deflected particle determines its kinetic energy. The \gls{CCD} detectors are coated with scintillating material which converts the particle energy into a light signal that the \gls{CCD}s are capable of detecting.  
 
-\subsection{Data Sources}
+\subsection{Data Sources} \label{sec:data_sources}
+\subsubsection{Spectrometers}
 
-\subsubsection{CCDs}
-
-The electron and proton spectra are collected from Mightex \gls{CCD} cameras. They each have 3648 pixels with $\SI{8}{\micro \meter}$ pixel width. As can be seen from \autoref{fig:experimental_chamber}, the higher energy particles should be reflected less and should (which translates to hitting the right end of the detector for electrons and the left end of the detector for positive ions). The magnetic field profile has been mapped out in previous work \cite{Morrison_2018_NJoP} so that a one-to-one correspondence between pixel location and kinetic energy can be established for both electrons and protons seen in \autoref{fig:pixel_energy}. 
+The electron and proton spectra are collected from Mightex \gls{CCD} cameras and stored in \gls{HDF5} files. They each have 3648 pixels with $\SI{8}{\micro \meter}$ pixel width. As can be seen from \autoref{fig:experimental_chamber}, the higher energy particles should be reflected less and should (which translates to hitting the right end of the detector for electrons and the left end of the detector for positive ions). The magnetic field profile has been mapped out in previous work \cite{Morrison_2018_NJoP} so that a one-to-one correspondence between pixel location and kinetic energy can be established for both electrons and protons seen in \autoref{fig:pixel_energy}. 
 
 The CCD pixels store counts up to 65,536 (unsigned 16 bit integer) which are collected over the desired exposure time. For example, if the Mightex cameras are set to collect at 100 Hz, they can have an exposure time of up to 10 ms. Pixels 0 to 900 for the proton CCD fall close to the direct line of sight of an undeflected particle and thus can receive stray signals from other radiation sources like x-rays. Since protons from this laser system have peaked at 2.5 MeV \cite{Morrison_2018_NJoP} (around pixel 1000), ignoring pixels 0 to 900 does not throw away any high energy proton data. Furthermore, 13 (additional) pixels are shielded from light which can be used to set a noise floor.
 
-\subsubsection{Laser Diodes}
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.75\linewidth]{planning/images/daq/pixel.png}
+	\caption{The pixel number to proton or electron kinetic energy mapping for the two \gls{CCD}s present in the magnetic spectrometer. This is the same mapping that was used in Morrison et al. \cite{Morrison_2018_NJoP}.}
+	\label{fig:pixel_energy}
+\end{figure}
+
+\subsubsection{Laser Diagnostics}
+To accurately measure the main pulse and pre-pulse energy (or intensity) at a kHz rate, a tiny fixed percentage of the pulses are picked off and redirected at a diode. This diode measures a momentary increase in voltage over the course of 1 ms (due to the kHz collection rate) shown in \autoref{fig:diode_trace}. The peak of this trace will be directly proportional to the energy of an individual shot. \autoref{fig:diode_peak} shows this voltage plotted over a range of 30,000 shots (30 seconds) where the laser energy was increased and decreased.
+
+\begin{figure}
+	\centering 
+	\subfloat{
+		\label{fig:diode_trace}
+		\includegraphics[width=0.5\linewidth]{planning/images/daq/diode_trace.png}
+	}
+	\subfloat{
+		\label{fig:diode_peak}
+		\includegraphics[width=0.5\linewidth]{planning/images/daq/diode_peak.png}
+	}
+	\caption{(a) An example of the voltage trace each individual shot registers on the laser diode. (b) The peak of the voltage trace is plotted for a range of shots.}
+\end{figure}
+
+The calibration between the peak voltage and laser energy is shown in \autoref{fig:energy_calibration} which is clearly a linear relationship for both main and pre-pulse. As mentioned earlier, the angle of two polarizing waveplates controls the amount of energy that strikes the target. These two angles are tunable and can be accurately fit to the energy by using Malus' Law ($I = I_0 \cos^2(\theta)$).
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=0.9\linewidth]{planning/images/daq/energy_calibration.png}
+	\caption{Linear relation from voltage to energy for both the main pulse (blue) and pre-pulse (red). The slope and intercept are displayed on the graphs.}
+	\label{fig:energy_calibration}
+\end{figure}
+
+\subsubsection{Target Properties}
+
+As seen in \autoref{fig:experimental_chamber}, the sheet target is created by the interaction of two grazing incidence liquid microjets that shoot from two nozzles. These  are situated on an XPS motion controller whose orientation and position can be precisely tuned to micron-level precision. 
+
+In this work, we change the target position along the laser-axis direction which changes the distance between the peak focus of the laser and the target. However, the XPS controllers have the ability to control other properties. The vertical target position can be changed which can, in principle, alter the target thickness as shown in \autoref{fig:liquid_leaf}(B). Additionally, the nozzle angles and positions could be adjusted to modify the target shape. Like the \gls{CCD}s and diodes, the target data is also stored in the \gls{HDF5} format (currently at a 5 Hz rate).
+
+\subsubsection{Other Sources}
+There are other potential radiation sources that can be measured but I will give two others as examples. The amount of ionizing radiation is already recorded the \emph{Radiation Survey Log} that AFIT graduate student Benjamin Knight has created in units of mR/h (milli roentgen per hour). Second, neutrons have been detected \cite{Knight_2024_HPLSE} and optimizing their counts could give insights into high-repetition rate fusion.
 
 \section{Optimization Experiments}
 
-\subsection{Automated Data Analysis}
+In this section, the data analysis suite that I have developed will be explained in detail. Then, some results from one highlighted day will be explored to demonstrate the types of experiments that one could conduct using this setup.
 
-\subsection{June 6, 2024}
+\subsection{Automated Data Extraction}
 
-\subsection{August 8, 2024}
+\subsubsection{Combining Data}
+
+Nathaniel and Scott have spent a great deal of time, before my involvement in the project, in making sure all the data sources described in \autoref{sec:data_sources} are accurately synced up on a common index: the shot count. They have successfully integrated the lab with \gls{EPICS} which allows the values of the aforementioned data sources to be broadcasted throughout the lab network. In this way, we can extract the values of the waveplate angles, target positions, pre-pulse delay, and other values from any of the computers in the lab at any time. Furthermore, we can use \gls{EPICS} commands from python scripts, LabVIEW interfaces, and other means to adjust these parameters in real time. Below, I will describe the process that I used to combine all the data and perform the analysis. 
+
+To start, I looked at the relevant locations at the lab computers to automatically grab the files from all the relevant data sources within a given time window (most of which were stored as \gls{HDF5} files). I then created a pandas dataframe where each point corresponds to a unique Mightex shot count (i.e. an individual data point on the spectrometers). So, if the spectrometers were collecting at 20 Hz, I would take a rolling average of 50 nearby shots to compress the 1 kHz main and pre-pulse data down to 20 Hz. On the other hand, the target position and delay time were interpolated to fill values at a 20 Hz rate (since they collected at a 5 and 2 Hz rate respectively).
+
+Then, to smooth the spectra, I subtracted out the noise using counts from the light shielded pixels and applied a median filter of window size 15 (replaces the given pixel counts with the median of the adjacent 15 pixel counts). From the spectra data, I extracted two metrics: the 99th percentile energy/pixel $E_\text{max}$ and the total \gls{CCD} counts $N$. Furthermore, I provided some extra processing to improve the data quality. First, I threw out data points that were oversaturated -- that is the counts were so high that they were getting maxed out (beyond unsigned 16 bit precision) for a given pixel. Second, I removed points that didn't contain a sufficient number of electron or proton counts. Third, I implemented a measure to catch and fix the shot count if one of the spectrometers temporarily froze and reset its internal shot count. 
+
+Finally, I merged all the data sources together in one pandas dataframe which was then saved to a compressed \gls{HDF5} file.
+
+\subsubsection{Data Visualization}
+Given a merged and filtered dataset, it is now easy to visualize the data which can be seen in \autoref{fig:optimization_gui} which is based on data collected on June 14th 2024. In \autoref{fig:optimization_gui}(B), the main pulse and pre-pulse parameter space is seen to be adequately explored over a time frame of 45 minutes. In \autoref{fig:optimization_gui}(C), the cosine-squared mapping between the waveplate angle and diode voltage for both main and pre-pulse is shown. In the lab, the angle of the main pulse waveplate drifts over time, so an initial angle ``$\theta_0$'' is automatically inferred from the data that corresponds to the waveplate angle that registers maximum voltage. In \autoref{fig:optimization_gui}(D), the main pulse and target focus position (\texttt{nozzle\_focus}) are plotted as a function of shot number (and time) which shows approximately 25,000 shots worth of data.
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=\linewidth]{planning/images/daq/optimization_gui.png}
+	\caption{(A) A list of instruction on how to use the \gls{GUI} and a button that loads in data already saved to a compressed \gls{HDF5} file. (B) A panel that shows two variables plotted against each other. (C) The mapping between cosine-squared of the waveplate angle and the measured voltage on the laser diodes. (D) Two variables are plotted as a function of time and shot number. (E) Instructions for the optimization task with options to choose a machine learning model, desired inputs, and displayed error metrics after training the model. (F) A visual of the optimization task which shows darker purple colors in regions of the parameter space that best optimize the chosen metric from \autoref{eq:obj_function_daq}.}
+	\label{fig:optimization_gui}
+\end{figure}
+
+To visualize the electron/proton spectrum, I used a different \gls{GUI} which first loads data from a file shown in \autoref{fig:spectrum_gui}(A). In \autoref{fig:spectrum_gui}(B), the spectrum is plotted throughout the run and the bright yellow spots correspond to shot numbers and pixels with high counts. In \autoref{fig:spectrum_gui}(C), a diagnostic plot is shown that measures the number of skipped shots in the data. Sometimes, especially when running the spectrometers at a higher repetition rate, shots can be skipped over due to the inability of the virtual machines to keep up with the data acquisition. In \autoref{fig:spectrum_gui}(D, E) the electron spectrum for a specified shot is plotted as a function of either pixel number of energy in MeV. These can either be plotted on a linear y-scale or a log y-scale.
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=\linewidth]{planning/images/daq/spectrum_gui.png}
+	\caption{(A) A list of instructions on how to load in the data. (B) A heatmap that shows the pixel counts for the shot numbers throughout the run. (C) A diagnostic that shows where (if any) shots are erroneously being missed due the lab equipment. (D) An electron spectrum plotted for a specified shot. (E) An electron spectrum binned by energy in MeV on a log scale.}
+	\label{fig:spectrum_gui}
+\end{figure}
+
+\subsection{Optimization Feedback Loop}
+The developed \gls{ML} framework was tested out on various days in the summer of 2024. In this subsection, I will highlight one particular day: June 14th, 2024 which varied the main-pulse, pre-pulse and target position according to \autoref{tab:exp_runs}. The data seen in \autoref{fig:optimization_gui} and \autoref{fig:spectrum_gui} are also from this day. 
+
+
+\begin{table}
+	\centering
+	\begin{tabular}{|p{4cm}|p{1.5cm}|p{1.5cm}|p{3cm}|}
+		\hline
+		\textbf{Explored Parameter} & \text{Max} & \textbf{Min} & \textbf{Scan Period}\\
+		\hline
+		Main Pulse Energy & 8.4~mJ & $\lesssim$1~mJ & 80 s\\
+		\hline
+		Pre-Pulse Energy & 12~$\mu$J & $\lesssim$1~$\mu$J & 104 s\\
+		\hline
+		Target Position & +30~$\mu$m & -30~$\mu$m & 700 s\\
+		\hline
+	\end{tabular}
+	\caption{A description of the experimental parameters, the range they were scanned through, and the period of the parameter scan. This table was reproduced from forthcoming work in Tamminga et al. (2025).}
+	\label{tab:exp_runs}
+\end{table}
+
+These three quantities were simultaneously varied with three different periods so that the 3D parameter space would be adequately explored. The approximately 25,000 data points from this 45 second run were stored in a consolidated \gls{HDF5} file. After this, we used the optimization \gls{GUI} in \autoref{fig:optimization_gui}(E) to quickly fit a regression with specified hyperparameters on the collected data. This model is used to smooth over noisy data points and we can apply a metric (just like what was done in \autoref{sec:first_analysis} and \autoref{sec:second_analysis}) to optimize for two different properties. Here, we use the following objective function
+
+\begin{equation}
+	f(KE_{\rm cutoff},N_{e})  =  1 + (1 - \beta) \cdot \left(1 -  \frac{\log_{10}(N_{e})}{8} \right) + \beta \frac{|KE_{\rm c} - KE_{\rm c,goal}|}{KE_{\rm c, goal}} \label{eq:obj_function_daq}
+\end{equation}
+which looks notably similar to \autoref{eq:obj_function_v2} if the logarithm of the \gls{CCD} electron counts $N_e$ replaces the conversion efficiency $\eta$. We attempted to perform a similar optimization task as explored in \autoref{ch:5}, but the electron data largely had signals at the same energy which can be seen in \autoref{fig:spectrum_gui}(D, E). This spectrum peaks around 0.7 or 0.8 MeV but can have a higher or lower number of counts based on the input parameters. We found (unsurprisingly) that the conditions with highest electron counts correspond to maximum main pulse intensity, minimum pre-pulse intensity, and close to peak focus. An example of this can be seen in \autoref{fig:optimization_gui}(F) which highlights the main pulse and pre-pulse optimal conditions with a blue star. For this run, 8.555 mm was the absolute position of the target when peak focus was achieved which matches the peak focus listed in the figure legend.
+
+Even though the electron spectra did not offer a lot of interesting physics to explore, we did succesfully implement a feedback loop which sent the optimized main pulse, pre-pulse, and focus conditions back to motion controllers and waveplates in the lab via the \gls{EPICS} protocol. An example of this can be seen in \autoref{fig:beta_shift} where, during a second data collection, optimized parameters from the first run were sent via \gls{EPICS} to change the electron spectra in real-time. Each different value of $\beta$ specified a slightly different set of input parameters that were tested for 30 seconds before moving on to the next value of $\beta$.
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=\linewidth]{planning/images/daq/rf_beta_shift.jpg}
+	\caption{Electron spectra plotted for various levels of $\beta$ for a specified cutoff energy $KE_{\rm c,goal} = 0.7$ MeV. The different spectra are predicted optimal parameters from a \gls{RF} model trained on data collected in an earlier run.}
+	\label{fig:beta_shift}
+\end{figure}
 
 \section{Conclusion}

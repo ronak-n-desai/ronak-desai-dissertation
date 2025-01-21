@@ -3,8 +3,8 @@
 \contentsline {front}{Dedication}{iii}{section*.2}%
 \contentsline {front}{Acknowledgments}{iv}{chapter*.3}%
 \contentsline {front}{Vita}{v}{chapter*.4}%
-\contentsline {front}{\textbf {List of Figures}}{ix}{section*.5}%
-\contentsline {front}{\textbf {List of Tables}}{xiii}{section*.6}%
+\contentsline {front}{\textbf {List of Figures}}{x}{section*.5}%
+\contentsline {front}{\textbf {List of Tables}}{xv}{section*.6}%
 \contentsline {part}{Chapters}{\pageref {chapter.1}}{chapter.1}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Lasers for Particle Acceleration}{1}{section.1.1}%
@@ -79,21 +79,24 @@
 \contentsline {section}{\numberline {6.1}Background}{63}{section.6.1}%
 \contentsline {subsection}{\numberline {6.1.1}Experimental Chamber}{63}{subsection.6.1.1}%
 \contentsline {subsection}{\numberline {6.1.2}Data Sources}{66}{subsection.6.1.2}%
-\contentsline {subsubsection}{CCDs}{66}{subsubsection*.65}%
-\contentsline {subsubsection}{Laser Diodes}{66}{subsubsection*.66}%
-\contentsline {section}{\numberline {6.2}Optimization Experiments}{66}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Automated Data Analysis}{66}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}June 6, 2024}{66}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}August 8, 2024}{66}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Conclusion}{66}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusion}{67}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary}{67}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Future Work}{67}{section.7.2}%
-\contentsline {chapter}{Bibliography}{68}{section*.67}
+\contentsline {subsubsection}{Spectrometers}{66}{subsubsection*.65}%
+\contentsline {subsubsection}{Laser Diagnostics}{66}{subsubsection*.67}%
+\contentsline {subsubsection}{Target Properties}{68}{subsubsection*.70}%
+\contentsline {subsubsection}{Other Sources}{68}{subsubsection*.71}%
+\contentsline {section}{\numberline {6.2}Optimization Experiments}{69}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Automated Data Extraction}{69}{subsection.6.2.1}%
+\contentsline {subsubsection}{Combining Data}{69}{subsubsection*.72}%
+\contentsline {subsubsection}{Data Visualization}{70}{subsubsection*.73}%
+\contentsline {subsection}{\numberline {6.2.2}Optimization Feedback Loop}{71}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Conclusion}{72}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{74}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary}{74}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Future Work}{74}{section.7.2}%
+\contentsline {chapter}{Bibliography}{75}{section*.78}
 \contentsline {part}{Appendices}{\pageref {appendix.A}}{appendix.A}
-\contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{78}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Background}{78}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{78}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{79}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}Methods}{80}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Conclusion}{80}{section.A.3}%
+\contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{85}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Background}{85}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{85}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{86}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}Methods}{87}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Conclusion}{87}{section.A.3}%
