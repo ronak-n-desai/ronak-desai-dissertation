@@ -111,29 +111,69 @@ Now, the particles can be advanced or ``pushed'' from
 \end{equation}
 For completeness, the velocity initially needs to be pushed backwards from $v^{0} \rightarrow v^{-\frac{1}{2}}$. This is not done in a time-centered way, but is only needed at the start of the simulation. 
 
-\subsection{EPOCH Code}
+\section{Machine Learning}
+What is \gls{ML}? According to the computer scientist Arthur Samuel who popularized the term in 1959, it is the 
 
 \begin{quote}
-	Clearly Top-hat shape functions should never be used for laser-solid simulations.
+	... field of study that gives computers the ability to learn without being explicitly programmed. \cite{Geron_2023_ML}
 \end{quote}
 
-\subsubsection{Background}
+The book \emph{Hands-On Machine Learning with Scikit-Learn} by Aurelien Geron \cite{Geron_2023_ML} gives a simple example of how a \gls{ML} model differs from a more traditional computer program in the form of an email spam filter. A traditional filter would implement user specified rules that mark emails as spam based on e-mail address and subject line keywords for example. A \gls{ML} approach would determine what keywords and e-mail addresses to look for based on prior emails that have been flagged as spam.
 
-\subsubsection{Methods}
+The key difference in the two approaches is predictive power. The traditional filter can remove spam from messages that fit a pattern explicitly given by the user. The \gls{ML} filter can learn a generalized model that can predict possibly unforeseen types of spam. Since the \gls{ML} model is much more general, it is more susceptible to incorrect predictions. In this section, we'll overview how to handle data for \gls{ML} algorithms, compare model training for different methods, and explain how these models can be used in practice. The information below is largely from the book by Geron \cite{Geron_2023_ML} unless specified otherwise.
 
-\subsubsection{Results}
+\subsection{Pre-processing}
+\gls{ML} can be either supervised or unsupervised based on whether the data is labeled with a particular output. In the \gls{ML} context, model outputs are often referred to as labels and model inputs are often referred to as features. For the e-mail classification example, a supervised model would have training data that is already labeled as spam (or not) and an unsupervised model would have to infer if the data is spam by other means (e.g. clustering similar emails together). We will not be considering unsupervised learning in this work because we are ultimately interested in labeled data (which would be electron or proton energy spectra). To train an \gls{ML} effectively, there are various things we need to take into account: 
 
-\section{Machine Learning}
+\begin{itemize}
+	\item Data Quantity: We need a sufficient amount of data in order to learn relevant trends and patterns. For example, a good spam classifier would have many e-mails (thousands to millions) to train on.
+	\item Representative Data: The data should be representative of all data points. A spam classifier trained only on data prior to 2010 will not accurately predict modern spam emails.
+	\item Poor-Quality: The data should not have significant errors, outliers, and noise. 
+	\item Irrelevant Features: The input data (features) to the model should all be relevant. For example, taking into account the exact time that a spam e-mail is received may not be the most relevant as spam emails are often sent out at random times. 
+\end{itemize}
+Failure to take the preceding steps into account can oftentimes lead to one of two things
 
-\subsection{Simple Models}
+\begin{itemize}
+	\item Overfitting: This can happen when the data is too complex in relation to the data. An example would be using a polynomial to fit a set of points that fall on a straight line. To fix this, we can constrain the model to make it more simple, gather more training data, or reduce noise in the training set.
+	\item Underfitting: When the model is too simple in relation to the data. This can be fixed by selecting a more complex model, using better features, and reducing any constraints on the model.
+\end{itemize} 
+To improve the quality of the existing data, we can perform \emph{pre-processing} which is the set of actions performed to transform raw data into data ready to be fed into a \gls{ML} model. In \autoref{ch:6}, significant pre-processing was needed which included removing missing values, combining data sources, applying a median-based filter, compressing the spectra into two metrics, and more. One particularly effective method of pre-processing that is specific to \gls{ML} is data normalization which makes sure that all the inputs are approximately on the same scale. The two most common ways to approach this are summarized below: 
 
-\subsubsection{Polynomial Regression}
+\begin{itemize}
+	\item Standard Scaling: A particular feature can be transformed through the following: $x_i \rightarrow \frac{x_i - \mu}{\sigma}$ where $\mu$ is the mean of all the data points $x_i$ and $\sigma$ is the standard deviation. This normalizes the data to be centered at 0 and have a standard deviation of 1. 
+	\item Min Max Scaling: A particular features can be transformed by setting the minimum value to 0, the maximum value to 1, and all values in between would be linearly proportional. 
+\end{itemize}
+The Min Max Scaling is useful when the data is known to be uniformly distributed with a fixed minimum and maximum. The Standard Scaling is more general and works best if the data is normally distributed. 
 
-\subsubsection{Support Vector Regression}
+\subsection{Model Selection}
+Given a pre-processed dataset, some additional steps are needed before deploying a \gls{ML} model. There are many different types of models one can select and even a particular model can have different so-called \emph{hyperparameters} that characterize it. For example, a hyperparameter of the polynomial regression model is the degree. A standard approach to model selection is through \emph{cross-validation} which breaks up a dataset into different partitions and varies which ones are used for training and which are used for model evaluation. If a model has good performance with one partition but not with another, then the model would not generalize well to make good predictions. In the \emph{cross-validation} process we only want to use data from a specified training set and not from a different testing set that we want to make useful predictions on. A typical training-testing split is 80-20\% (which is what was used in \autoref{ch:5}). 
+
+To implement cross-validation, we pick a number of partition arrangements for the training set and evaluate the model performance for each partition for a number of hyperparameter combinations. For the polynomial regression example, we could evaluate the average error between 5 partition arrangements for polynomial degree ranging from 2 to 7 and pick the model that has the lowest amount of error. In python, we use the \texttt{GridSearchCV} module of scikit-learn \cite{Pedregosa_2011_Scikit-Learn} package to handle cross-validation for a ``grid'' of hyperparameter combinations.
+
+To evaluate model performance, one needs to choose an error (or accuracy) metric. Two common error metrics are the \gls{MSE} and the \gls{MAPE} which are defined as follows: 
+
+\begin{align}
+	\text{MSE} &\equiv  \frac{1}{N} \sum_{i=1}^N (y_i - \hat{y}_i)^2 \\
+	\text{MAPE} &\equiv \frac{1}{N} \sum{i=1}^N \lvert \frac{y_i - \hat{y}_i}{y_i} \rvert
+\end{align}
+where $y_i$ is a particular output value, $\hat{y}_i$ is the \gls{ML} model prediction, and $N$ is the number of points in the dataset. By defining these error metrics, the model with the lowest cross-validation error should be the best model. 
+
+\subsection{Model Types}
+
+A polynomial model is one simple model that involves minimizing the \gls{MSE} between data values and model predictions of the following formula: 
+
+\begin{equation}
+	\hat{y} = \beta_{0,0} + \beta_{1,0} x_1 + \beta_{0,1} x_2 + \beta_{1,1} x_1 x_2 + \cdots
+\end{equation}
+where $\beta_{i,j}$ are the polynomial coefficients. This equation incorporated two inputs $x_1$ and $x_2$ but can be generalized for any number of inputs. These coefficients can be found by a least-squares minimization algorithm. 
+
+In principle, any dataset can be fit by a polynomial model of a sufficiently high degree. However, such a model would be prone to overfitting -- a good model with predictive power should be able to predict data not yet seen. Wolpert \cite{Wolpert_1997_IEEE} famously showed in his 1996 paper that if we don't make any assumptions about the data at hand, then there is no reason to prefer a particular \gls{ML} model over another. This is sometimes referred to as the ``no free lunch'' theorem. Therefore, it is always instructive to experiment with a variety of models to see which one works best. 
+
+Instead of a polynomial, more sophisticated regression models can be used like the ridge regression which uses a regularization hyperparameter to avoid overfitting. In a similar vein, \gls{SVR} (which falls in the class of support vector machines) use a regularization parameter that tries to maximize the number of data points that are close to the prediction but do not exactly match the prediction. 
+
+A big advantage of the \gls{SVR} is that it can take advantage of the so-called ``kernel trick'' which allows the model to use higher dimensional features (like the polynomial model), but without explicitly calculating all the higher order components. Importantly, this has both time and memory saving implications. A common ``kernel'' is the \gls{RBF} which calculates a similarity measure between two data points involving a dot product which is easy to compute. For more information on support vector machines, see the text by Geron \cite{Geron_2023_ML}. 
 
 
-\subsection{Advanced Models}
 
-\subsubsection{Gaussian Process}
+\subsection{Evaluation of Models}
 
-\subsection{Neural Networks}

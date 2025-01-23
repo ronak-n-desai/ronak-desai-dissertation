@@ -3,11 +3,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Gold Simulations.}}{43}{table.caption.42}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Average GPU memory consumption results when training on data with 20000 points.}}{46}{table.caption.49}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces HPS TABLE}}{53}{table.caption.55}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison metrics evaluated from \autoref {fig:obn_fn_model}. The RMSE row shows the root mean squared error between the colormap values of the ML models and the analytic model for each value of $\beta $. The $\Delta _\text {opt}$ row calculates the Euclidean distance between the predicted optimum and true optimum (i.e. distance in $\mu $m between the cyan and white stars in \autoref {fig:obn_fn_model}).}}{56}{table.caption.60}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Average GPU memory consumption results when training on data with 20000 points.}}{54}{table.caption.46}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces HPS TABLE}}{61}{table.caption.52}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Comparison metrics evaluated from \autoref {fig:obn_fn_model}. The RMSE row shows the root mean squared error between the colormap values of the ML models and the analytic model for each value of $\beta $. The $\Delta _\text {opt}$ row calculates the Euclidean distance between the predicted optimum and true optimum (i.e. distance in $\mu $m between the cyan and white stars in \autoref {fig:obn_fn_model}).}}{66}{table.caption.57}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces A description of the experimental parameters, the range they were scanned through, and the period of the parameter scan. This table was reproduced from forthcoming work in Tamminga et al. (2025).}}{72}{table.caption.76}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces A description of the experimental parameters, the range they were scanned through, and the period of the parameter scan. This table was reproduced from forthcoming work in Tamminga et al. (2025).}}{80}{table.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

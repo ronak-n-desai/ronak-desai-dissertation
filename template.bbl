@@ -460,6 +460,25 @@ D.R. Welch, D.V. Rose, R.E. Clark, T.C. Genoni, and T.P. Hughes.
 \newblock Proceedings of the 18th International Conferene on the Numerical
   Simulation of Plasmas.
 
+\bibitem{Geron_2023_ML}
+Aurélien Géron.
+\newblock {\em Hands-on machine learning with scikit-learn, Keras, and
+  tensorflow: Concepts, tools, and techniques to build Intelligent Systems}.
+\newblock O’Reilly Media, 2023.
+
+\bibitem{Pedregosa_2011_Scikit-Learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,
+  D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{Wolpert_1997_IEEE}
+D.H. Wolpert and W.G. Macready.
+\newblock No free lunch theorems for optimization.
+\newblock {\em IEEE Transactions on Evolutionary Computation}, 1(1):67--82,
+  1997.
+
 \bibitem{Fuchs_2007_PRL}
 J.~Fuchs, C.~A. Cecchetti, M.~Borghesi, T.~Grismayer, E.~d'Humi\`eres,
   P.~Antici, S.~Atzeni, P.~Mora, A.~Pipahl, L.~Romagnani, A.~Schiavi,
