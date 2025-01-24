@@ -44,7 +44,6 @@
 \contentsline {subsection}{\numberline {3.2.1}Pre-processing}{29}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Model Selection}{30}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Model Types}{31}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Evaluation of Models}{32}{subsection.3.2.4}%
 \contentsline {chapter}{\numberline {4}Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration}{33}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Background}{33}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Spatially Aligned Pulses}{33}{subsection.4.1.1}%

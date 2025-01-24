@@ -173,7 +173,6 @@ Instead of a polynomial, more sophisticated regression models can be used like t
 
 A big advantage of the \gls{SVR} is that it can take advantage of the so-called ``kernel trick'' which allows the model to use higher dimensional features (like the polynomial model), but without explicitly calculating all the higher order components. Importantly, this has both time and memory saving implications. A common ``kernel'' is the \gls{RBF} which calculates a similarity measure between two data points involving a dot product which is easy to compute. For more information on support vector machines, see the text by Geron \cite{Geron_2023_ML}. 
 
+Another regression method that can make use of the kernel trick is the Gaussian Process -- a method that doesn't just construct one function to fit the data, but rather a distribution of functions that all fit the data. The functions can effectively be averaged to create a \gls{GPR} or an uncertainty can be quantified by taking a standard deviation of this probability distribution. 
 
-
-\subsection{Evaluation of Models}
-
+A more general purpose model capable of learning functions of extremely high complexity is the \gls{NN}. This model, just like a linear regression, fits an intercept and coefficients to each input variable. Unlike the linear regression, the output of the first linear regression is the input of a 
