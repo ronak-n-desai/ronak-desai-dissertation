@@ -1,490 +1,544 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  24 JAN 2025 17:07
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 24.1) (preloaded format=xelatex 2024.11.20)  25 JAN 2025 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./template.tex
 (template.tex
-LaTeX2e <2024-06-01> patch level 1
-L3 programming layer <2024-05-27>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
 (osudiss-2.cls
 Document Class: osudiss-2 2010/05/24 v0.9 .dtx osudiss-2 file
 *** Conforms to the 2010 Graduate School Format ***
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
-Document Class: report 2024/02/08 v1.4n Standard LaTeX document class
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
-File: size11.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count190
-\c@chapter=\count191
-\c@section=\count192
-\c@subsection=\count193
-\c@subsubsection=\count194
-\c@paragraph=\count195
-\c@subparagraph=\count196
-\c@figure=\count197
-\c@table=\count198
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-\bibindent=\dimen141
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.s
+ty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.st
+y
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ))
-\Gm@cnth=\count199
-\Gm@cntv=\count266
-\c@Gm@tempcnt=\count267
-\Gm@bindingoffset=\dimen142
-\Gm@wd@mp=\dimen143
-\Gm@odd@mp=\dimen144
-\Gm@even@mp=\dimen145
-\Gm@layoutwidth=\dimen146
-\Gm@layoutheight=\dimen147
-\Gm@layouthoffset=\dimen148
-\Gm@layoutvoffset=\dimen149
+\Gm@cnth=\count192
+\Gm@cntv=\count193
+\c@Gm@tempcnt=\count194
+\Gm@bindingoffset=\dimen141
+\Gm@wd@mp=\dimen142
+\Gm@odd@mp=\dimen143
+\Gm@even@mp=\dimen144
+\Gm@layoutwidth=\dimen145
+\Gm@layoutheight=\dimen146
+\Gm@layouthoffset=\dimen147
+\Gm@layoutvoffset=\dimen148
 \Gm@dimlist=\toks18
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry
+.cfg))
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace
+.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec
+.sty
 Package: titlesec 2023/10/27 v2.16 Sectioning titles
-\ttl@box=\box52
-\beforetitleunit=\skip51
-\aftertitleunit=\skip52
-\ttl@plus=\dimen150
-\ttl@minus=\dimen151
+\ttl@box=\box51
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
+\ttl@plus=\dimen149
+\ttl@minus=\dimen150
 \ttl@toksa=\toks19
-\titlewidth=\dimen152
-\titlewidthlast=\dimen153
-\titlewidthfirst=\dimen154
+\titlewidth=\dimen151
+\titlewidthlast=\dimen152
+\titlewidthfirst=\dimen153
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.s
+ty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
-\cftparskip=\skip53
-\cftbeforetoctitleskip=\skip54
-\cftaftertoctitleskip=\skip55
-\cftbeforepartskip=\skip56
-\cftpartnumwidth=\skip57
-\cftpartindent=\skip58
-\cftbeforechapskip=\skip59
-\cftchapindent=\skip60
-\cftchapnumwidth=\skip61
-\cftbeforesecskip=\skip62
-\cftsecindent=\skip63
-\cftsecnumwidth=\skip64
-\cftbeforesubsecskip=\skip65
-\cftsubsecindent=\skip66
-\cftsubsecnumwidth=\skip67
-\cftbeforesubsubsecskip=\skip68
-\cftsubsubsecindent=\skip69
-\cftsubsubsecnumwidth=\skip70
-\cftbeforeparaskip=\skip71
-\cftparaindent=\skip72
-\cftparanumwidth=\skip73
-\cftbeforesubparaskip=\skip74
-\cftsubparaindent=\skip75
-\cftsubparanumwidth=\skip76
-\cftbeforeloftitleskip=\skip77
-\cftafterloftitleskip=\skip78
-\cftbeforefigskip=\skip79
-\cftfigindent=\skip80
-\cftfignumwidth=\skip81
-\c@lofdepth=\count268
-\c@lotdepth=\count269
-\cftbeforelottitleskip=\skip82
-\cftafterlottitleskip=\skip83
-\cftbeforetabskip=\skip84
-\cfttabindent=\skip85
-\cfttabnumwidth=\skip86
+\cftparskip=\skip52
+\cftbeforetoctitleskip=\skip53
+\cftaftertoctitleskip=\skip54
+\cftbeforepartskip=\skip55
+\cftpartnumwidth=\skip56
+\cftpartindent=\skip57
+\cftbeforechapskip=\skip58
+\cftchapindent=\skip59
+\cftchapnumwidth=\skip60
+\cftbeforesecskip=\skip61
+\cftsecindent=\skip62
+\cftsecnumwidth=\skip63
+\cftbeforesubsecskip=\skip64
+\cftsubsecindent=\skip65
+\cftsubsecnumwidth=\skip66
+\cftbeforesubsubsecskip=\skip67
+\cftsubsubsecindent=\skip68
+\cftsubsubsecnumwidth=\skip69
+\cftbeforeparaskip=\skip70
+\cftparaindent=\skip71
+\cftparanumwidth=\skip72
+\cftbeforesubparaskip=\skip73
+\cftsubparaindent=\skip74
+\cftsubparanumwidth=\skip75
+\cftbeforeloftitleskip=\skip76
+\cftafterloftitleskip=\skip77
+\cftbeforefigskip=\skip78
+\cftfigindent=\skip79
+\cftfignumwidth=\skip80
+\c@lofdepth=\count195
+\c@lotdepth=\count196
+\cftbeforelottitleskip=\skip81
+\cftafterlottitleskip=\skip82
+\cftbeforetabskip=\skip83
+\cfttabindent=\skip84
+\cfttabnumwidth=\skip85
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2024-05-23 v7.01i Hypertext links for LaTeX
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref
+.sty
+Package: hyperref 2023-11-26 v7.01g Hypertext links for LaTeX
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwa
+rerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetke
+ys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kv
+definekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfes
+cape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds
+.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdft
+excmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 ))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.s
+ty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letlt
+xmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.s
+ty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.
+sty
 Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount
+.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\
+gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptio
+ns.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count270
+\c@section@level=\count197
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox
+.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count271
+\etb@tempcnta=\count198
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+\@linkdim=\dimen154
+\Hy@linkcounter=\count199
+\Hy@pagecounter=\count266
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.d
+ef
+File: pd1enc.def 2023-11-26 v7.01g Hyperref: PDFDocEncoding definition (HO)
 )
-)
-\@linkdim=\dimen155
-\Hy@linkcounter=\count272
-\Hy@pagecounter=\count273
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2024-05-23 v7.01i Hyperref: PDFDocEncoding definition (HO)
-) (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc
+.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count274
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
-File: puenc.def 2024-05-23 v7.01i Hyperref: PDF Unicode definition (HO)
-)
-Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4040.
-Package hyperref Info: Option `final' set `true' on input line 4040.
-Package hyperref Info: Option `implicit' set `true' on input line 4040.
-Package hyperref Info: Hyper figures OFF on input line 4157.
-Package hyperref Info: Link nesting OFF on input line 4162.
-Package hyperref Info: Hyper index ON on input line 4165.
-Package hyperref Info: Plain pages OFF on input line 4172.
-Package hyperref Info: Backreferencing OFF on input line 4177.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count275
+\Hy@SavedSpaceFactor=\count267
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.de
+f
+File: puenc.def 2023-11-26 v7.01g Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4064.
+Package hyperref Info: Option `final' set `true' on input line 4064.
+Package hyperref Info: Option `implicit' set `true' on input line 4064.
+Package hyperref Info: Hyper figures OFF on input line 4181.
+Package hyperref Info: Link nesting OFF on input line 4186.
+Package hyperref Info: Hyper index ON on input line 4189.
+Package hyperref Info: Plain pages OFF on input line 4196.
+Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4448.
+\c@Hy@tempcnt=\count268
+ (C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen156
+LaTeX Info: Redefining \url on input line 4786.
+\XeTeXLinkMargin=\dimen155
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.s
+ty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigi
+ntcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count276
-\Field@Width=\dimen157
-\Fld@charsize=\dimen158
-Package hyperref Info: Hyper figures OFF on input line 6042.
-Package hyperref Info: Link nesting OFF on input line 6047.
-Package hyperref Info: Hyper index ON on input line 6050.
-Package hyperref Info: backreferencing OFF on input line 6057.
-Package hyperref Info: Link coloring OFF on input line 6062.
-Package hyperref Info: Link coloring with OCG OFF on input line 6067.
-Package hyperref Info: PDF/A mode OFF on input line 6072.
+\Fld@menulength=\count269
+\Field@Width=\dimen156
+\Fld@charsize=\dimen157
+Package hyperref Info: Hyper figures OFF on input line 6065.
+Package hyperref Info: Link nesting OFF on input line 6070.
+Package hyperref Info: Hyper index ON on input line 6073.
+Package hyperref Info: backreferencing OFF on input line 6080.
+Package hyperref Info: Link coloring OFF on input line 6085.
+Package hyperref Info: Link coloring with OCG OFF on input line 6090.
+Package hyperref Info: PDF/A mode OFF on input line 6095.
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx
+.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count277
-\c@Item=\count278
-\c@Hfootnote=\count279
+\Hy@abspage=\count270
+\c@Item=\count271
+\c@Hfootnote=\count272
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
-File: hxetex.def 2024-05-23 v7.01i Hyperref driver for XeTeX
-\pdfm@box=\box53
-\c@Hy@AnnotLevel=\count280
-\HyField@AnnotCount=\count281
-\Fld@listcount=\count282
-\c@bookmark@seq@number=\count283
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.d
+ef
+File: hxetex.def 2023-11-26 v7.01g Hyperref driver for XeTeX
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\strin
+genc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box52
+\c@Hy@AnnotLevel=\count273
+\HyField@AnnotCount=\count274
+\Fld@listcount=\count275
+\c@bookmark@seq@number=\count276
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\re
+runfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-lt
+x.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\u
+niquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip87
+\Hy@SectionHShift=\skip86
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count284
-\calc@Bcount=\count285
-\calc@Adimen=\dimen159
-\calc@Bdimen=\dimen160
-\calc@Askip=\skip88
-\calc@Bskip=\skip89
+\calc@Acount=\count277
+\calc@Bcount=\count278
+\calc@Adimen=\dimen158
+\calc@Bdimen=\dimen159
+\calc@Askip=\skip87
+\calc@Bskip=\skip88
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count286
-\calc@Cskip=\skip90
+\calc@Ccount=\count279
+\calc@Cskip=\skip89
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\remreset.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\remreset
+.sty
 
 Package remreset Warning: The remreset package is obsolete:
 (remreset)                \@removefromreset is defined.
 
 )
-\titleskip=\skip91
-\chapterskip=\skip92
+\titleskip=\skip90
+\chapterskip=\skip91
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx
+.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2024/05/23 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics
+.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\grap
+hics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 106.
+Package graphics Info: Driver file: xetex.def on input line 107.
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xete
+x.def
 File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
 ))
-\Gin@req@height=\dimen161
-\Gin@req@width=\dimen162
-) (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3k
-eys2e.sty
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2024-05-27 L3 programming layer (loader) 
+\Gin@req@height=\dimen160
+\Gin@req@width=\dimen161
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
-ex.def
-File: l3backend-xetex.def 2024-05-08 L3 backend support: XeTeX
-\g__graphics_track_int=\count287
-\l__pdf_internal_box=\box54
-\g__pdf_backend_annotation_int=\count288
-\g__pdf_backend_link_int=\count289
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys
+2e\l3keys2e.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.st
+y
+Package: expl3 2024-01-04 L3 programming layer (loader) 
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backe
+nd-xetex.def
+File: l3backend-xetex.def 2024-01-04 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\l__pdf_internal_box=\box53
+\g__pdf_backend_object_int=\count281
+\g__pdf_backend_annotation_int=\count282
+\g__pdf_backend_link_int=\count283
 ))
-Package: l3keys2e 2024-05-08 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2023-10-10 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count290
-\l__lipsum_a_int=\count291
-\l__lipsum_b_int=\count292
+\g__lipsum_par_int=\count284
+\l__lipsum_a_int=\count285
+\l__lipsum_b_int=\count286
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
-Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd
+.tex))
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/tools\bm.sty
+Package: bm 2023/07/08 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
 \symboldletters=\mathgroup5
 \symboldsymbols=\mathgroup6
 Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs
+.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen163
-\lightrulewidth=\dimen164
-\cmidrulewidth=\dimen165
-\belowrulesep=\dimen166
-\belowbottomsep=\dimen167
-\aboverulesep=\dimen168
-\abovetopsep=\dimen169
-\cmidrulesep=\dimen170
-\cmidrulekern=\dimen171
-\defaultaddspace=\dimen172
-\@cmidla=\count293
-\@cmidlb=\count294
-\@aboverulesep=\dimen173
-\@belowrulesep=\dimen174
-\@thisruleclass=\count295
-\@lastruleclass=\count296
-\@thisrulewidth=\dimen175
+\heavyrulewidth=\dimen162
+\lightrulewidth=\dimen163
+\cmidrulewidth=\dimen164
+\belowrulesep=\dimen165
+\belowbottomsep=\dimen166
+\aboverulesep=\dimen167
+\abovetopsep=\dimen168
+\cmidrulesep=\dimen169
+\cmidrulekern=\dimen170
+\defaultaddspace=\dimen171
+\@cmidla=\count287
+\@cmidlb=\count288
+\@aboverulesep=\dimen172
+\@belowrulesep=\dimen173
+\@thisruleclass=\count289
+\@lastruleclass=\count290
+\@thisrulewidth=\dimen174
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark
+.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-dvipdfm.de
-f
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-dvip
+dfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
-\BKM@id=\count297
+\BKM@id=\count291
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 45.
 Package hyperref Info: Option `breaklinks' set `true' on input line 45.
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\hypcap.sty
-Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip93
-\bibsep=\skip94
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count298
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\hypcap.s
+ty
+Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip92
+\bibsep=\skip93
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count292
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.s
+ty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.
+sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen176
-\captionmargin=\dimen177
-\caption@leftmargin=\dimen178
-\caption@rightmargin=\dimen179
-\caption@width=\dimen180
-\caption@indent=\dimen181
-\caption@parindent=\dimen182
-\caption@hangindent=\dimen183
+\caption@tempdima=\dimen175
+\captionmargin=\dimen176
+\caption@leftmargin=\dimen177
+\caption@rightmargin=\dimen178
+\caption@width=\dimen179
+\caption@indent=\dimen180
+\caption@parindent=\dimen181
+\caption@hangindent=\dimen182
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count299
-\c@continuedfloat=\count300
+\c@caption@flags=\count293
+\c@continuedfloat=\count294
 Package caption Info: hyperref package is loaded.
 Package caption Info: hypcap package is loaded.
 )
-\c@KVtest=\count301
-\sf@farskip=\skip95
-\sf@captopadj=\dimen184
-\sf@capskip=\skip96
-\sf@nearskip=\skip97
-\c@subfigure=\count302
-\c@subfigure@save=\count303
-\c@subtable=\count304
-\c@subtable@save=\count305
-\sf@top=\skip98
-\sf@bottom=\skip99
-) (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2024/05/23 v2.17q AMS math features
-\@mathmargin=\skip100
+\c@KVtest=\count295
+\sf@farskip=\skip94
+\sf@captopadj=\dimen183
+\sf@capskip=\skip95
+\sf@nearskip=\skip96
+\c@subfigure=\count296
+\c@subfigure@save=\count297
+\c@subtable=\count298
+\c@subtable@save=\count299
+\sf@top=\skip97
+\sf@bottom=\skip98
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.s
+ty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip99
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.s
+ty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.st
+y
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen185
+\ex@=\dimen184
 ))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
+y
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 LaTeX Info: Redefining \boldsymbol on input line 28.
-\pmbraise@=\dimen186
+\pmbraise@=\dimen185
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
+y
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count306
-LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count307
-\leftroot@=\count308
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count309
-\DOTSCASE@=\count310
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box55
-\strutbox@=\box56
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen187
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count311
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count312
-\dotsspace@=\muskip18
-\c@parentequation=\count313
-\dspbrk@lvl=\count314
+\inf@bad=\count300
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count301
+\leftroot@=\count302
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count303
+\DOTSCASE@=\count304
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box54
+\strutbox@=\box55
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen186
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count305
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count306
+\dotsspace@=\muskip17
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
 \tag@help=\toks21
-\row@=\count315
-\column@=\count316
-\maxfields@=\count317
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
 \andhelp@=\toks22
-\eqnshift@=\dimen188
-\alignsep@=\dimen189
-\tagshift@=\dimen190
-\tagwidth@=\dimen191
-\totwidth@=\dimen192
-\lineht@=\dimen193
+\eqnshift@=\dimen187
+\alignsep@=\dimen188
+\tagshift@=\dimen189
+\tagwidth@=\dimen190
+\totwidth@=\dimen191
+\lineht@=\dimen192
 \@envbody=\toks23
-\multlinegap=\skip101
-\multlinetaggap=\skip102
+\multlinegap=\skip100
+\multlinetaggap=\skip101
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.
+sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts
+.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup7
 \symAMSb=\mathgroup8
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.st
-y
+))
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref
+.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -498,212 +552,217 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `subfig' support loaded on input line 3164.
-) (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2024-09-30 v3.3.22 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count318
-\l__siunitx_number_exponent_fixed_int=\count319
-\l__siunitx_number_min_decimal_int=\count320
-\l__siunitx_number_min_integer_int=\count321
-\l__siunitx_number_round_precision_int=\count322
-\l__siunitx_number_lower_threshold_int=\count323
-\l__siunitx_number_upper_threshold_int=\count324
-\l__siunitx_number_group_first_int=\count325
-\l__siunitx_number_group_size_int=\count326
-\l__siunitx_number_group_minimum_int=\count327
-\l__siunitx_angle_tmp_dim=\dimen194
-\l__siunitx_angle_marker_box=\box57
-\l__siunitx_angle_unit_box=\box58
-\l__siunitx_compound_count_int=\count328
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.s
+ty
+Package: siunitx 2024-11-15 v3.3.23 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count312
+\l__siunitx_number_exponent_fixed_int=\count313
+\l__siunitx_number_min_decimal_int=\count314
+\l__siunitx_number_min_integer_int=\count315
+\l__siunitx_number_round_precision_int=\count316
+\l__siunitx_number_lower_threshold_int=\count317
+\l__siunitx_number_upper_threshold_int=\count318
+\l__siunitx_number_group_first_int=\count319
+\l__siunitx_number_group_size_int=\count320
+\l__siunitx_number_group_minimum_int=\count321
+\l__siunitx_angle_tmp_dim=\dimen193
+\l__siunitx_angle_marker_box=\box56
+\l__siunitx_angle_unit_box=\box57
+\l__siunitx_compound_count_int=\count322
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/translations\translatio
-ns.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/translations\tran
+slations.sty
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
  (CN)
 )
-\l__siunitx_table_tmp_box=\box59
-\l__siunitx_table_tmp_dim=\dimen195
-\l__siunitx_table_column_width_dim=\dimen196
-\l__siunitx_table_integer_box=\box60
-\l__siunitx_table_decimal_box=\box61
-\l__siunitx_table_uncert_box=\box62
-\l__siunitx_table_before_box=\box63
-\l__siunitx_table_after_box=\box64
-\l__siunitx_table_before_dim=\dimen197
-\l__siunitx_table_carry_dim=\dimen198
-\l__siunitx_unit_tmp_int=\count329
-\l__siunitx_unit_position_int=\count330
-\l__siunitx_unit_total_int=\count331
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
-Package: array 2024/06/14 v2.6d Tabular extension package (FMi)
-\col@sep=\dimen199
-\ar@mcellbox=\box65
-\extrarowheight=\dimen256
-\NC@list=\toks25
-\extratabsurround=\skip103
-\backup@length=\skip104
-\ar@cellbox=\box66
-))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
-ies.sty
-Package: glossaries 2024/04/03 v4.54 (NLCT)
+\l__siunitx_table_tmp_box=\box58
+\l__siunitx_table_tmp_dim=\dimen194
+\l__siunitx_table_column_width_dim=\dimen195
+\l__siunitx_table_integer_box=\box59
+\l__siunitx_table_decimal_box=\box60
+\l__siunitx_table_uncert_box=\box61
+\l__siunitx_table_before_box=\box62
+\l__siunitx_table_after_box=\box63
+\l__siunitx_table_before_dim=\dimen196
+\l__siunitx_table_carry_dim=\dimen197
+\l__siunitx_unit_tmp_int=\count323
+\l__siunitx_unit_position_int=\count324
+\l__siunitx_unit_total_int=\count325
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen198
+\ar@mcellbox=\box64
+\extrarowheight=\dimen199
+\NC@list=\toks25
+\extratabsurround=\skip102
+\backup@length=\skip103
+\ar@cellbox=\box65
+))
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\g
+lossaries.sty
+Package: glossaries 2024/11/01 v4.55 (NLCT)
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.s
+ty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval
+.tex
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutil
+s.tex
 \XKV@toks=\toks26
 \XKV@tempa@toks=\toks27
 )
-\XKV@depth=\count332
+\XKV@depth=\count326
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc
+.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
 \@glsmfirst=\toks28
 \@glsmrest=\toks29
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
-)
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-base.
-sty
+) ()
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool
+-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
-Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count333
-)
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.st
-y
-Package: datatool-fp 2019/09/27 v2.32 (NLCT)
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
-Package: fp 1995/04/02
 
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count327
+)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool
+-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count334
-)
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
+\actioncount=\count328
+) (C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count335
-\FP@xia=\count336
-\FP@xib=\count337
-\FP@xfa=\count338
-\FP@xfb=\count339
-\FP@rega=\count340
-\FP@regb=\count341
-\FP@regs=\count342
-\FP@times=\count343
+\FP@xs=\count329
+\FP@xia=\count330
+\FP@xib=\count331
+\FP@xfa=\count332
+\FP@xfb=\count333
+\FP@rega=\count334
+\FP@regb=\count335
+\FP@regs=\count336
+\FP@times=\count337
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
-)
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
+) (C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
 Package: fp-snap 1995/04/05
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count344
-)
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
+\FPseed=\count338
+) (C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks30
-\@dtl@tmpcount=\count345
-\dtl@tmplength=\skip105
-\dtl@sortresult=\count346
-\@dtl@numgrpsepcount=\count347
-\@dtl@datatype=\count348
-\dtl@codeA=\count349
-\dtl@codeB=\count350
-\@dtl@foreach@level=\count351
+\@dtl@tmpcount=\count339
+\dtl@tmplength=\skip104
+\dtl@sortresult=\count340
+\@dtl@numgrpsepcount=\count341
+\@dtl@datatype=\count342
+\dtl@codeA=\count343
+\dtl@codeB=\count344
+\@dtl@foreach@level=\count345
 )
-\gls@level=\count352
+\gls@level=\count346
 \@gls@tmpb=\toks31
-\gls@tmplen=\skip106
+\gls@tmplen=\skip105
 \glskeylisttok=\toks32
 \glslabeltok=\toks33
 \glsshorttok=\toks34
 \glslongtok=\toks35
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
-ary-hypernav.sty
-Package: glossary-hypernav 2024/04/03 v4.54 (NLCT)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles
+\glossary-hypernav.sty
+Package: glossary-hypernav 2024/11/01 v4.55 (NLCT)
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
-ary-list.sty
-Package: glossary-list 2024/04/03 v4.54 (NLCT)
-\glslistdottedwidth=\skip107
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles
+\glossary-list.sty
+Package: glossary-list 2024/11/01 v4.55 (NLCT)
+\glslistdottedwidth=\skip106
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
-ary-long.sty
-Package: glossary-long 2024/04/03 v4.54 (NLCT)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles
+\glossary-long.sty
+Package: glossary-long 2024/11/01 v4.55 (NLCT)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
-Package: longtable 2024-04-26 v4.20 Multi-page Table package (DPC)
-\LTleft=\skip108
-\LTright=\skip109
-\LTpre=\skip110
-\LTpost=\skip111
-\LTchunksize=\count353
-\LTcapwidth=\dimen257
-\LT@head=\box67
-\LT@firsthead=\box68
-\LT@foot=\box69
-\LT@lastfoot=\box70
-\LT@gbox=\box71
-\LT@cols=\count354
-\LT@rows=\count355
-\c@LT@tables=\count356
-\c@LT@chunks=\count357
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.s
+ty
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip107
+\LTright=\skip108
+\LTpre=\skip109
+\LTpost=\skip110
+\LTchunksize=\count347
+\LTcapwidth=\dimen256
+\LT@head=\box66
+\LT@firsthead=\box67
+\LT@foot=\box68
+\LT@lastfoot=\box69
+\LT@gbox=\box70
+\LT@cols=\count348
+\LT@rows=\count349
+\c@LT@tables=\count350
+\c@LT@chunks=\count351
 \LT@p@ftn=\toks36
 )
-\glsdescwidth=\skip112
-\glspagelistwidth=\skip113
+\glsdescwidth=\skip111
+\glspagelistwidth=\skip112
 )
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
-ary-super.sty
-Package: glossary-super 2024/04/03 v4.54 (NLCT)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles
+\glossary-super.sty
+Package: glossary-super 2024/11/01 v4.55 (NLCT)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabul
-ar.sty
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supe
+rtabular.sty
 Package: supertabular 2024/07/20 v4.2c the supertabular environment
-\c@tracingst=\count358
-\ST@wd=\dimen258
-\ST@rightskip=\skip114
-\ST@leftskip=\skip115
-\ST@parfillskip=\skip116
-\ST@pageleft=\dimen259
-\ST@headht=\dimen260
-\ST@tailht=\dimen261
-\ST@pagesofar=\dimen262
-\ST@pboxht=\dimen263
-\ST@rowht=\dimen264
-\ST@prevht=\dimen265
-\ST@toadd=\dimen266
-\ST@dimen=\dimen267
-\ST@pbox=\box72
+\c@tracingst=\count352
+\ST@wd=\dimen257
+\ST@rightskip=\skip113
+\ST@leftskip=\skip114
+\ST@parfillskip=\skip115
+\ST@pageleft=\dimen258
+\ST@headht=\dimen259
+\ST@tailht=\dimen260
+\ST@pagesofar=\dimen261
+\ST@pboxht=\dimen262
+\ST@rowht=\dimen263
+\ST@prevht=\dimen264
+\ST@toadd=\dimen265
+\ST@dimen=\dimen266
+\ST@pbox=\box71
 ))
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
-ary-tree.sty
-Package: glossary-tree 2024/04/03 v4.54 (NLCT)
-\glstreeindent=\skip117
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles
+\glossary-tree.sty
+Package: glossary-tree 2024/11/01 v4.55 (NLCT)
+\glstreeindent=\skip116
 ))
 runsystem(makeindex -s template.ist -t template.glg -o template.gls template.gl
 o)...executed safely (allowed).
@@ -729,17 +788,20 @@ e 65.
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 114.
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2024/01/14 v1.3d Standard LaTeX Color (DPC)
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.st
+y
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\colo
+r.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 149.
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-) (template.aux (template-abstract.aux) (template-ack.aux) (template-vita.aux)
-(chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux) (chap6.aux)
-(chap7.aux) (app1.aux))
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolo
+r.ltx)) (template.aux (template-abstract.aux) (template-ack.aux)
+(template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
+(chap6.aux) (chap7.aux) (app1.aux))
 \openout1 = `template.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -754,7 +816,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 14.
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 114.
@@ -807,14 +869,16 @@ Package hyperref Info: Link coloring ON on input line 114.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: longtable package is loaded.
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption
+.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tran
-slations-basic-dictionary-english.trsl
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/translations/dict
+s\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
@@ -859,115 +923,78 @@ e (if you have moved the definition there from the document environment, delete
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 116
 .
- (C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 116
 .
-
-(C:\Users\ronak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\Ronak Desai\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[1
+) [1
 
 \openout3 = `template.ist'.
 
-]
-
-[1
+] [1
 
 ]
 \openout2 = `template-abstract.aux'.
 
- (template-abstract.tex
-
-[2
+ (template-abstract.tex [2
 
 
 
-])
-
-[3
+]) [3
 
 
 
 ]
 \openout2 = `template-ack.aux'.
 
- (template-ack.tex
-
-[4
+ (template-ack.tex [4
 
 
 
 ])
 \openout2 = `template-vita.aux'.
 
- (template-vita.tex
 
-[5
-
+(template-vita.tex [5
 
 
 
 
-]
 
-[6]) (template.toc
-
-[7
+] [6]) (template.toc [7
 
 
-]
-
-[8])
+] [8])
 \tf@toc=\write6
 \openout6 = `template.toc'.
 
-
-
-[9] (template.lof
-
-[10
+ [9] (template.lof [10
 
 ]
-
-[11]
-
-[12]
-
-[13])
+[11] [12] [13])
 \tf@lof=\write7
 \openout7 = `template.lof'.
 
-
-
-[14] (template.lot)
+ [14] (template.lot)
 \tf@lot=\write8
 \openout8 = `template.lot'.
 
+ [15
 
-
-[15
-
-] (template.acr
-
-[16
+] (template.acr [16
 
 
 
-]
-
-[17])
-
-[18]
+] [17]) [18]
 \openout2 = `chap1.aux'.
 
- (chap1.tex
+
+(chap1.tex
 Chapter 1.
-
-
 [1
 
 
@@ -975,91 +1002,46 @@ Chapter 1.
 ]
 File: planning/images/bragg_curve.PNG Graphic file (type bmp)
 <planning/images/bragg_curve.PNG>
-
-
-[2]
-
-[3]
+ [2] [3]
 File: planning/images/fusion.png Graphic file (type bmp)
 <planning/images/fusion.png>
-
-
-[4]
+ [4]
 File: planning/images/mass_concentration.jpg Graphic file (type bmp)
 <planning/images/mass_concentration.jpg>
-
-
-[5])
-
-[6]
+ [5]) [6]
 \openout2 = `chap2.aux'.
 
  (chap2.tex
 Chapter 2.
-
-
 [7
 
 
 
 
-]
-
-[8]
-
-[9]
+] [8] [9]
 File: planning/images/plasma_oscillation.PNG Graphic file (type bmp)
 <planning/images/plasma_oscillation.PNG>
-
-
-[10]
-
-[11]
+ [10] [11]
 File: planning/images/debye_length.png Graphic file (type bmp)
 <planning/images/debye_length.png>
-
-
-[12]
-
-[13]
-
-[14]
-
-[15]
+ [12] [13] [14] [15]
 File: planning/images/absorption.png Graphic file (type bmp)
 <planning/images/absorption.png>
-
-
-[16]
-
-[17]
-
-[18]
+ [16] [17] [18]
 File: planning/images/gibbon_hot_electron.PNG Graphic file (type bmp)
 <planning/images/gibbon_hot_electron.PNG>
-
-
-[19]
+ [19]
 File: planning/images/tnsa.PNG Graphic file (type bmp)
 <planning/images/tnsa.PNG>
-
-
-[20]
-
-[21]
+ [20] [21]
 File: planning/images/acceleration_regimes.PNG Graphic file (type bmp)
 <planning/images/acceleration_regimes.PNG>
 
-
-[22])
-
-[23]
+[22]) [23]
 \openout2 = `chap3.aux'.
 
  (chap3.tex
 Chapter 3.
-
-
 [24
 
 
@@ -1068,34 +1050,16 @@ Chapter 3.
 ]
 File: planning/images/shape_functions.png Graphic file (type bmp)
 <planning/images/shape_functions.png>
-
-
-[25]
+ [25]
 File: planning/images/yee_grid.PNG Graphic file (type bmp)
 <planning/images/yee_grid.PNG>
-
-
-[26]
-
-[27]
-
-[28]
-
-[29]
-
-[30]
-
-[31])
-
-[32]
+ [26] [27] [28] [29] [30] [31]) [32]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
 Chapter 4.
 File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
 <planning/images/Markey_Spectrum.PNG>
-
-
 [33
 
 
@@ -1104,42 +1068,26 @@ File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
 ]
 File: planning/images/scott_half_cavity.PNG Graphic file (type bmp)
 <planning/images/scott_half_cavity.PNG>
-
-
-[34]
+ [34]
 File: planning/images/ferri_dub_pulse.PNG Graphic file (type bmp)
 <planning/images/ferri_dub_pulse.PNG>
-
-
-[35]
+ [35]
 File: planning/images/ferri_scale_energy.PNG Graphic file (type bmp)
 <planning/images/ferri_scale_energy.PNG>
-
-
-[36]
-
-[37]
+ [36] [37]
 File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
 <planning/images/yao_exp_stacks.PNG>
-
-
-[38]
+ [38]
 File: planning/images/titan/target_area_JLF.pdf Graphic file (type pdf)
 <use planning/images/titan/target_area_JLF.pdf>
-
-
-[39]
+ [39]
 File: planning/images/titan/efield_800fs.eps Graphic file (type eps)
 <planning/images/titan/efield_800fs.eps>
-
-
-[40]
+ [40]
 File: planning/images/titan/proton_angular_density_2100fs.eps Graphic file (typ
 e eps)
 <planning/images/titan/proton_angular_density_2100fs.eps>
-
-
-[41]
+ [41]
 File: planning/images/titan/spectrum_2100fs.eps Graphic file (type eps)
 <planning/images/titan/spectrum_2100fs.eps>
 File: planning/images/titan/conversion_efficiency.eps Graphic file (type eps)
@@ -1159,27 +1107,17 @@ Overfull \hbox (3.97011pt too wide) in paragraph at lines 149--168
  [][] 
  []
 
-)
-
-[42]
-
-[43]
+) [42] [43]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
-
-
 [44
 
 
 
 
-]
-
-[45]
-
-[46]
+] [45] [46]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1189,29 +1127,15 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 89--94
  [][][][] 
  []
 
-
-
-[47]
-
-[48]
-
-[49]
-
-[50]
+[47] [48] [49] [50]
 File: planning/images/density_profile.png Graphic file (type bmp)
 <planning/images/density_profile.png>
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
-
-
-[51]
-
-[52]
+ [51] [52]
 
 LaTeX Warning: Reference `eq:fuchs_maxE, eq:fuchs_totE, eq:fuchs_avgE' on page 
 53 undefined on input line 210.
-
-
 
 [53]
 File: planning/images/paper1/test_mape_3levels.eps Graphic file (type eps)
@@ -1222,38 +1146,18 @@ File: planning/images/paper1/time.eps Graphic file (type eps)
 <planning/images/paper1/time.eps>
 File: planning/images/paper1/fuchs_optim.pdf Graphic file (type pdf)
 <use planning/images/paper1/fuchs_optim.pdf>
-
-
-[54]
-
-[55]
-
-[56]
+ [54] [55] [56]
 File: planning/images/paper1/model_optim_noise=30_pts=2000.pdf Graphic file (ty
 pe pdf)
 <use planning/images/paper1/model_optim_noise=30_pts=2000.pdf>
-
-
-[57]
-
-[58]
-
-[59]
-
-[60]
+ [57] [58] [59] [60]
 File: planning/images/paper2/fig4.eps Graphic file (type eps)
 <planning/images/paper2/fig4.eps>
 File: planning/images/paper2/fig5.eps Graphic file (type eps)
 <planning/images/paper2/fig5.eps>
 File: planning/images/paper2/fig6.eps Graphic file (type eps)
 <planning/images/paper2/fig6.eps>
-
-
-[61]
-
-[62]
-
-[63]
+ [61] [62] [63]
 File: planning/images/paper2/fig7.eps Graphic file (type eps)
 <planning/images/paper2/fig7.eps>
 
@@ -1261,11 +1165,7 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 353--356
  [][] 
  []
 
-
-
-[64]
-
-[65]
+[64] [65]
 File: planning/images/paper2/fig10.eps Graphic file (type eps)
 <planning/images/paper2/fig10.eps>
 
@@ -1273,24 +1173,14 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 395--396
  [][] 
  []
 
-
-
 [66]
 File: planning/images/paper2/fig11.eps Graphic file (type eps)
 <planning/images/paper2/fig11.eps>
-
-
-[67]
-
-[68])
-
-[69]
+ [67] [68]) [69]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
-
-
 [70
 
 
@@ -1299,16 +1189,10 @@ Chapter 6.
 ]
 File: planning/images/daq/experimental_chamber.PNG Graphic file (type bmp)
 <planning/images/daq/experimental_chamber.PNG>
-
-
-[71]
-
-[72]
+ [71] [72]
 File: planning/images/daq/target.PNG Graphic file (type bmp)
 <planning/images/daq/target.PNG>
-
-
-[73]
+ [73]
 File: planning/images/daq/pixel.png Graphic file (type bmp)
 <planning/images/daq/pixel.png>
 File: planning/images/daq/diode_trace.png Graphic file (type bmp)
@@ -1322,47 +1206,25 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 64--69
 
 File: planning/images/daq/energy_calibration.png Graphic file (type bmp)
 <planning/images/daq/energy_calibration.png>
-
-
-[74]
-
-[75]
-
-[76]
-
-[77]
+[74] [75] [76] [77]
 File: planning/images/daq/optimization_gui.png Graphic file (type bmp)
 <planning/images/daq/optimization_gui.png>
 File: planning/images/daq/spectrum_gui.png Graphic file (type bmp)
 <planning/images/daq/spectrum_gui.png>
-
-
-[78]
-
-[79]
-
-[80]
+ [78] [79] [80]
 File: planning/images/daq/rf_beta_shift.jpg Graphic file (type bmp)
 <planning/images/daq/rf_beta_shift.jpg>
-
-
-[81])
-
-[82]
+ [81]) [82]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
 Chapter 7.
-)
-
-[83
+) [83
 
 
 
 
-] (template.bbl
-
-[84
+] (template.bbl [84
 
 
 
@@ -1379,8 +1241,6 @@ Underfull \hbox (badness 1009) in paragraph at lines 119--124
 Smith, Alona
  []
 
-
-
 [85]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
@@ -1395,45 +1255,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--161
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
-
-
-[86]
-
-[87]
-
-[88]
-
-[89]
-
-[90]
-
-[91]
-
-[92]
-
-[93])
-
-[94]
+[86] [87] [88] [89] [90] [91] [92] [93]) [94]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
-
-
 [95
 
 
 
-]
-
-[96])
-
-[97] (template.aux (template-abstract.aux) (template-ack.aux)
+] [96]) [97] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
-LaTeX2e <2024-06-01> patch level 1
-L3 programming layer <2024-05-27>
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-04>
  ***********
 
 
@@ -1441,12 +1277,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26055 strings out of 409049
- 493352 string characters out of 5757194
- 1940560 words of memory out of 5000000
- 48282 multiletter control sequences out of 15000+600000
+ 26162 strings out of 409616
+ 496625 string characters out of 5772773
+ 1939191 words of memory out of 5000000
+ 47816 multiletter control sequences out of 15000+600000
  565967 words of font info for 79 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,14n,116p,2382b,1332s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,14n,116p,2409b,1332s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on template.pdf (116 pages).
