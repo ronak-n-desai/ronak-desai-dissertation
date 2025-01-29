@@ -1,82 +1,13 @@
 \chapter{Introduction}
 
-%\begin{quote}
-%\lipsum[1]
-%\end{quote}
-\section{Lasers for Particle Acceleration}
+\section{Historical Overview}
+
+\subsection{Lasers}
+
+\subsection{Laser-Driven Ion Acceleration}
 
 Explain what a laser stands for, stimulated emission, lasing medium, what the Ti:sapphire crystal does and why it is chosen, CPA
 
-\subsection{Chirped Pulse Amplification}
-
-\subsection{...}
-
-%In this template, the acronyms are all placed in a separate file called
-%\verb#acronmys.tex# which is then loaded with \verb#\include{acronyms}#, to
-%make the main source file easier to read.  You can also just put all
-%your acronyms directly in the header of your main source file.
-%
-%Once you have defined an acronym, you can use it with the \verb#\gls{<label>}# command.
-%The first time you use the acronym, the full definition is printed: atomic force microscopy (AFM). %\gls{AFM}.
-%On subsequent uses, just the abbreviation is printed: AFM %\gls{AFM}
-% - Latex keeps track
-%for you, so you don't have to do this manually.  There are fancier forms
-%of \verb#\gls# that allow you to capitalize (\verb#\Gls{<label>}#) or use the 
-%plural (\verb#\glspl{<label>}#) forms of your abbreviations.  See 
-%for example \url{http://en.wikibooks.org/wiki/LaTeX/Glossary} for details
-%on the glossaries package.
-
-%If you want to list all your acronyms at the beginning of your document, you
-%will need to include the \verb#\makeglossaries# command in your preable, as
-%shown above, and then 
-%\begin{verbatim}
-%\printglossary[type=\acronymtype]
-%\end{verbatim}
-%where you want the list of abbreviations to actually appear 
-%(as stated above, this must be right after your lists of figures and tables in the roman
-%numeral pages at the beginning of the document).  Then you have
-%to go to the terminal (in the directory containing your document), and run the command
-%\begin{verbatim}
-%makeglossaries (yourdocumentname)
-%\end{verbatim}
-%to actually create the glossary.  If you just want Latex to keep track of your acronyms for you 
-%and print no list, you can just skip this step and the \verb#printglossary# command.
-
-%To make the heading for the List of Abbreviations look the same as the List of Figures
-%and List of Tables, instead of using \verb#\printglossary# I defined a custom command to print the glossary:
-%\begin{verbatim}
-%\newcommand\PrintListofAbbreviations[1]{
-%\phantomsection
-%\addcontentsline{toc}{front}{\typesetColumnHeading{#1}}
-%\printglossary[type=\acronymtype,title={\protect {\typesetLevelTwo{#1}}}]
-%%\end{verbatim}
-%This command functions the same as \verb#\printglossary#, but instead
-%of typesetting the heading like a chapter heading (in smallcaps), 
-%it typesets in bold like the lists of figures and tables.  
-%To use it, just call \verb#\PrintListofAbbreviations{List of Abbreviations}#
-%right after \verb#\listoftables# and before \verb#\mainmatter#.
-%If you wish to use a different title for you list of abbreviations,
-%just call \verb#\PrintListofAbbreviations{Your Title}#.
-%I am unsure if the GS has any restrictions on what title you can use.
-%
-%One final comment, this template uses \verb#makeindex# to create the glossaries
-%for compatability (some versions of Ubuntu for example don't support \verb#xindy#).
-%However, there is a better program for making glossaries that you can use by calling
-%\begin{verbatim}
-%\usepackage[xindy,toc,acronym, section=chapter]{glossaries}
-%\end{verbatim}
-%instead.  In particular, \verb#xindy# allows you to use symbols in your abbreviations,
-%such as Greek letters or accented characters, which are not supported by \verb#makeindex#.
-%
-%This figure also illustrates the use of subfigures via the subfig package, loaded by placing 
-%\verb#\usepackage{subfig}# in the preamble of \verb#template.txt#.  This allows you to include
-%each subfigure as an individual image, and have latex arrange and label them for you 
-%(including an optional name for each subfigure in \verb#[]#).  This also allows
-%you to individually reference Fig.~\ref{one_battery} and Fig.~\ref{five_battery}.
-%Note that many journals DO NOT support this, and require that each figure be a single
-%image, but this should be fine for a thesis.  
-%
-%A footnote\footnote{Another foot.}
 
 \section{Applications}
 
@@ -87,7 +18,7 @@ This section highlights some of the most important applications of laser-based p
 
 Due to having no cure, cancer is one of the largest medical challenges faced worldwide and generally requires the use of harsh treatments like invasive surgery, chemotherapy, and immunotherapy. Another relevant treatment is called radiotherapy and more than half of all people with cancer will receive it as a part of their medical care \cite{Mayo_2024_Cancer}. Typically, a large machine will provide a source of x-rays (a type of energetic ionizing radiation) that kills the tumor. However, this radiation does not discern whether the cells are cancerous or not -- healthy tissue along the radiation beam path surrounding the tumor will also be damaged. This damage can be mitigated by shooting many beams from different angles such that they overlap at the site of the tumor. In this way, the dose delivered in the beam overlap region will be significantly higher than the surrounding tissue. This approach is typically employed by situating the machine on a rotating ``gantry''
 
-As early as 1905, Bragg \cite{Bragg_1905_JOS} identified that charged particles have different properties than x-rays when passing through matter. Specifically, he identified that radium particles lost more energy (i.e. delivered a higher dose) at a lower speed. Physically, the slower the radium particles, the more time it has to interact with each of the individual atoms and the more energy it can deposit. This means that when the radium first enters a material at its highest speed, it is losing energy slowly in contrast to when it is at a slow speed and about to stop it is losing energy very quickly. In 1946, Wilson \cite{Wilson_1946_Rad} identified that this property of charged particles would enable a more concentrated dose to be delivered closer to the site of a tumor. In \autoref{fig:bragg_curve}, these differences are explicitly highlighted between x-rays and proton beams traveling through water. It can be seen that the proton beam is sharply peaked at a particular distance of around 23 centimeters, where the x-ray beam delivers a relatively higher dose at just a few centimeters. One can see the advantage of protons quite readily from this picture -- if a tumor is located 23 centimeters into the body, the protons, comparatively to the x-rays, will deliver more energy at the tumor site and less energy to the surrounding tissue. The shape of the proton beam curve in this graph is appropriately referred to as a ``Bragg Curve'' which peaks at the ``Bragg Peak''. 
+As early as 1905, Bragg \cite{Bragg_1905_JOS} identified that charged particles have different properties than x-rays when passing through matter. Specifically, he identified that radium particles lost more energy (i.e. delivered a higher dose) at a lower speed. Physically, the slower the radium particles, the more time it has to interact with each of the individual atoms and the more energy it can deposit. This means that when the radium first enters a material at its highest speed, it is losing energy slowly. In contrast, when the radium is at a slow speed and about to stop, it is losing energy very quickly. In 1946, Wilson \cite{Wilson_1946_Rad} identified that this property of charged particles would enable a more concentrated dose to be delivered closer to the site of a tumor. In \autoref{fig:bragg_curve}, these differences are explicitly highlighted between x-rays and proton beams traveling through water. It can be seen that the proton beam is sharply peaked at a particular distance of around 23 centimeters, where the x-ray beam delivers a relatively higher dose at just a few centimeters. One can see the advantage of protons quite readily from this picture -- if a tumor is located 23 centimeters into the body, the protons, comparatively to the x-rays, will deliver more energy at the tumor site and less energy to the surrounding tissue. The shape of the proton beam curve in this graph is appropriately referred to as a ``Bragg Curve'' which peaks at the ``Bragg Peak''. 
 
 The specifics of the depth-dose curve depend on the material that the particles are traveling through as well as initial energy of the protons. These conditions are well-studied by empirical measurements of the \gls{SRIM} \cite{Ziegler_2010_SRIM} and can be combined with other techniques to achieve a depth-dose curve that not only peaks at different depths, but also has a \gls{SOBP} that expands the region where the highest dose is delivered. The most modern form of proton therapy is called \gls{IMPT} whose intensities are modulated to optimally balance tumor dose and sparing of normal tissues \cite{Mohan_2022_PRO}. The first proton therapy center opened at the Loma Linda University Medical Center in California in 1990, but today there are more than 100 centers around the world with more that are planned or in the process of construction \cite{Mohan_2022_PRO}. 
 
@@ -98,9 +29,9 @@ The specifics of the depth-dose curve depend on the material that the particles 
 	\label{fig:bragg_curve}
 \end{figure}
  
-Right here in Columbus, \gls{OSUCCC}, in collaboration with Nationwide Children's Hospital opened a 55,000 square foot proton therapy center in December of 2023 \cite{OSU_CCC} that uses \gls{IMPT}. Despite all the aformentioned benefits of proton therapy, the intial cost is tremendous -- \gls{OSUCCC} was a 100 million dollar investment. The significant cost demonstrates the value this could bring to Central Ohio. The facility is even outfitted with the capability to perform FLASH therapy -- a newer, experimental form of proton therapy that can be delivered in seconds that is still in clinical trials \cite{OSU_CCC} -- which shows the continued investment and innovation in this field. 
+Right here in Columbus, \gls{OSUCCC}, in collaboration with Nationwide Children's Hospital, opened a 55,000 square foot proton therapy center in December of 2023 \cite{OSU_CCC} that uses \gls{IMPT}. Despite all the aformentioned benefits of proton therapy, the intial cost is tremendous -- \gls{OSUCCC} was a 100 million dollar investment. The significant cost demonstrates the value this could bring to Central Ohio. The facility is even outfitted with the capability to perform FLASH therapy which is a newer, experimental form of proton therapy. Compared to conventional methods, FLASH uses much higher dose-rates (i.e. amount of dose per second) with much shorter exposure times (seconds) for the same total dose. The higher dose-rates have been shown to reduce radiation-induced toxicity in healthy tissues in pre-clinical trials \cite{Matuszak_2022_Onc} and is currently under clinical trials \cite{OSU_CCC}. 
 
-The cost, however, cannot be overlooked. The conventional cyclotron accelerators used to accelerate the protons are extremely large and expensive. In recent years, it has been proposed that laser-based particle accelerators could be used to generate high energy protons. These facilities could in principle be smaller and less costly, but the technology is not adequately matured to be considered in the near future \cite{Linz_2016_LaPB}. Laser-based sources are typically only able to generate protons in the 10s of MeV reliably (as opposed to the 100s of MeV required for clinical operation), possess orders of magnitude smaller numbers of protons, and poor reproducibility of the laser pulse output. In addition, the conventional accelerators have already made significant strides in terms of reducing cost, increasing beam quality, and reducing size in recent years \cite{Linz_2016_LaPB} which is something laser-based sources will need to keep up with in the future. However, the potential of developing a smaller and lower cost proton accelerator remains an important motivating factor for many laser-plasma physicists for the coming years.
+The conventional cyclotron accelerators used to accelerate the protons are extremely large and expensive which limits their availability to select locations globally. In recent years, it has been proposed that laser-based particle accelerators could be used to generate high energy protons. Just like FLASH therapy, laser-based sources are capable of delivering high dose-rates. Also, these facilities could in principle be smaller and less costly. On the other hand, the technology is not adequately matured to be considered in the near future \cite{Linz_2016_LaPB}. Laser-based sources are typically only able to generate protons in the 10s of MeV reliably (as opposed to the 100s of MeV required for clinical operation), possess orders of magnitude smaller numbers of protons, and poor reproducibility of the laser pulse output. In addition, the conventional accelerators have already made significant strides in terms of reducing cost, increasing beam quality, and reducing size in recent years \cite{Linz_2016_LaPB} which is something laser-based sources will need to keep up with in the future. However, the potential of developing a smaller, lower cost, higher dose rate proton accelerator remains an important motivating factor for many laser-plasma physicists in the coming years.
 
 \subsection{Proton Radiography and Laser Fusion}
 

@@ -19,7 +19,7 @@
 \contentsline {section}{\numberline {2.1}Plasma Physics}{7}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Gaussian Laser}{7}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}Single Particle Motions}{8}{subsection.2.1.2}%
-\contentsline {subsubsection}{Quiver Energy}{8}{subsubsection*.12}%
+\contentsline {subsubsection}{Quiver Energy}{9}{subsubsection*.12}%
 \contentsline {subsubsection}{Ponderomotive Force}{9}{subsubsection*.13}%
 \contentsline {subsection}{\numberline {2.1.3}Properties of a Plasma}{10}{subsection.2.1.3}%
 \contentsline {subsubsection}{Plasma Electron Oscillations}{10}{subsubsection*.15}%
@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {2.2}Ion Acceleration}{18}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Target Normal Sheath Acceleration}{19}{subsection.2.2.1}%
 \contentsline {subsubsection}{TNSA Models}{20}{subsubsection*.25}%
-\contentsline {subsubsection}{Optimization of TNSA process}{21}{subsubsection*.27}%
+\contentsline {subsubsection}{Optimization of TNSA process}{22}{subsubsection*.27}%
 \contentsline {subsection}{\numberline {2.2.2}Other Acceleration Mechanisms}{22}{subsection.2.2.2}%
 \contentsline {subsubsection}{Wakefield Acceleration}{23}{subsubsection*.29}%
 \contentsline {chapter}{\numberline {3}Computational Methods}{24}{chapter.3}%

@@ -1,4 +1,4 @@
-\chapter{Laser-Plasma Interactions and Ion-Acceleration} \label{ch:2}
+\chapter{Physics Background} \label{ch:2}
 
 %\begin{table}
 %\begin{center}
@@ -20,12 +20,12 @@
 
 \section{Plasma Physics}
 
-Chen \cite{Chen_2015_Plasma} describes a plasma as
+At the most basic level, a plasma is a state of matter that largely consists of charged particles (rather than neutral particles). Typically, this is achieved by heating a solid, liquid, or gas so much that the constituent atoms achieve a sufficient level of ionization. Francis Chen, author of a prominent plasma physics textbook \cite{Chen_2015_Plasma}, describes a plasma as
 
 \begin{quote}
 	a \emph{quasineutral} gas of charged and neutral particles which exhibits \emph{collective behavior}
 \end{quote}
-In this section, the quasineutrality and collective behavior of plasmas will be discussed. One way to create a plasma is through the interaction of matter with an energetic laser. The laser has enough energy to ionize atoms to a hot dense soup that satisfy the definition of Chen. Plasmas do exist in other contexts, like those found in stars and various astrophysical systems, but these will not be explained in detail in this section. Here, we'll overview the physics of gaussian laser beams, particle motions in electric fields, and the properties of plasmas.
+In this section, the unique properties of plasmas will be discussed and how quasineutrality and collective behavior give rise to them. One way to create a plasma is through the interaction of matter with an energetic laser which can ionize the atoms into a hot dense soup. Plasmas do exist in other contexts, like those found in stars and various astrophysical systems, but these will not be explained in detail in this section. Here, we'll overview the physics of gaussian laser beams, particle motions in electric fields, and the properties of plasmas.
 
 % are found everywhere: Lightning, plasma etching, fusion energy. Magnetic and Inertial and Graviational Confinement. Polar aurorae, solar wind, ion thrusters.
 %
@@ -41,10 +41,10 @@ In order to heat up a material with a laser efficiently, the energy would ideall
 \begin{equation}
 	E(r, x) = E_0 \hat{y} \frac{w_0}{w(x)} \exp( - \frac{r^2}{w(x)^2}) \cos(k x - \arctan(x/x_R) + \frac{k r^2}{2 R(x)}) \label{eq:gaussian_beam}
 \end{equation}
-where $\hat{x}$ is the propagation direction, $\hat{y}$ is the polarization direction, and $r = \sqrt{y^2 + z^2}$ is the radial distance away from the laser axis. In the cosine function, $R(z) = z [1 + (z_R/z)^2]$ is the radius of curvature and $\arctan(z/z_R)$ is the guoy phase. For our purposes, these won't have too much relevance. Additionally, the beam radius $w$ is expressed as
+where $\hat{x}$ is the propagation direction, $\hat{y}$ is the polarization direction, and $r = \sqrt{y^2 + z^2}$ is the radial distance away from the laser axis. The radius of curvature $R(x) = x [1 + (x_R/x)^2]$ (infinity at $x=0$ and minimum at $x=x_R$) is inversely related to how strongly the wavefronts are curved. The guoy phase $\arctan(x/x_R)$ is an observed phase $\pi$ that the beam picks continuously up as it propagates from $x=-\infty \rightarrow x=+\infty$ of. Additionally, the beam radius $w$ is expressed as
 
 \begin{equation}
-	w(z) = w_0 \sqrt{1 + (z/z_R)^2} \label{eq:beam_radius}
+	w(z) = w_0 \sqrt{1 + (x/x_R)^2} \label{eq:beam_radius}
 \end{equation}  
 and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. The peak intensity is related to the electric field by $I_0 = \frac{1}{2} \epsilon_0 c E_0^2$ and \cref{eq:gaussian_beam} shows that the intensity decays as $I(x, r) = I_0 (w_0 / w(x))^2 \exp(-2 r^2 / w(x)^2)$ with increasing $r$ and $x$. If we integrate this intensity distribution over the entire $y-z$ plane, we obtain the peak power $P_0 = \frac{\pi \omega_0^2}{2} I_0$. Furthermore, we can integrate the power over the pulse duration (assuming the pulse has a $sin^2(t)$ envelope) to obtain the total energy in the pulse 
 
@@ -83,7 +83,7 @@ where $v_\text{osc} \equiv (e E_0) / (m \omega)$ is defined as the \emph{quiver 
 \begin{equation}
 	a_0 \equiv v_\text{osc} / c = \frac{e E_0}{m \omega c} \label{eq:a0}
 \end{equation}
-Ultra-intense laser-matter interactions involve relativistic electrons which are produced when $a_0 \gtrsim 1$. In terms of the field, $a_0 \sim 1$ corresponds to a peak electric field $E_0 = \frac{2 \pi m c^2}{e \lambda} \simeq \SI{4}{\tera \volt \per \meter}$. In terms of the peak intensity, $I_0 = \frac{1}{2} c \epsilon_0 E_0^2 \simeq \SI{2e18}{\watt \per \centi \meter \squared}$ for this electric field. Consequently, the threshold for relativistic interactions is commonly understood as $I_0 \gtrsim \SI{1e18}{\watt \per \centi \meter \squared}$. 
+Ultra-intense laser-matter interactions involve relativistic electrons which are produced when $a_0 \gtrsim 1$ (for a $\lambda \approx \SI{1}{\micro \meter}$ wavelength). In terms of the field, $a_0 \sim 1$ corresponds to a peak electric field $E_0 = \frac{2 \pi m c^2}{e \lambda} \simeq \SI{4}{\tera \volt \per \meter}$. In terms of the peak intensity, $I_0 = \frac{1}{2} c \epsilon_0 E_0^2 \simeq \SI{2e18}{\watt \per \centi \meter \squared}$ for this electric field. Consequently, the threshold for relativistic interactions is commonly understood as $I_0 \gtrsim \SI{1e18}{\watt \per \centi \meter \squared}$. 
 
 \subsubsection{Ponderomotive Force}
 The above approach yields some important scales for laser-matter interactions, but only describes the interaction of a plane wave that is spatially homogeneous. A real laser field would be spatially inhomogeneous and we can express $E(x) \approx E_0 + x E_0'(x)$ to first order. This modifies the equation of motion as 
@@ -106,9 +106,7 @@ where
 \begin{equation}
 	U_p = \frac{e^2 E_0^2}{4 m \omega^2} = \frac{1}{4} m v_\text{osc}^2 \label{eq:pond_potential}
 \end{equation}
-is the ponderomotive potential energy introduced earlier. 
-
-The ponderomotive force is an important mechanism in the absorption of laser energy by electrons which will be expanded upon in \cref{sec:absorption}.
+is the ponderomotive potential energy introduced earlier. The ponderomotive force is an important mechanism in the absorption of laser energy by electrons which will be expanded upon in \cref{sec:absorption}.
 
 \subsection{Properties of a Plasma}
 The quasi-neutrality condition reflects the fact that a plasma is charge neutral throughout its volume in a similar way to an ideal conductor: mobile electrons will reorganize themselves in the presence of an external electric field to maintain zero field (or constant  potential). The simplest plasma description will assume the ions are immobile (due to being much heavier than the electrons) and can be treated as a constant neutralizing background density $n_i$ for the electrons of density $n_{e,0} = Z n_i$ (for a plasma with atomic number $Z$).
@@ -151,7 +149,7 @@ This description of a plasma as a sea of electrons with collective motion that a
 \begin{equation}
 	m n_e (\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u}) = -e n_e (\vec{E} + \vec{u} \times \vec{B}) - \nabla p \label{eq:fluid}
 \end{equation}
-where we've changed the single particle velocity $\vec{v}$ to the fluid velocity $\vec{u}$ and multiplied by the electron density $n_e$ to ensure correct units with the pressure gradient term. Then, let's look for a simple radially symmetric solution where the fluid velocity $u = 0$, magnetic field $B$ is negligible, and the temperature is constant (isothermal). Then, 
+where we've changed the single particle velocity $\vec{v}$ to the fluid velocity $\vec{u}$ and multiplied by the electron density $n_e$ to ensure correct units with the pressure gradient term. Then, let's look for a simple radially symmetric solution where the fluid velocity $u = 0$, magnetic field $B$ is negligible, and the temperature is constant (isothermal).
 
 \begin{equation}
 	n_e e E = - k_B T_e \frac{\partial n_e}{\partial r}
@@ -166,7 +164,7 @@ which is referred to as the \emph{Boltzmann relation} for electrons \cite{Chen_2
 \begin{equation}
 	n_e \approx n_{e,0}(1 + \frac{e \phi}{k_B T_e})
 \end{equation} 
-and if we assume a fully ionized plasma with immobile ions of charge $Z$, the density of ions satisfies $n{e,0} = Z n_i$ and \cref{eq:poisson} becomes 
+and if we assume a fully ionized plasma with immobile ions of charge $Z$, the density of ions satisfies $n_{e,0} = Z n_i$ and \cref{eq:poisson} becomes 
 
 \begin{equation}
 	\epsilon_0 \nabla^2 \phi = - e n_{e,0} + e n_e = e n_{e,0} [1 + \frac{e \phi}{k_B T_e} - 1] = \frac{e^2 n_{e,0} \phi}{k_B T_e}
@@ -186,7 +184,7 @@ where $\lambda_D = \sqrt{\frac{\epsilon_0 k_B T_e}{n_{e,0} e^2}}$ is the Debye l
 \end{figure}
 
 \subsubsection{Plasma Conditions}
-Putting all this together, we can define several conditions that must be satisfied for a plasma \cite{Chen_2015_Plasma}. Quasi-neutrality dictates that the plasma should be largely charge neutral. The only regions that aren't charge neutral are those that fall within $\lambda_D$ of some charge imbalance. Therefore, if $L$ is the length scale of the system in which the plasma resides, we require that $\lambda_D \ll L$. However, this condition is not sufficient because an ideal conductor has $\lambda_D = 0$ but is not a plasma due to the absence of collective behavior. Collective behavior can be enforced by asserting that there are enough electrons $N_D$ within a spherical volume of radius $\lambda_D$. The corresponding equation is $N_D = n_e (\frac{4}{3} \pi \lambda_D^3) \gg 1$. The final condition is that electrostatic interactions should dominate over collisions because the collective behavior (e.g. plasma oscillations) originates from the electrostatic forces. This means that the period of oscillations ($\omega_{p,e}^{-1}$) should be less than the mean time between collisions. 
+Putting all this together, we can define several conditions that are characteristic of plasmas \cite{Chen_2015_Plasma}. Quasi-neutrality means that the bulk of the plasma is overall charge neutral, with non-neutral regions generally falling within $\lambda_D$ of some charge imbalance. Notable exceptions to quasi-neutrality are charged particle beams in ultraintense laser experiments which can only exist on a timescale shorter than the time it takes for the coulomb repulsion to blow the plasma apart. If $L$ is the length scale of the system in which the plasma resides, we require that $\lambda_D \ll L$. However, this condition is not sufficient because an ideal conductor has $\lambda_D = 0$ but is not a plasma due to the absence of collective behavior. Collective behavior can be enforced by asserting that there are enough electrons $N_D$ within a spherical volume of radius $\lambda_D$. The corresponding equation is $N_D = n_e (\frac{4}{3} \pi \lambda_D^3) \gg 1$. The final condition is that electrostatic interactions should dominate over collisions because the collective behavior (e.g. plasma oscillations) originates from the electrostatic forces. This means that the period of oscillations ($\omega_{p,e}^{-1}$) should be less than the mean time between collisions. 
 
 \subsection{Absorption of Energy} \label{sec:absorption}
 
