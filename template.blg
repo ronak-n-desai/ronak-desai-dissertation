@@ -47,44 +47,44 @@ Database file #8: book.bib
 Database file #9: review.bib
 Database file #10: desai.bib
 Database file #11: exp.bib
-You've used 109 entries,
+You've used 113 entries,
             1791 wiz_defined-function locations,
-            1155 strings with 28335 characters,
-and the built_in function-call counts, 28149 in all, are:
-= -- 2033
-> -- 2085
-< -- 4
-+ -- 739
-- -- 630
-* -- 2484
-:= -- 4853
-add.period$ -- 326
-call.type$ -- 109
-change.case$ -- 97
+            1180 strings with 28972 characters,
+and the built_in function-call counts, 29003 in all, are:
+= -- 2107
+> -- 2121
+< -- 5
++ -- 753
+- -- 640
+* -- 2531
+:= -- 4982
+add.period$ -- 338
+call.type$ -- 113
+change.case$ -- 101
 chr.to.int$ -- 0
-cite$ -- 109
-duplicate$ -- 983
-empty$ -- 2382
-format.name$ -- 630
-if$ -- 5889
+cite$ -- 113
+duplicate$ -- 1028
+empty$ -- 2465
+format.name$ -- 640
+if$ -- 6088
 int.to.chr$ -- 0
-int.to.str$ -- 109
-missing$ -- 107
-newline$ -- 544
-num.names$ -- 110
-pop$ -- 236
+int.to.str$ -- 113
+missing$ -- 110
+newline$ -- 564
+num.names$ -- 114
+pop$ -- 250
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 387
+skip$ -- 417
 stack$ -- 0
-substring$ -- 1656
-swap$ -- 146
-text.length$ -- 4
+substring$ -- 1692
+swap$ -- 163
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 208
-width$ -- 112
-write$ -- 1176
+while$ -- 215
+width$ -- 116
+write$ -- 1218

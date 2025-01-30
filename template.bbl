@@ -1,5 +1,20 @@
 \begin{thebibliography}{100}
 
+\bibitem{MeetOpticsPost}
+MeetOptics.
+\newblock Laser fundamentals: operation and beam characteristics.
+\newblock Accessed: 2025-01-30.
+
+\bibitem{Arrigoni_2019_Photonics}
+Marco Arrigoni and Jean-Luc Tapié.
+\newblock Chirped pulse amplification.
+\newblock {\em PhotonicsViews}, 16(3):78--82, 2019.
+
+\bibitem{Yakovlev_2014_QE}
+I.V. Yakovlev.
+\newblock Stretchers and compressors for ultra-high power laser systems.
+\newblock {\em Quantum Electronics}, 44(5):393, may 2014.
+
 \bibitem{Mohan_2022_PRO}
 Radhe Mohan.
 \newblock A review of proton therapy – current status and future directions.
@@ -129,6 +144,11 @@ K.~M. George, J.~T. Morrison, S.~Feister, G.~K. Ngirmang, J.~R. Smith, A.~J.
   liquid microjets for high-intensity laser–plasma interactions.
 \newblock {\em High Power Laser Science and Engineering}, 7:e50, 2019.
 
+\bibitem{Strickland_1985_Optics}
+Donna Strickland and Gerard Mourou.
+\newblock Compression of amplified chirped optical pulses.
+\newblock {\em Optics Communications}, 56(3):219--221, 1985.
+
 \bibitem{Mayo_2024_Cancer}
 Mayo~Clinic Staff.
 \newblock Radiation therapy, 2024.
@@ -200,6 +220,13 @@ A.~B. Zylstra, C.~K. Li, H.~G. Rinderknecht, F.~H. Séguin, R.~D. Petrasso,
 M.~Passoni, L.~Fedeli, and F.~Mirani.
 \newblock Superintense laser-driven ion beam analysis.
 \newblock {\em Scientific Reports}, 9, JUN 24 2019.
+
+\bibitem{Dopp_2023_HPLSE}
+Andreas Döpp, Christoph Eberle, Sunny Howard, Faran Irshad, Jinpu Lin, and
+  Matthew Streeter.
+\newblock Data-driven science and machine learning methods in laser-plasma
+  physics.
+\newblock {\em High Power Laser Science and Engineering}, page 1–50, 2023.
 
 \bibitem{Chen_2015_Plasma}
 F.F. Chen.
@@ -300,11 +327,6 @@ Yasuaki Kishimoto, Kunioki Mima, Tsuguhiro Watanabe, and Kyoji Nishikawa.
 \newblock {Analysis of fast‐ion velocity distributions in laser plasmas with
   a truncated Maxwellian velocity distribution of hot electrons}.
 \newblock {\em The Physics of Fluids}, 26(8):2308--2315, 08 1983.
-
-\bibitem{Strickland_1985_Optics}
-Donna Strickland and Gerard Mourou.
-\newblock Compression of amplified chirped optical pulses.
-\newblock {\em Optics Communications}, 56(3):219--221, 1985.
 
 \bibitem{Nobel_2018}
 NobelPrize.org.

@@ -1,5 +1,11 @@
 \chapter{Physics Background} \label{ch:2}
 
+At the most basic level, a plasma is a state of matter that largely consists of charged particles (rather than neutral particles). Typically, this is achieved by heating a solid, liquid, or gas so much that the constituent atoms achieve a sufficient level of ionization. Francis Chen, author of a prominent plasma physics textbook \cite{Chen_2015_Plasma}, describes a plasma as
+
+\begin{quote}
+	a \emph{quasineutral} gas of charged and neutral particles which exhibits \emph{collective behavior}
+\end{quote}
+In this chapter, laser fields and the physics of charged particles oscillating in them will be overviewed to better understand the plasmas produced from laser-matter interactions. Plasma properties and their relation to quasineutrality and collective behavior will be discussed. Then, ion-acceleration will be explained in the context of laser-plasma interactions.
 %\begin{table}
 %\begin{center}
 %\begin{tabular}{lll}
@@ -18,35 +24,30 @@
 %\end{center}
 %\end{table}
 
-\section{Plasma Physics}
+\section{Electric Fields}
 
-At the most basic level, a plasma is a state of matter that largely consists of charged particles (rather than neutral particles). Typically, this is achieved by heating a solid, liquid, or gas so much that the constituent atoms achieve a sufficient level of ionization. Francis Chen, author of a prominent plasma physics textbook \cite{Chen_2015_Plasma}, describes a plasma as
-
-\begin{quote}
-	a \emph{quasineutral} gas of charged and neutral particles which exhibits \emph{collective behavior}
-\end{quote}
-In this section, the unique properties of plasmas will be discussed and how quasineutrality and collective behavior give rise to them. One way to create a plasma is through the interaction of matter with an energetic laser which can ionize the atoms into a hot dense soup. Plasmas do exist in other contexts, like those found in stars and various astrophysical systems, but these will not be explained in detail in this section. Here, we'll overview the physics of gaussian laser beams, particle motions in electric fields, and the properties of plasmas.
-
-% are found everywhere: Lightning, plasma etching, fusion energy. Magnetic and Inertial and Graviational Confinement. Polar aurorae, solar wind, ion thrusters.
-%
-%Even though one can think of a plasma as just an ionized gas, its properties thoroughly differentitate it from one. Gases typically rely on short-range collisions while plasmas involve collective motions of particles over a long-range due to the electrostatic forces. Gases have low conductivity, while plasmas have nearly infinite conductivity which allows for the high charge separation and high field strengths. Plasmas can also have multiple species that behave vastly differently (different mass/charge) which can result in different types of waves and instabilities.
-%
-%Plasmas are very similar to many metals in the fact that they both conduct electricity well. However, metals are solids and typically have worse conductivity at higher temperature, while plasmas conduct electricity well at high temps. 
-%
-%Can derive e field from boltzmann relation as E = kb T / e (del ne) / ne
 
 \subsection{Gaussian Laser}
-In order to heat up a material with a laser efficiently, the energy would ideally be concentrated to a small point. Lasers are a coherent source of light that can be focused to narrow beams. The intended output of many lasers have an electric field described by the fundamental transverse electromagnetic mode \cite{Zangwill_2012} (TEM$_{00}$) described by the following electric field
+In order to heat up a material with a laser efficiently, the energy would ideally be concentrated to a small point. Lasers are a coherent source of light that can be focused to narrow beams. The intended output of many lasers is the fundamental transverse electromagnetic mode \cite{Zangwill_2012} (TEM$_{00}$) described by the following electric field
 
 \begin{equation}
-	E(r, x) = E_0 \hat{y} \frac{w_0}{w(x)} \exp( - \frac{r^2}{w(x)^2}) \cos(k x - \arctan(x/x_R) + \frac{k r^2}{2 R(x)}) \label{eq:gaussian_beam}
+	E(r, x) = E_0 \hat{y} \frac{w_0}{w(x)} \exp( - \frac{r^2}{w(x)^2}) \cos(k x - \arctan(\frac{x}{x_R}) + \frac{k r^2}{2 R(x)}) \label{eq:gaussian_beam}
 \end{equation}
-where $\hat{x}$ is the propagation direction, $\hat{y}$ is the polarization direction, and $r = \sqrt{y^2 + z^2}$ is the radial distance away from the laser axis. The radius of curvature $R(x) = x [1 + (x_R/x)^2]$ (infinity at $x=0$ and minimum at $x=x_R$) is inversely related to how strongly the wavefronts are curved. The guoy phase $\arctan(x/x_R)$ is an observed phase $\pi$ that the beam picks continuously up as it propagates from $x=-\infty \rightarrow x=+\infty$ of. Additionally, the beam radius $w$ is expressed as
+where $\hat{x}$ is the propagation direction, $\hat{y}$ is the polarization direction, and $r = \sqrt{y^2 + z^2}$ is the radial distance away from the laser axis. The radius of curvature $R(x)$ is inversely related to how strongly the wavefronts are curved and is infinity at $x=0$ and minimum at $x=x_R$. The guoy phase $\arctan(x/x_R)$ is an observed phase of $\pi$ that is continuously picked up as the beam propagates from $x=-\infty \rightarrow x=+\infty$. Additionally, the beam radius $w$ is expressed as
 
 \begin{equation}
 	w(z) = w_0 \sqrt{1 + (x/x_R)^2} \label{eq:beam_radius}
 \end{equation}  
-and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. The peak intensity is related to the electric field by $I_0 = \frac{1}{2} \epsilon_0 c E_0^2$ and \cref{eq:gaussian_beam} shows that the intensity decays as $I(x, r) = I_0 (w_0 / w(x))^2 \exp(-2 r^2 / w(x)^2)$ with increasing $r$ and $x$. If we integrate this intensity distribution over the entire $y-z$ plane, we obtain the peak power $P_0 = \frac{\pi \omega_0^2}{2} I_0$. Furthermore, we can integrate the power over the pulse duration (assuming the pulse has a $sin^2(t)$ envelope) to obtain the total energy in the pulse 
+and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. A beam with these properties is usually referred to as a gaussian beam\footnote{I've googled (actually bing'd unfortunately) more times than I can count ``gaussian beam wikipedia'' over the course of my studies. I don't know why I didn't bookmark that page.} and is depicted in \autoref{fig:gaussian_beam}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{planning/images/gaussian_beam.png}
+	\caption{The intensity profile of a gaussian beam with laser parameters seen in the Extreme Light Laboratory at Wright-Patterson Air Force Base ($\lambda = 0.8 \mu$m, $I_0=\SI{5e18}{\watt \per \centi \meter \squared}$, $w_0 = \SI{1.5}{\micro \meter}$, $\tau_\text{FWHM}=40$fs). The beam radii $w_0$ and $w(x_R)$ are displayed in addition to the rayleigh range $x_R$.}
+	\label{fig:gaussian_beam}
+\end{figure}
+
+The peak intensity is related to the electric field by $I_0 = \frac{1}{2} \epsilon_0 c E_0^2$ and \cref{eq:gaussian_beam} shows that the intensity decays as $I(x, r) = I_0 (w_0 / w(x))^2 \exp(-2 r^2 / w(x)^2)$ with increasing $r$ and $x$. If we integrate this intensity distribution over the entire $y-z$ plane (at $x=0$), we obtain the peak power $P_0 = \frac{\pi \omega_0^2}{2} I_0$. Furthermore, we can integrate the power over the pulse duration (assuming the pulse has a $sin^2(t)$ envelope) to obtain the total energy in the pulse 
 
 \begin{equation}
 	E = \frac{\pi \omega_0^2}{2} I_0 \tau_\text{fwhm} \label{eq:gaussian_beam_energy}
@@ -108,7 +109,7 @@ where
 \end{equation}
 is the ponderomotive potential energy introduced earlier. The ponderomotive force is an important mechanism in the absorption of laser energy by electrons which will be expanded upon in \cref{sec:absorption}.
 
-\subsection{Properties of a Plasma}
+\section{Plasma Physics}
 The quasi-neutrality condition reflects the fact that a plasma is charge neutral throughout its volume in a similar way to an ideal conductor: mobile electrons will reorganize themselves in the presence of an external electric field to maintain zero field (or constant  potential). The simplest plasma description will assume the ions are immobile (due to being much heavier than the electrons) and can be treated as a constant neutralizing background density $n_i$ for the electrons of density $n_{e,0} = Z n_i$ (for a plasma with atomic number $Z$).
 
 \begin{figure}
@@ -118,7 +119,7 @@ The quasi-neutrality condition reflects the fact that a plasma is charge neutral
 	\label{fig:plasma_oscillation}
 \end{figure}
 
-\subsubsection{Plasma Electron Oscillations}
+\subsection{Plasma Electron Oscillations}
 A simple example can be illustrated by \cref{fig:plasma_oscillation} which shows a sheet of negative charge density $-\sigma = -e n_e x$ displaced to the right a small distance $x$. The region in the bulk of the plasma will experience a force from the parallel plate ``capacitor'' fields directed to the left.
 
 \begin{equation}
@@ -143,7 +144,7 @@ Due to the strong restoring force from the charge separation, the electrons can 
 \end{equation} 
 Physically, $\lambda_D$ gives a length scale over which the electrostatic force persists in a plasma. Within a distance $\lambda_D$ from some perturbation, charges will feel a force, and outside this distance, the charges will be completely shielded like that of an ideal conductor. 
 
-\subsubsection{Fluid Model}
+\subsection{Fluid Model}
 This description of a plasma as a sea of electrons with collective motion that allows wave-like motions naturally lends itself toward a fluid model. The first component of this model stems from \cref{eq:lorentz} whose explicit time and space dependence can be expressed through $\frac{d p}{d t} = m (\frac{\partial v}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial v}{\partial t}) = m (\frac{\partial v}{\partial t} + v \frac{\partial v}{\partial x})$ (just considering one spatial dimension for simplicity). The second component of this model is the effect of the pressure gradient from thermal motions. Particles will tend to migrate from areas of higher pressure to lower pressure, where the thermal pressure is typically given by the familiar ideal gas law equation of state $p = n_e k_B T_e$. Consequently, the equation of motion should have a term that is opposite to the pressure gradient direction (i.e. $- \nabla p$). Combining these two components together in a generalized 3D equation results in
 
 \begin{equation}
@@ -183,14 +184,14 @@ where $\lambda_D = \sqrt{\frac{\epsilon_0 k_B T_e}{n_{e,0} e^2}}$ is the Debye l
 	\label{fig:debye}
 \end{figure}
 
-\subsubsection{Plasma Conditions}
+\subsection{Plasma Conditions}
 Putting all this together, we can define several conditions that are characteristic of plasmas \cite{Chen_2015_Plasma}. Quasi-neutrality means that the bulk of the plasma is overall charge neutral, with non-neutral regions generally falling within $\lambda_D$ of some charge imbalance. Notable exceptions to quasi-neutrality are charged particle beams in ultraintense laser experiments which can only exist on a timescale shorter than the time it takes for the coulomb repulsion to blow the plasma apart. If $L$ is the length scale of the system in which the plasma resides, we require that $\lambda_D \ll L$. However, this condition is not sufficient because an ideal conductor has $\lambda_D = 0$ but is not a plasma due to the absence of collective behavior. Collective behavior can be enforced by asserting that there are enough electrons $N_D$ within a spherical volume of radius $\lambda_D$. The corresponding equation is $N_D = n_e (\frac{4}{3} \pi \lambda_D^3) \gg 1$. The final condition is that electrostatic interactions should dominate over collisions because the collective behavior (e.g. plasma oscillations) originates from the electrostatic forces. This means that the period of oscillations ($\omega_{p,e}^{-1}$) should be less than the mean time between collisions. 
 
-\subsection{Absorption of Energy} \label{sec:absorption}
+\section{Absorption of Energy} \label{sec:absorption}
 
 In order for a laser to couple energy to the plasma electrons, some absorption mechanism needs to take place. The most obvious way that electrons can gain energy is through collisions with other energetic electrons and ions. However, the collision frequency is known to get smaller as the temperature goes up \cite{Gibbon_2005_Plasma}, so much so that plasmas can be treated as collisionless for ultra-intense laser experiments. Below, some of the most common known heating mechanisms are summarized.
 
-\subsubsection{Critical Density}
+\subsection{Critical Density}
 First, we will look at how the electric field from an oscillating electric field penetrates a plasma. Using \cref{eq:faraday,eq:ampere} combined with the vector identity $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \nabla^2 \vec{E}$ \cite{Zangwill_2012}, we can solve for the vector wave equation in terms of only $\vec{E}$. 
 
 \begin{equation}
@@ -228,12 +229,14 @@ This ``evanescent'' behavior when $\omega > \omega_p$ occurs because the electro
 \end{equation}
 When $n_e > n_c$, the plasma is said to be \emph{overdense} and most of the laser light gets reflected. When $n_e < n_c$, the plasma is said to be \emph{underdense}, and the laser light can propagate through the plasma. 
 
-A typical Ti:Sapphire laser has a wavelength of $\SI{0.8}{\micro \meter}$ which corresponds to a critical density of $n_c \simeq \SI{1.7e27}{\per \meter \cubed}$. In this work, two materials are of interest: gold and ethylene glycol which have densities of $\SI{19.3}{\gram \per \centi \meter \cubed}$ and $\SI{1.11}{\gram \per \centi \meter \cubed}$ respectively. These mass densities correspond to a number density of electrons $\SI{5.9e28}{\per \meter \cubed}$ and $\SI{1.1e28}{\per \meter \cubed}$ respectively assuming a singly ionized plasma. If the plasmas were multiply ionized, these densities would be even higher. Even though these ``solid density'' plasmas are clearly overdense, experiments show energy is able to efficiently couple to the electrons. Consequently, there must exist mechanisms of absorption that are consistent with the fact that most of the laser energy can only be deposited in a small depth $l_s$ into the plasma. 
+\subsection{Absorption Mechanisms}
+A typical Ti:Sapphire laser has a wavelength of $\SI{0.8}{\micro \meter}$ which corresponds to a critical density of $n_c \simeq \SI{1.7e27}{\per \meter \cubed}$. In this work, two materials are of interest: gold and ethylene glycol which have densities of $\SI{19.3}{\gram \per \centi \meter \cubed}$ and $\SI{1.11}{\gram \per \centi \meter \cubed}$ respectively. These mass densities correspond to a number density of electrons $\SI{5.9e28}{\per \meter \cubed}$ and $\SI{1.1e28}{\per \meter \cubed}$ respectively assuming a singly ionized plasma. If the plasmas were multiply ionized, these densities would be even higher. Even though these plasmas are clearly overdense, experiments show energy is able to efficiently couple to the electrons. Consequently, there must exist mechanisms of absorption that are consistent with the fact that most of the laser energy can only be deposited in a small depth $l_s$ into the plasma. 
 
 \subsubsection{Resonance Absorption}
+
 The previous discussion applied to an electric field directed in the x-direction. For gaussian laser beams, the electric field is always perpendicular to the direction of propagation. So, if the laser beam is to be directed toward a target at $x = 0$, normal incidence would imply that the electric field $E_x = 0$. Additionally, an s-polarized beam would have an electric field only in the z direction. As a result, the typical model of a laser beam depositing energy into a plasma involves a p-polarized laser beam traveling obliquely in the $x-y$ plane with some angle of incidence $\theta_i$ measured with respect to the normal direction of the target. Physically, plasma oscillations occur through fluctuations in density which are going to be the strongest in the x direction due to the interface between vacuum and matter.
 
-Furthermore, Kruer \cite{Kruer_2003_Plasma} argues that the reflection of light at oblique incidence occurs at a density $n_e = n_c \cos^2(\theta_i)$ by enforcing momentum conservation of the electric field component in the $y$ direction. Even though we've discussed density profile as an abrupt step: from 0 to $n_e$ from crossing $x = 0$, an actual experiment would see some pre-heating of the target before the target becomes ionized and behaves as a mirror at the critical density. This can be characterized by some scale length $L_p \equiv n_e (\frac{\partial n_e}{\partial x})^{-1}$ which is smaller for steeper density profiles. As a result, at higher incidence angles, the evanescent portion of the electric field has to travel further into the underdense region of the target to reach the critical density. 
+Kruer \cite{Kruer_2003_Plasma} argues that the reflection of light at oblique incidence occurs at a density $n_e = n_c \cos^2(\theta_i)$ by enforcing momentum conservation of the electric field component in the $y$ direction. Even though we've discussed density profile as an abrupt step: from 0 to $n_e$ from crossing $x = 0$, an actual experiment would see some pre-heating of the target before the target becomes ionized and behaves as a mirror at the critical density. This can be characterized by some scale length $L_p \equiv n_e (\frac{\partial n_e}{\partial x})^{-1}$ which is smaller for steeper density profiles. As a result, at higher incidence angles, the evanescent portion of the electric field has to travel further into the underdense region of the target to reach the critical density. 
 
 When the frequency of the laser $\omega \simeq \omega_p$, the laser light is in resonance with the plasma oscillations and the energy can be most efficiently absorbed. To maximize the amount of energy reaching the critical density surface in resonance, we would want $\theta_i$ to be large so that the electric field has a significant component in the $x$ direction, but also small enough so that the field doesn't diminish too much by traveling in the evanescent underdense region. Denisov \cite{Denisov_1957_JETP} and others \cite{Forslund_1975_PRA, Freidberg_1972_PRL, Estabrook_1975_PoF} addresses this question and develops a model for this so-called \emph{resonance absorption} An approximate version of this formula is given by Kruer \cite{Kruer_2003_Plasma}
 
