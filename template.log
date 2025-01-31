@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  30 JAN 2025 17:51
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  31 JAN 2025 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -988,12 +988,11 @@ File: planning/images/laser_gain.pdf Graphic file (type pdf)
 [2]
 File: planning/images/cpa.PNG Graphic file (type bmp)
 <planning/images/cpa.PNG>
-
-
-[3]
 File: planning/images/laser_history.PNG Graphic file (type bmp)
 <planning/images/laser_history.PNG>
 
+
+[3]
 
 [4]
 
@@ -1038,11 +1037,11 @@ File: planning/images/gaussian_beam.png Graphic file (type bmp)
 [13]
 
 [14]
+
+[15]
 File: planning/images/plasma_oscillation.PNG Graphic file (type bmp)
 <planning/images/plasma_oscillation.PNG>
 
-
-[15]
 
 [16]
 
@@ -1056,6 +1055,10 @@ File: planning/images/debye_length.png Graphic file (type bmp)
 [19]
 
 [20]
+
+LaTeX Warning: Reference `sec:criticaldensity' on page 21 undefined on input li
+ne 242.
+
 File: planning/images/absorption.png Graphic file (type bmp)
 <planning/images/absorption.png>
 
@@ -1196,22 +1199,24 @@ Overfull \hbox (3.97011pt too wide) in paragraph at lines 149--168
 [48]
 
 [49]
+
+[50]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
 
 
-[50
+[51
 
 
 
 
 ]
 
-[51]
-
 [52]
+
+[53]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1223,29 +1228,29 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 89--94
 
 
 
-[53]
-
 [54]
 
 [55]
 
 [56]
+
+[57]
 File: planning/images/density_profile.png Graphic file (type bmp)
 <planning/images/density_profile.png>
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
 
 
-[57]
-
 [58]
 
-LaTeX Warning: Reference `eq:fuchs_maxE, eq:fuchs_totE, eq:fuchs_avgE' on page 
-59 undefined on input line 210.
-
-
-
 [59]
+
+LaTeX Warning: Reference `eq:fuchs_maxE, eq:fuchs_totE, eq:fuchs_avgE' on page 
+60 undefined on input line 210.
+
+
+
+[60]
 File: planning/images/paper1/test_mape_3levels.eps Graphic file (type eps)
 <planning/images/paper1/test_mape_3levels.eps>
 File: planning/images/paper1/test_mape_points=2.0k.eps Graphic file (type eps)
@@ -1256,23 +1261,23 @@ File: planning/images/paper1/fuchs_optim.pdf Graphic file (type pdf)
 <use planning/images/paper1/fuchs_optim.pdf>
 
 
-[60]
-
 [61]
 
 [62]
+
+[63]
 File: planning/images/paper1/model_optim_noise=30_pts=2000.pdf Graphic file (ty
 pe pdf)
 <use planning/images/paper1/model_optim_noise=30_pts=2000.pdf>
 
-
-[63]
 
 [64]
 
 [65]
 
 [66]
+
+[67]
 File: planning/images/paper2/fig4.eps Graphic file (type eps)
 <planning/images/paper2/fig4.eps>
 File: planning/images/paper2/fig5.eps Graphic file (type eps)
@@ -1281,11 +1286,11 @@ File: planning/images/paper2/fig6.eps Graphic file (type eps)
 <planning/images/paper2/fig6.eps>
 
 
-[67]
-
 [68]
 
 [69]
+
+[70]
 File: planning/images/paper2/fig7.eps Graphic file (type eps)
 <planning/images/paper2/fig7.eps>
 
@@ -1295,9 +1300,9 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 353--356
 
 
 
-[70]
-
 [71]
+
+[72]
 File: planning/images/paper2/fig10.eps Graphic file (type eps)
 <planning/images/paper2/fig10.eps>
 
@@ -1307,23 +1312,23 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 395--396
 
 
 
-[72]
+[73]
 File: planning/images/paper2/fig11.eps Graphic file (type eps)
 <planning/images/paper2/fig11.eps>
 
 
-[73]
+[74]
 
-[74])
+[75])
 
-[75]
+[76]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 
 
-[76
+[77
 
 
 
@@ -1333,14 +1338,14 @@ File: planning/images/daq/experimental_chamber.PNG Graphic file (type bmp)
 <planning/images/daq/experimental_chamber.PNG>
 
 
-[77]
-
 [78]
+
+[79]
 File: planning/images/daq/target.PNG Graphic file (type bmp)
 <planning/images/daq/target.PNG>
 
 
-[79]
+[80]
 File: planning/images/daq/pixel.png Graphic file (type bmp)
 <planning/images/daq/pixel.png>
 File: planning/images/daq/diode_trace.png Graphic file (type bmp)
@@ -1356,45 +1361,45 @@ File: planning/images/daq/energy_calibration.png Graphic file (type bmp)
 <planning/images/daq/energy_calibration.png>
 
 
-[80]
-
 [81]
 
 [82]
 
 [83]
+
+[84]
 File: planning/images/daq/optimization_gui.png Graphic file (type bmp)
 <planning/images/daq/optimization_gui.png>
 File: planning/images/daq/spectrum_gui.png Graphic file (type bmp)
 <planning/images/daq/spectrum_gui.png>
 
 
-[84]
-
 [85]
 
 [86]
+
+[87]
 File: planning/images/daq/rf_beta_shift.jpg Graphic file (type bmp)
 <planning/images/daq/rf_beta_shift.jpg>
 
 
-[87])
+[88])
 
-[88]
+[89]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
 Chapter 7.
 )
 
-[89
+[90
 
 
 
 
 ] (template.bbl
 
-[90
+[91
 
 
 
@@ -1413,23 +1418,21 @@ Smith, Alona
 
 
 
-[91]
+[92]
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 [][][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][] [] [][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 188--190
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-
-[92]
 
 [93]
 
@@ -1443,24 +1446,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
 [98]
 
-[99])
+[99]
 
-[100]
+[100])
+
+[101]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[101
+[102
 
 
 
 ]
 
-[102])
+[103])
 
-[103] (template.aux (template-abstract.aux) (template-ack.aux)
+[104] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
@@ -1473,12 +1478,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 26180 strings out of 409049
- 495962 string characters out of 5757194
+ 26224 strings out of 409049
+ 496693 string characters out of 5757194
  1940560 words of memory out of 5000000
- 48387 multiletter control sequences out of 15000+600000
+ 48431 multiletter control sequences out of 15000+600000
  570010 words of font info for 96 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,14n,116p,2382b,1334s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,14n,116p,2382b,1336s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (124 pages).
+Output written on template.pdf (125 pages).
