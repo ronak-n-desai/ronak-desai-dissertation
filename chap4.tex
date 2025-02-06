@@ -1,8 +1,8 @@
 \chapter{Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration} \label{ch:4}
 
-This chapter details the work I did in conducting \gls{PIC} simulations to better understand the \gls{eTNSA} experiments at \gls{LLNL} by Nathaniel Tamminga, Joseph Snyder, and John Morrison in March of 2024. They worked at Titan (which is housed in the \gls{JLF}) for 5-6 weeks using their earned LaserNetUS \emph{shot time}. I will mostly focus on the simulation aspect of the project, but include some relevant comparisons to the experiment as needed. 
+This chapter details the \gls{PIC} simulations I conducted to better understand the \gls{eTNSA} experiments at \gls{LLNL} by Nathaniel Tamminga, Joseph Snyder, and John Morrison in March of 2024. They worked at Titan (which is housed in the \gls{JLF}) for 6 weeks using their earned LaserNetUS \emph{shot time}. I will mostly focus on the simulation aspect of the project, but include some relevant comparisons to the experiment as needed. 
 
-\section{Background}
+\section{Background} \label{sec:etnsa_background}
 
 \subsection{Spatially Aligned Pulses} \label{sec:spatialalign}
 
@@ -22,7 +22,7 @@ In a different approach Scott et. al. \cite{Scott_2012_APL} realized that much o
 \begin{figure}
 	\centering 
 	\includegraphics[width=0.9\linewidth]{planning/images/scott_half_cavity.PNG}
-	\caption{Schematic of the incident laser on the half-cavity target (left) in Scott et. al. \cite{Scott_2012_APL}. The radius of the cavity foil determines the delay ($\tau = 2 r/c$) between the main pulse and the post-pulse (reflected laser light of $\sim 40 \%)$ energy of the main pulse).}
+	\caption{Schematic of the incident laser on the half-cavity target (left) in Scott et. al. \cite{Scott_2012_APL}. The radius of the cavity foil determines the delay ($\tau = 2 r/c$) between the main pulse and the post-pulse (reflected laser light of $\sim 40 \%$ energy of the main pulse).}
 	\label{fig:scott_half_cavity}
 \end{figure}
 
@@ -40,7 +40,7 @@ Given the results of the previous section \cite{Markey_2010_PRL,Scott_2012_APL,F
 	\caption{Geometry of the two pulse scheme as shown in Figure 1 of Ferri et. al. (2019) \cite{Ferri_2019_Nat_Comm}. The single pulse has a total energy of 1.1J at an incidence angle of $\phi=45^\circ$ and is shown through several time snapshots (a-c). In (d-f), the double pulse is shown through those same time snapshots with energies of 0.55 J in each pulse (the 1.55 J is a typo from the original figure). Other parameters include $\tau_\text{fwhm} = \SI{38}{\femto \second}$, thickness = $\SI{3}{\micro \meter}$, material = aluminum, $w_\text{0,fwhm} = \SI{5}{\micro \meter}$, $I_0 = \SI{7e19}{\watt \per \centi \meter \squared}$.}
 	\label{fig:ferri_dub_pulse}
 \end{figure}
-The constructive interference of the electric fields can be understood by considering the electric field of two p-polarized pulses coming in at angles of incidence $\phi$ and $-\phi$
+The constructive interference of the electric fields can be understood by considering the electric field of two p-polarized plane waves coming in at angles of incidence $\phi$ and $-\phi$
 
 \begin{align}
 	E_{x,1} &= -E_0 \sin(\phi) \sin(k y \sin(\phi) - \omega t + k x \cos(\phi)) \\
@@ -65,7 +65,7 @@ Unlike the methods described in \cref{sec:spatialalign} (which see enhanced prot
 Furthermore, Ferri ran some simulations exploring different preplasma scale lengths $L$ at a fixed energy, and changing the total laser energy for the flat target \cite{Ferri_2019_Nat_Comm} which can be seen in \cref{fig:ferri_scale_energy}. He finds that a higher preplasma scale length generally increases the max proton energy up to a certain scale length of around $L = \SI{0.6}{\micro \meter}$. The enhancement is seen for all scale lengths, but the gap between single and double pulse diminishes for larger scale lengths. In the double pulse case, a more favorable scaling with laser energy is seen for both the hot electron temperature and maximum proton energy ($E_\text{0,tot}$ as opposed to $\sqrt{E_\text{0,tot}}$) when comparing double pulse against single. In addition, Ferri comments that, for pulses with total energy greater than 10 J, the proton layer on the rear side starts to entirely disconnect from the bulk of the target during the acceleration, causing proton energies to saturate and become lower than the expected linear scaling.
 
 \subsection{Other eTNSA Simulations}
-In 2021, \gls{eTNSA} was again demonstrated through simulations in Rahman et. al. \cite{Rahman_2021_PoP} for a mJ class laser, around 2 orders of magnitude lower energy than the setup in Ferri's work. This mJ class laser is based on the experimental facility at the Wright Patterson Air Force Base (see \cref{ch:6} for more details) which utilizes a thinner target of $\sim \SI{0.5}{\micro \meter}$. Despite the major difference in laser and target parameters, the findings are similar -- increased hot electron temperature and proton energies with double pulse compared to single pulse. However, Rahman finds that the presence of a preplasma actually \emph{reduces} the maximum proton energy. But, like Ferri et. al., the gap between single and double pulse becomes smaller in the presence of a preplasma.
+In 2021, \gls{eTNSA} was again demonstrated through simulations in Rahman et. al. \cite{Rahman_2021_PoP} for a mJ class laser (around 2 orders of magnitude lower energy than the setup in Ferri's work). This mJ class laser is based on the experimental facility at the Wright Patterson Air Force Base (see \cref{ch:6} for more details) which utilizes a thinner target of $\sim \SI{0.5}{\micro \meter}$. Despite the major difference in laser and target parameters, the findings are similar -- increased hot electron temperature and proton energies with double pulse compared to single pulse. However, Rahman finds that the presence of a preplasma actually \emph{reduces} the maximum proton energy. But, like Ferri et. al., the gap between single and double pulse becomes smaller in the presence of a preplasma.
 
 In 2024, Khan and Saxena \cite{Khan_2024_NJoP} revisit the double pulse scheme but with an applied longitudinal kilo-Tesla level magnetic field. The purpose of the magnetic field is to reduce the divergence of the hot electron beam. This guides the electrons and enhances the \gls{TNSA} process to see a higher maximum cutoff energy in the proton spectrum \cite{Arefiev_2016_NJoP}. In this study, the laser was based off of the experimental set-up at \gls{RAL} with a peak intensity of $\SI{5.5e20}{\watt \per \centi \meter \squared}$ incident on a $\SI{7}{\micro \meter}$ polyethelene target. 
 
@@ -82,11 +82,11 @@ Due to multiple studies demonstrating \gls{eTNSA} \cite{Ferri_2019_Nat_Comm,Rahm
 	\label{fig:yao_exp_stacks}
 \end{figure}
 
-Yao et al. \cite{Yao_2024_MaRaE} investigated the double pulse effect by changing the transverse spatial separation between two temporally aligned pulses as shown in \cref{fig:yao_exp_stacks}. This figure shows two possible beams $\alpha$ and $\beta$ which come in at equal and opposite incidence angles with $\alpha$ angled in the $-\hat{y}$ direction. Comparing (b) and (c) shows an enhancement of the double pulse electron energy when the pulses are spatially overlapped. In (a), the electron energy is recorded along the laser beam axis in contrast to (b) and (c). This shows that most electrons are getting accelerated along the laser beam axis and the $\vec{J} \times \vec{B}$ mechanism is taking place (in contrast to vacuum heating or resonance absorption which drives electrons in the  target normal direction). In terms of the protons, case 2 (spatially aligned double pulses) shows a more collimated central small beam which is absent in case 1 (spatially offset double pulses).
+Yao et al. \cite{Yao_2024_MaRaE} investigated the double pulse effect by changing the transverse spatial separation between two temporally aligned pulses as shown in \autoref{fig:yao_exp_stacks}. This figure shows two possible beams $\alpha$ and $\beta$ which come in at equal and opposite incidence angles with $\alpha$ angled in the $-\hat{y}$ direction. Comparing\footnote{Note that in \autoref{fig:yao_exp_stacks}(a), the electron energy is recorded along the laser beam axis unlike (b) and (c) which are in the target normal direction. This does not allow us to compare (a) to (b) or (c) directly, but shows that most electrons are getting accelerated along the laser axis.} (b) and (c) shows an enhancement of the double pulse electron energy when the pulses are spatially overlapped. In terms of the protons, case 2 (spatially aligned double pulses) shows a more collimated central small beam which is absent in case 1 (spatially offset double pulses).
 
-\section{Titan Experiment}
+\section{Titan Experiment} \label{sec:titan_experiment}
 
-The experimental setup involved one or two $50$ J or $25$ J $\sim 10^{19} \unit{\watt \per \centi \meter \squared}$ pulses arriving at a $\SI{15}{\micro \meter}$ thick gold target. The Titan laser produces $\tau_\text{FWHM} = 2$ ps pulses of wavelength $\SI{1.053}{\micro \meter}$. The beam coming from \gls{OAP}1 (\gls{OAP}2) has an incidence angle of $20^\circ$ ($42^\circ$) and spot size of $\SI{12}{\micro \meter}$ ($\SI{12}{\micro \meter}$) which can be seen in \autoref{fig:jlf_target_chamber} (the blue beam is from OAP1 and the yellow beam is from OAP2). The proton beams are recorded by three \gls{EPPS}s which are located along each beam axis and in the target normal direction.
+The experimental setup involved one (two) $50$ J ($25$ J) $\sim 10^{19} \unit{\watt \per \centi \meter \squared}$ pulse(s) arriving at a $\SI{15}{\micro \meter}$ thick gold target. The Titan laser produces $\tau_\text{FWHM} = 2$ ps pulses of wavelength $\SI{1.053}{\micro \meter}$. The beam coming from \gls{OAP}1 (\gls{OAP}2) has an incidence angle of $20^\circ$ ($42^\circ$) which can be seen in \autoref{fig:jlf_target_chamber} (the blue beam is from OAP1 and the yellow beam is from OAP2). The beam spot size was around $\SI{15}{\micro \meter}$ (in the plane of \autoref{fig:jlf_target_chamber}) and $\SI{8}{\micro \meter}$ (normal to the plane of \autoref{fig:jlf_target_chamber}) for each beam. The proton beams are recorded by three \gls{EPPS}s which are located along each beam axis and in the target normal direction.
 
 \begin{figure}
 	\centering
@@ -99,7 +99,7 @@ The experimental setup involved one or two $50$ J or $25$ J $\sim 10^{19} \unit{
 
 To model this setup, we used 2D(3v) simulations using the EPOCH \gls{PIC} code (version 4.19.0). For simplicity, both pulses had a fixed spot size of $w_\text{FWHM} = \SI{12}{\micro \meter}$ to enable better comparison between the individual pulses. Using a $\SI{2e19}{\watt \per \centi \meter \squared}$ peak intensity, the single pulse would have around 65 J of energy for a sine-squared temporal profile. Accordingly, the double pulse has half the energy and intensity per pulse. We timed the pulses to arrive at the target front around 100 fs into the simulation. Even though the total pulse duration is around $2 \tau_\text{FWHM} = \SI{4}{\pico \second}$, we only run the simulations to 2.2 ps which is more than sufficient to see the highest energy protons produced. Note that there are two single pulse cases, but the figures below choose \gls{OAP}2 ($41^\circ$) due to higher sheath fields, electron energies, and proton energies observed throughout the simulations as can be seen in \autoref{tab:gold_sims}.
 
-The $\SI{15}{\micro \meter}$ thick target had a length of $\SI{36}{\micro \meter}$ which can be seen in FIGURE rotated at a $45^\circ$ angle. The gold target had an initial number density $n_0 = \SI{5.9e28}{\per \meter \cubed}$ and a $\SI{0.5}{\micro \meter}$ layer of protons (of the same density) was added to the rear side to enhance the \gls{TNSA} effect.  The gold was initially neutral and allowed to freely ionize through EPOCH's field ionization routine (typically reaching $Z^* = 20$ or $Z^* = 30$ after 1 to 2 ps respectively). No recombination model was used. We employed a ($-\SI{28}{\micro \meter}$, $\SI{42}{\micro \meter}$) square simulation box with $\Delta x = \SI{13.33}{\nano \meter}$ cells and 25 (125) \gls{PPC} for gold (protons).
+The $\SI{15}{\micro \meter}$ thick target had a length of $\SI{36}{\micro \meter}$ which can be seen in \autoref{fig:efield_800fs} rotated at a $45^\circ$ angle. The gold target had an initial number density $n_0 = \SI{5.9e28}{\per \meter \cubed}$ with a $\SI{0.5}{\micro \meter}$ layer of protons (of the same density) added to the rear side to enhance the \gls{TNSA} effect. The gold was initially neutral and allowed to freely ionize through EPOCH's field ionization routine (typically reaching $Z^* = 20$ or $Z^* = 30$ after 1 to 2 ps respectively). No recombination model was used. We employed a ($-\SI{28}{\micro \meter}$, $\SI{42}{\micro \meter}$) square simulation box with $\Delta x = \SI{13.33}{\nano \meter}$ cells and 25 (125) \gls{PPC} for gold (protons).
 
 \begin{figure}
 	\centering
@@ -108,12 +108,12 @@ The $\SI{15}{\micro \meter}$ thick target had a length of $\SI{36}{\micro \meter
 	\label{fig:efield_800fs}
 \end{figure}
 
-From the results of Ferri et al. \cite{Ferri_2019_Nat_Comm}, we would expect the constructive interference of the pulses in front of the target to enhance the electric fields on the back side of the target. This is exactly what we see in \autoref{fig:efield_800fs}(a, c) which is an electric field snapshot 800 fs into the simulation when sheath fields are clearly developed. Furthermore, the proton energy enhancement can be seen in \autoref{fig:sim_protons_angular}(a, c) in both the maximum energy and total amount of high energy protons. This plot determines the angular direction of the protons from using the $\texttt{atan2}$ with the y and x momentum components and bins the protons by angle and energy.
+From the results of Ferri et al. \cite{Ferri_2019_Nat_Comm}, we would expect the constructive interference of the pulses in front of the target to enhance the electric fields on the back side of the target. This is exactly what we see in \autoref{fig:efield_800fs}(a, c) which is an electric field snapshot 800 fs into the simulation when sheath fields are clearly developed. Furthermore, the proton energy enhancement can be seen in \autoref{fig:sim_protons_angular}(a, c) in both the maximum energy and total amount of high energy (i.e. $>$ 1 MeV) protons. This plot bins the protons by both angle (determined from the protons' x and y momentum components) and energy.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{planning/images/titan/proton_angular_density_2100fs.eps}
-	\caption{Proton distribution as a function of angle $\phi = \tan^{-1}(p_y, p_x)$ and energy at simulation time of 2100 fs for the (a) flat single $41^\circ$ pulse, (b) expanded single $41^\circ$ pulse, (c) flat double pulse, (d) expanded double pulse (gold 65 J). Only protons with energy greater than 1 MeV are plotted. }
+	\caption{Proton distribution as a function of angle $\phi = \tan^{-1}(p_y, p_x)$ and energy at simulation time of 2100 fs for the (a) flat single $41^\circ$ pulse, (b) expanded single $41^\circ$ pulse, (c) flat double pulse, (d) expanded double pulse. Only protons with energy greater than 1 MeV are plotted. }
 	\label{fig:sim_protons_angular}
 \end{figure}
 
@@ -122,25 +122,25 @@ Since the presence of a pre-plasma is known to greatly affect the proton energy 
 \begin{equation}
 	n(r) = n_0^* \exp(-r / L_s) \label{eq:exponential_scale_pp}
 \end{equation}
-where $n_0^* = \SI{5.2e28}{\per \meter \cubed}$ is chosen to be lower than $n_0$ to preserve the same number of particles. This extends from $r=0$ (the target front) to $r = r_\text{cut} = \SI{15.7}{\micro \meter}$ in front of the target which corresponds to the location where the gold density would be $n_c / 50$. Here, $n_c \approx 10^{27} \unit{\per \meter \cubed}$ is the critical density (from \autoref{eq:criticaldensity}). This pre-plasma will make the critical density surface at which the laser primarily delivers energy into the target around $r = \SI{8}{\micro \meter}$ in front of the target which can be seen in the electric fields of \autoref{fig:efield_800fs}(b, d). From this figure, the electric field enhancement on the rear side of the target is not clear, but the proton energy distribution from \autoref{fig:sim_protons_angular}(b, d) show that the double pulse clearly focuses the proton beam to a narrower angular spread and reduces filamentation. Additionally, the number of protons along the target normal direction is higher in the double pulse case as can be seen from the colorbar. 
+where $n_0^* = \SI{5.2e28}{\per \meter \cubed}$ is chosen to be lower than $n_0$ to preserve the same number of particles. The pre-plasma extends from $r_0=0$ (the target front) to $r_\text{cut} = \SI{15.7}{\micro \meter}$ in front of the target. $r_\text{cut}$ corresponds to the location where the gold density would be $n_c / 50$\footnote{This is an arbitrary cutoff which is chosen significantly below the critical density to ensure the laser travels for a significant distance through the pre-plasma. This cutoff was chosen as $n_c / 18$ in Rahman et al. \cite{Rahman_2021_PoP} and $n_c / 100$ in Ferri et al. \cite{Ferri_2019_Nat_Comm}.}. Here, $n_c \approx 10^{27} \unit{\per \meter \cubed}$ is the critical density (from \autoref{eq:criticaldensity}). This pre-plasma will form the critical density surface around $r = \SI{8}{\micro \meter}$ in front of the target which can be seen in the electric fields of \autoref{fig:efield_800fs}(b, d). From this figure, the electric field enhancement on the rear side of the target is not clear, but the proton energy distributions from \autoref{fig:sim_protons_angular}(b, d) show that the double pulse focuses the proton beam to a narrower angular spread and reduces filamentation\footnote{According to dictionary.com a filament is defined as \emph{a very fine thread or threadlike structure}. So, filamentation refers to the threadlike nature of the proton beam (which is not desired).}. Additionally, the number of protons along the target normal direction is higher in the double pulse case as can be seen from the brighter color. 
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{planning/images/titan/spectrum_2100fs.eps}
-	\caption{Spectrum at 2100 fs for (a) protons and (b) electrons (gold 65 J). Particles that have left the simulation before 2100 fs are included in the spectrum from their energy at the time of crossing the boundary.}
+	\caption{Spectrum at 2100 fs for (a) protons and (b) electrons. Particles that have left the simulation before 2100 fs are included in the spectrum from their energy at the time of crossing the boundary.}
 	\label{fig:sim_spectrum}
 \end{figure}
 
-To make these trends clear, the proton energy spectra at 2.1 ps were plotted in \autoref{fig:sim_spectrum} for each of the single an double pulses with and without the $\SI{2}{\micro \meter}$ pre-plasma. We can clearly see (a) that the proton energy spectrum is enhanced for the double pulse without pre-plasma, but this is not so clear for the case with pre-plasma. Furthermore, the electron energy spectra (b) shows a clear enhancement in electron energy in the presence of pre-plasma. 
+To make these trends clear, the proton energy spectra at 2.1 ps were plotted in \autoref{fig:sim_spectrum} for each of the single and double pulses with and without the $\SI{2}{\micro \meter}$ pre-plasma. We can see (a) that the proton energy spectrum is enhanced for the double pulse without pre-plasma, but this is not so clear for the case with pre-plasma. Furthermore, the electron energy spectra (b) shows a clear enhancement in electron energy in the presence of pre-plasma. 
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.9\linewidth]{planning/images/titan/conversion_efficiency.eps}
-	\caption{Conversion Efficiency of Laser Energy into greater than 1 MeV (a) protons and (b) electrons for 65 J simulations on gold.}
+	\caption{Conversion efficiency of laser energy into greater than 1 MeV (a) protons and (b) electrons.}
 	\label{fig:sim_conv_eff}
 \end{figure}
 
-Another metric would be the overall conversion efficiency of laser energy into high energy ($> 1 $ MeV) electrons or protons which is shown in \autoref{fig:sim_conv_eff}. This is computed by dividing the energy in high energy protons or electrons by the total laser energy that entered the simulation at that point in time. Here it becomes more clear that there is a proton and electron energy enhancement in the double pulse case for both flat and pre-expanded targets. Although, it bears mentioning that the enhancement is much smaller in the presence of a pre-plasma. 
+Another useful metric is the overall conversion efficiency of laser energy into high energy ($> 1 $ MeV) electrons or protons which is shown in \autoref{fig:sim_conv_eff}. This is computed by dividing the energy in high energy protons or electrons by the total laser energy that entered the simulation at that point in time. Here, both the proton and electron energy enhancement can be seen, although, it bears mentioning that the enhancement is much smaller in the presence of a pre-plasma. 
 
 \renewcommand{\arraystretch}{1.15}
 \setlength{\tabcolsep}{0.5em}
@@ -165,11 +165,38 @@ Another metric would be the overall conversion efficiency of laser energy into h
 		\hline
 		\hline
 	\end{tabular}
-	\caption{Summary of Gold Simulations.}
+	\caption{Summary of Titan Simulations that varied the number of pulses, incidence angle ($\theta_i$), intensity at peak focus ($I_0$), total laser energy ($E_\text{laser}$), and pre-plasma scale length ($L_p$). The maximum kinetic energy $KE_\text{max}$ and conversion efficiency $\eta$ are shown for both electrons (e) and protons (p). The top half of the table includes simulations with $E_\text{laser} = 65$ J which are used in the figures in this section. The bottom half of the table includes simulations with (otherwise identical) lower laser energy.}
 	\label{tab:gold_sims}
 \end{table}
 
+We also conducted some simulations with either half (32.5 J) or a quarter (16.3 J) of the total laser energy used previously. These maximum kinetic energy and conversion efficiency results for these simulations are also shown in \autoref{tab:gold_sims} which exhibit similar trends to the higher energy simulations.
+
 \subsection{Comparison to Experiment}
+
+The spatial distribution of the protons was recorded with \gls{RCF} which change color when exposed to certain types of radiation. By stacking the \gls{RCF}, the films can record a proton dose calibrated to higher energies for films further along in the stack. We can see these results in \autoref{fig:exp_rcf} which show spatial proton distributions for a selection of energies. Each row is a different shot with total energy at or slightly below 50 J. These images show that both the $20^\circ$ and $41^\circ$ single pulses have a proton distribution that is not centered in the target normal direction (which lies along the hole in the center). The $20^\circ$ pulse records higher doses on the right side because that is where the laser axis of OAP1 points (similar for the $41^\circ$). The double pulse see protons that have a more even distribution throughout the entire \gls{RCF} square that appears to have its highest dose right in the center.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.9\linewidth]{planning/images/titan/rcf.png}
+	\caption{Three slices of radio-chromic film stacks that measure proton doses at 2.9, 16.55, and 21.3 MeV for 3 different pulse arrangments. A darker blue color indicates a higher proton dose at a given spatial location. For reference the stacks are $2 \times 2$ inch squares that are placed 18.6 cm behind the target.}
+	\label{fig:exp_rcf}
+\end{figure}
+
+In \autoref{fig:exp_rcf}, I've focused on only three shots and three energies, but all of the shots for which the pulses had a nominal 50 J of energy is plotted in \autoref{fig:50JRCF}. The total dose is plotted on the y-axis for each shot and for each energy that the \gls{RCF} stacks are calibrated to. These show that the double pulse arrangement (blue circles) yields a higher dose in the higher energy stacks. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\linewidth]{planning/images/titan/50JRCFcompNew.png}
+	\caption{The radio-chromic film total estimated dose for all 50J shots. The blue circles indicate when both beams were used, while the orange + and green x markers indicate when beams 1 and 2 were used, respectively. These results are not calibrated, they are estimated from a calibration in Chris Willis' dissertation. This is why the y axis is estimated in units of Gy/sr. The implementation of sr allows for comparison of different size RCF stacks.}
+	\label{fig:50JRCF}
+\end{figure}
 
 \section{Discussion}
 
+In \autoref{sec:etnsa_background}, I reviewed the theoretical and experimental background behind the double pulse enhanced target normal sheath acceleration mechanism. This enhancement is largely due to two factors. First, the constructive interference of both pulses is capable of producing $\sqrt{2}$ times higher peak fields at the front of the target using the same total laser energy. The higher electric fields at the target front is directly related to both the hot electron generation and the maximum proton energy. Second, the symmetry of using two pulses at opposite incidence can help mitigate unwanted magnetic field deflections that help reduce filamentation and keep proton beams centered along the target normal direction. 
+
+Then, in \autoref{sec:titan_experiment}, I showed results of particle-in-cell simulations that show a clear enhancement in both the maximum proton energy and conversion efficiency of laser energy into high energy protons. When adding an exponential scale pre-plasma to the front of the target, these enhancements diminished. However, the double pulse simulations demonstrated a more focused proton beam along the target normal direction with reduced filamentation. On the experimental side, the double pulse showed a slightly higher total proton dose and comparable or slightly lower maximum proton energy than the single pulse case which is in agreement with the simulation results in the presence of a pre-plasma.
+
+In conjunction, the results of experiment and simulations suggest that picosecond length lasers like Titan can demonstrate double pulse enhanced proton acceleration by both accelerating more protons and collimating the protons in the target normal direction. The maximum proton energy enhancement seems to be most pronounced for an undisturbed target with a sharp density profile which is supported by prior work from this group \cite{Rahman_2021_PoP}. The experimental results most likely matched the simulation results with a pre-plasma due to an imperfect temporal pulse alignment. In the experiments when looking at results with different temporal timing\footnote{Not shown in this work ...}, the maximum proton energies were seen at both 0 and -2 picosecond delays. Since the experiment was only able to temporally resolve the timing of the pulses down to 2 picoseconds, this means that the temporal alignment may have been off on the order of a picosecond. As mentioned in \autoref{sec:etnsa_background}, this delay would cause pre-mature expansion of the target that may disturb the flat density profile needed for optimal target normal sheath acceleration. 
+
+While it may be difficult to time both pulses to arrive at the target within femtosecond resolution, the double pulse setup is still capable of increasing proton counts and reducing a proton beam's angular divergence. The double pulse setup can be extended to multiple pulses (like \cite{Morace_2019_Nat_Comm}) for a potentially even greater effect. The symmetry benefits of using multiple pulses at different angles has already been known for a long time as evidenced by the laser-fusion experiments at the National Ignition Facility and OMEGA. Since there is a significant amount of time and money that goes into upgrading existing laser facilities, the double (or multiple) pulse approach is a great tool for scientists to see enhanced proton/ion generation when constrained to a certain amount of laser energy from current technology.

@@ -47,44 +47,44 @@ Database file #8: book.bib
 Database file #9: review.bib
 Database file #10: desai.bib
 Database file #11: exp.bib
-You've used 116 entries,
+You've used 117 entries,
             1791 wiz_defined-function locations,
-            1197 strings with 29414 characters,
-and the built_in function-call counts, 29553 in all, are:
-= -- 2148
-> -- 2152
+            1202 strings with 29574 characters,
+and the built_in function-call counts, 29704 in all, are:
+= -- 2161
+> -- 2160
 < -- 5
-+ -- 765
-- -- 649
-* -- 2569
-:= -- 5076
-add.period$ -- 347
-call.type$ -- 116
-change.case$ -- 104
++ -- 768
+- -- 651
+* -- 2575
+:= -- 5104
+add.period$ -- 350
+call.type$ -- 117
+change.case$ -- 105
 chr.to.int$ -- 0
-cite$ -- 116
-duplicate$ -- 1050
-empty$ -- 2521
-format.name$ -- 649
-if$ -- 6206
+cite$ -- 117
+duplicate$ -- 1058
+empty$ -- 2535
+format.name$ -- 651
+if$ -- 6239
 int.to.chr$ -- 0
-int.to.str$ -- 116
-missing$ -- 112
-newline$ -- 579
-num.names$ -- 117
-pop$ -- 259
+int.to.str$ -- 117
+missing$ -- 113
+newline$ -- 584
+num.names$ -- 118
+pop$ -- 260
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 427
+skip$ -- 432
 stack$ -- 0
 substring$ -- 1710
-swap$ -- 166
+swap$ -- 167
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 219
-width$ -- 119
-write$ -- 1250
+while$ -- 220
+width$ -- 120
+write$ -- 1261
