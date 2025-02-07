@@ -3,6 +3,8 @@
 \bibitem{MeetOpticsPost}
 MeetOptics.
 \newblock Laser fundamentals: operation and beam characteristics.
+\newblock
+  \url{https://www.meetoptics.com/academy/laser-fundamentals#how-do-lasers-work}.
 \newblock Accessed: 2025-01-30.
 
 \bibitem{Arrigoni_2019_Photonics}
@@ -77,6 +79,12 @@ K.~V. Lezhnin, F.~F. Kamenets, V.~S. Beskin, M.~Kando, T.~Zh. Esirkepov, and
 \newblock {Effect of electromagnetic pulse transverse inhomogeneity on ion
   acceleration by radiation pressure}.
 \newblock {\em Physics of Plasmas}, 22(3):033112, 03 2015.
+
+\bibitem{WarpX_documentation}
+WarpX collaboration.
+\newblock Particle-in-cell method.
+\newblock \url{https://warpx.readthedocs.io/en/latest/theory/pic.html}.
+\newblock Accessed: 2025-02-07.
 
 \bibitem{Markey_2010_PRL}
 K.~Markey, P.~McKenna, C.~M. Brenner, D.~C. Carroll, M.~M. G\"unther,
@@ -156,13 +164,18 @@ Donna Strickland and Gerard Mourou.
 
 \bibitem{Nobel_2018}
 NobelPrize.org.
-\newblock Press release, 2018.
+\newblock Press release.
+\newblock \url{https://www.nobelprize.org/prizes/physics/2018/press-release/},
+  2018.
+\newblock Accessed: 2024-12-19.
 
 \bibitem{Mayo_2024_Cancer}
 Mayo~Clinic Staff.
-\newblock Radiation therapy, 2024.
+\newblock Radiation therapy.
 \newblock
-  \url{https://www.mayoclinic.org/tests-procedures/radiation-therapy/about/pac-20385162}.
+  \url{https://www.mayoclinic.org/tests-procedures/radiation-therapy/about/pac-20385162},
+  2024.
+\newblock Accessed: 02-07-2025.
 
 \bibitem{Bragg_1905_JOS}
 W.~H. Bragg and R.~Kleeman.
@@ -227,7 +240,8 @@ A.~B. Zylstra, C.~K. Li, H.~G. Rinderknecht, F.~H. Séguin, R.~D. Petrasso,
 
 \bibitem{LANL_PRAD}
 Los Alamos Neutron~Science Center.
-\newblock Proton radiography, 2023.
+\newblock Proton radiography.
+\newblock \url{https://lansce.lanl.gov/facilities/pRad/index.php}, 2023.
 \newblock Accessed: 2025-01-31.
 
 \bibitem{Passoni_2019_SciRep}
@@ -296,7 +310,10 @@ P.~B. Corkum.
 
 \bibitem{Nobel_2023}
 NobelPrize.org.
-\newblock Press release, 2023.
+\newblock Press release.
+\newblock \url{https://www.nobelprize.org/prizes/physics/2023/press-release/},
+  2023.
+\newblock Accessed: 2024-12-19.
 
 \bibitem{Griffiths_2017}
 David~J. Griffiths.
@@ -606,15 +623,15 @@ B.~Schmitz, D.~Kreuter, O.~Boine-Frankenheim, and Daniele Margarone.
 
 \bibitem{Desai_2024_Zenodo}
 Ronak Desai.
-\newblock Datasets and code from "applying machine learning methods to laser
-  acceleration of protons: lessons learned from synthetic data".
+\newblock Datasets and code from ``applying machine learning methods to laser
+  acceleration of protons: lessons learned from synthetic data''.
 \newblock \url{https://doi.org/10.5281/zenodo.12752264}, July 2024.
 
 \bibitem{Desai_2025_Zenodo}
 Ronak Desai and John~J. Felice.
 \newblock Datasets and code from ``towards automated learning with
-  ultra-intense laser systems operating in the khz repetition rate regime'',
-  October 2024.
+  ultra-intense laser systems operating in the khz repetition rate regime''.
+\newblock \url{https://doi.org/10.5281/zenodo.14009491}, October 2024.
 
 \bibitem{Passoni_2010_NJoP}
 M.~Passoni, L.~Bertagna, and A.~Zani.

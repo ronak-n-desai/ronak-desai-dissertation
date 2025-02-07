@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  6 FEB 2025 17:43
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  7 FEB 2025 17:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1080,9 +1080,19 @@ File: planning/images/yee_grid.PNG Graphic file (type bmp)
 
 [36]
 
-[37])
+[37]
+File: planning/images/nn_basic.eps Graphic file (type eps)
+<planning/images/nn_basic.eps>
+
 
 [38]
+File: planning/images/nn_architecture2.eps Graphic file (type eps)
+<planning/images/nn_architecture2.eps>
+)
+
+[39]
+
+[40]
 \openout2 = `chap4.aux'.
 
  (chap4.tex
@@ -1091,7 +1101,7 @@ File: planning/images/Markey_Spectrum.PNG Graphic file (type bmp)
 <planning/images/Markey_Spectrum.PNG>
 
 
-[39
+[41
 
 
 
@@ -1101,29 +1111,29 @@ File: planning/images/scott_half_cavity.PNG Graphic file (type bmp)
 <planning/images/scott_half_cavity.PNG>
 
 
-[40]
+[42]
 File: planning/images/ferri_dub_pulse.PNG Graphic file (type bmp)
 <planning/images/ferri_dub_pulse.PNG>
 
 
-[41]
+[43]
 File: planning/images/ferri_scale_energy.PNG Graphic file (type bmp)
 <planning/images/ferri_scale_energy.PNG>
 
 
-[42]
+[44]
 
-[43]
+[45]
 File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
 <planning/images/yao_exp_stacks.PNG>
 
 
-[44]
+[46]
 File: planning/images/titan/target_area_JLF.pdf Graphic file (type pdf)
 <use planning/images/titan/target_area_JLF.pdf>
 
 
-[45]
+[47]
 File: planning/images/titan/efield_800fs.eps Graphic file (type eps)
 <planning/images/titan/efield_800fs.eps>
 File: planning/images/titan/proton_angular_density_2100fs.eps Graphic file (typ
@@ -1131,9 +1141,9 @@ e eps)
 <planning/images/titan/proton_angular_density_2100fs.eps>
 
 
-[46]
+[48]
 
-[47]
+[49]
 File: planning/images/titan/spectrum_2100fs.eps Graphic file (type eps)
 <planning/images/titan/spectrum_2100fs.eps>
 File: planning/images/titan/conversion_efficiency.eps Graphic file (type eps)
@@ -1155,37 +1165,37 @@ Overfull \hbox (3.97011pt too wide) in paragraph at lines 149--168
 
 
 
-[48]
+[50]
 
-[49]
+[51]
 File: planning/images/titan/rcf.png Graphic file (type bmp)
 <planning/images/titan/rcf.png>
 
 
-[50]
+[52]
 File: planning/images/titan/50JRCFcompNew.png Graphic file (type bmp)
 <planning/images/titan/50JRCFcompNew.png>
 
 
-[51])
+[53])
 
-[52]
+[54]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
 
 
-[53
+[55
 
 
 
 
 ]
 
-[54]
+[56]
 
-[55]
+[57]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1197,24 +1207,24 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 90--95
 
 
 
-[56]
-
-[57]
-
 [58]
 
 [59]
+
+[60]
+
+[61]
 File: planning/images/density_profile.png Graphic file (type bmp)
 <planning/images/density_profile.png>
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
 
 
-[60]
-
-[61]
-
 [62]
+
+[63]
+
+[64]
 File: planning/images/paper1/test_mape_3levels.eps Graphic file (type eps)
 <planning/images/paper1/test_mape_3levels.eps>
 File: planning/images/paper1/test_mape_points=2.0k.eps Graphic file (type eps)
@@ -1225,23 +1235,23 @@ File: planning/images/paper1/fuchs_optim.pdf Graphic file (type pdf)
 <use planning/images/paper1/fuchs_optim.pdf>
 
 
-[63]
-
-[64]
-
 [65]
+
+[66]
+
+[67]
 File: planning/images/paper1/model_optim_noise=30_pts=2000.pdf Graphic file (ty
 pe pdf)
 <use planning/images/paper1/model_optim_noise=30_pts=2000.pdf>
 
 
-[66]
-
-[67]
-
 [68]
 
 [69]
+
+[70]
+
+[71]
 File: planning/images/paper2/fig4.eps Graphic file (type eps)
 <planning/images/paper2/fig4.eps>
 File: planning/images/paper2/fig5.eps Graphic file (type eps)
@@ -1250,9 +1260,9 @@ File: planning/images/paper2/fig6.eps Graphic file (type eps)
 <planning/images/paper2/fig6.eps>
 
 
-[70]
+[72]
 
-[71]
+[73]
 File: planning/images/paper2/fig7.eps Graphic file (type eps)
 <planning/images/paper2/fig7.eps>
 
@@ -1262,13 +1272,13 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 356--358
 
 
 
-[72]
-
-[73]
-
 [74]
 
 [75]
+
+[76]
+
+[77]
 File: planning/images/paper2/fig10.eps Graphic file (type eps)
 <planning/images/paper2/fig10.eps>
 
@@ -1278,21 +1288,21 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 397--398
 
 
 
-[76]
+[78]
 File: planning/images/paper2/fig11.eps Graphic file (type eps)
 <planning/images/paper2/fig11.eps>
 
 
-[77])
+[79])
 
-[78]
+[80]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 
 
-[79
+[81
 
 
 
@@ -1302,14 +1312,14 @@ File: planning/images/daq/experimental_chamber.PNG Graphic file (type bmp)
 <planning/images/daq/experimental_chamber.PNG>
 
 
-[80]
+[82]
 
-[81]
+[83]
 File: planning/images/daq/target.PNG Graphic file (type bmp)
 <planning/images/daq/target.PNG>
 
 
-[82]
+[84]
 File: planning/images/daq/pixel.png Graphic file (type bmp)
 <planning/images/daq/pixel.png>
 File: planning/images/daq/diode_trace.png Graphic file (type bmp)
@@ -1325,84 +1335,85 @@ File: planning/images/daq/energy_calibration.png Graphic file (type bmp)
 <planning/images/daq/energy_calibration.png>
 
 
-[83]
-
-[84]
-
 [85]
 
 [86]
+
+[87]
+
+[88]
 File: planning/images/daq/optimization_gui.png Graphic file (type bmp)
 <planning/images/daq/optimization_gui.png>
 File: planning/images/daq/spectrum_gui.png Graphic file (type bmp)
 <planning/images/daq/spectrum_gui.png>
 
 
-[87]
+[89]
 
-[88]
+[90]
 File: planning/images/daq/rf_beta_shift.jpg Graphic file (type bmp)
 <planning/images/daq/rf_beta_shift.jpg>
 
 
-[89])
+[91])
 
-[90]
+[92]
 
-[91]
+[93]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
 Chapter 7.
 
 
-[92
+[94
 
 
 
 
 ])
 
-[93] (template.bbl
+[95] (template.bbl
 
-[94
+[96
 
 
 
 
 ]
-Underfull \hbox (badness 1009) in paragraph at lines 120--124
-[]\TU/lmr/m/n/10.95 John J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph R. 
-Smith, Alona
- []
-
-
-Underfull \hbox (badness 1009) in paragraph at lines 134--139
+Underfull \hbox (badness 1009) in paragraph at lines 128--132
 []\TU/lmr/m/n/10.95 John J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph R. 
 Smith, Alona
  []
 
 
 
-[95]
+[97]
+Underfull \hbox (badness 1009) in paragraph at lines 142--147
+[]\TU/lmr/m/n/10.95 John J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph R. 
+Smith, Alona
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 173--179
+[]\TU/lmr/m/n/10.95 Mayo Clinic Staff.  Radiation therapy.  [][]$[][][][][] [] 
+[] [] [][][] [] [][][][][][][][][][] [] [][][] []
+ []
+
 Missing character: There is no α in font [lmroman10-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 [][][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][] [] [][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] []
  []
 
 
-
-[96]
-
-[97]
 
 [98]
 
@@ -1414,29 +1425,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
 [102]
 
-[103])
+[103]
 
 [104]
+
+[105])
+
+[106]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[105
+[107
 
 
 
 ]
 
-[106]
+[108]
 File: planning/images/arber/Energy_Plot_2D.png Graphic file (type bmp)
 <planning/images/arber/Energy_Plot_2D.png>
 
 
-[107]
+[109]
 
-[108]
+[110]
 Overfull \hbox (18.64594pt too wide) in paragraph at lines 100--149
  [][] 
  []
@@ -1448,9 +1463,9 @@ File: planning/images/arber/corr_matrix.png Graphic file (type bmp)
 <planning/images/arber/corr_matrix.png>
 
 
-[109]
+[111]
 
-[110]
+[112]
 
 LaTeX Warning: Float too large for page by 6.76956pt on input line 218.
 
@@ -1458,11 +1473,11 @@ File: planning/images/arber/L-E_1param_eppc.png Graphic file (type bmp)
 <planning/images/arber/L-E_1param_eppc.png>
 
 
-[111]
+[113]
 
-[112])
+[114])
 
-[113] (template.aux (template-abstract.aux) (template-ack.aux)
+[115] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
@@ -1471,12 +1486,12 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 26201 strings out of 409049
- 497451 string characters out of 5757194
+ 26252 strings out of 409049
+ 498529 string characters out of 5757194
  1963560 words of memory out of 5000000
- 48406 multiletter control sequences out of 15000+600000
+ 48455 multiletter control sequences out of 15000+600000
  570002 words of font info for 95 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  91i,14n,116p,2382b,1340s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (134 pages).
+Output written on template.pdf (136 pages).

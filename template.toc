@@ -43,53 +43,53 @@
 \contentsline {subsection}{\numberline {3.2.1}Pre-processing}{35}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Model Selection}{36}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Model Types}{37}{subsection.3.2.3}%
-\contentsline {chapter}{\numberline {4}Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Background}{39}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Spatially Aligned Pulses}{39}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Enhanced TNSA from Ferri et. al.}{41}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Other eTNSA Simulations}{43}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Recent Experiments}{43}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Titan Experiment}{44}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Gold Simulations}{45}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Comparison to Experiment}{50}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Discussion}{51}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Machine Learning Methods Applied to Synthetic Ion Acceleration Data}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Modified Fuchs et. al. Model}{54}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Plasma Expansion into a Vacuum}{54}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Modified Fuchs Model}{58}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Further Model Modifications}{59}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}First Analysis}{61}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Methods}{62}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Results}{63}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Optimization Task}{66}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Second Analysis}{68}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Methods}{68}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Results}{70}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Optimization Task}{70}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Constrained Data Campaign}{73}{subsection.5.3.4}%
-\contentsline {section}{\numberline {5.4}Conclusion}{77}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Optimization and Control of a kHz Laser System}{79}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Background}{80}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Experimental Chamber}{80}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Data Sources}{83}{subsection.6.1.2}%
-\contentsline {subsubsection}{Spectrometers}{83}{subsubsection*.64}%
-\contentsline {subsubsection}{Laser Diagnostics}{83}{subsubsection*.66}%
-\contentsline {subsubsection}{Target Properties}{83}{subsubsection*.69}%
-\contentsline {subsubsection}{Other Sources}{85}{subsubsection*.70}%
-\contentsline {section}{\numberline {6.2}Optimization Experiments}{85}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Automated Data Extraction}{86}{subsection.6.2.1}%
-\contentsline {subsubsection}{Combining Data}{86}{subsubsection*.71}%
-\contentsline {subsubsection}{Data Visualization}{86}{subsubsection*.72}%
-\contentsline {subsection}{\numberline {6.2.2}Optimization Feedback Loop}{88}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Conclusion}{89}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusion}{92}{chapter.7}%
-\contentsline {chapter}{Bibliography}{94}{section*.77}
+\contentsline {chapter}{\numberline {4}Particle-in-Cell Simulations of Enhanced Target Normal Sheath Acceleration}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Background}{41}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Spatially Aligned Pulses}{41}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Enhanced TNSA from Ferri et. al.}{43}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Other eTNSA Simulations}{45}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Recent Experiments}{45}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Titan Experiment}{46}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Gold Simulations}{47}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Comparison to Experiment}{52}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Discussion}{53}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Machine Learning Methods Applied to Synthetic Ion Acceleration Data}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Modified Fuchs et. al. Model}{56}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Plasma Expansion into a Vacuum}{56}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Modified Fuchs Model}{60}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Further Model Modifications}{61}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}First Analysis}{63}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Methods}{64}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Results}{65}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Optimization Task}{68}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Second Analysis}{70}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Methods}{70}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Results}{72}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Optimization Task}{72}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Constrained Data Campaign}{75}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Conclusion}{79}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Optimization and Control of a kHz Laser System}{81}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Background}{82}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Experimental Chamber}{82}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Data Sources}{85}{subsection.6.1.2}%
+\contentsline {subsubsection}{Spectrometers}{85}{subsubsection*.66}%
+\contentsline {subsubsection}{Laser Diagnostics}{85}{subsubsection*.68}%
+\contentsline {subsubsection}{Target Properties}{85}{subsubsection*.71}%
+\contentsline {subsubsection}{Other Sources}{87}{subsubsection*.72}%
+\contentsline {section}{\numberline {6.2}Optimization Experiments}{87}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Automated Data Extraction}{88}{subsection.6.2.1}%
+\contentsline {subsubsection}{Combining Data}{88}{subsubsection*.73}%
+\contentsline {subsubsection}{Data Visualization}{88}{subsubsection*.74}%
+\contentsline {subsection}{\numberline {6.2.2}Optimization Feedback Loop}{90}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Conclusion}{91}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{94}{chapter.7}%
+\contentsline {chapter}{Bibliography}{96}{section*.79}
 \contentsline {part}{Appendices}{\pageref {appendix.A}}{appendix.A}
-\contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{105}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Background}{105}{section.A.1}%
-\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{105}{subsection.A.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{106}{subsection.A.1.2}%
-\contentsline {section}{\numberline {A.2}Simulation}{107}{section.A.2}%
-\contentsline {subsection}{\numberline {A.2.1}Methods}{107}{subsection.A.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Results}{107}{subsection.A.2.2}%
-\contentsline {section}{\numberline {A.3}Conclusion}{113}{section.A.3}%
+\contentsline {chapter}{\numberline {A}Energy Conservation in EPOCH Particle-in-Cell Simulations Due to Finite Numbers of Particles}{107}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Background}{107}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}Electric Field Fluctuations}{107}{subsection.A.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Empirical Heating Estimates}{108}{subsection.A.1.2}%
+\contentsline {section}{\numberline {A.2}Simulation}{109}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Methods}{109}{subsection.A.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Results}{109}{subsection.A.2.2}%
+\contentsline {section}{\numberline {A.3}Conclusion}{115}{section.A.3}%
