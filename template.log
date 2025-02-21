@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  13 FEB 2025 14:29
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  21 FEB 2025 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,6 +926,19 @@ Overfull \hbox (0.67888pt too wide) detected at line 7
 
 ] (template.acr
 
+Package glossaries Warning: Glossary entry `eTNSA' has not been defined on inpu
+t line 40.
+
+
+Package glossaries Warning: Glossary entry `eTNSA' has not been defined on inpu
+t line 40.
+
+
+Package glossaries Warning: Glossary entry `eTNSA' has not been defined on inpu
+t line 40.
+
+
+
 [18
 
 
@@ -1019,11 +1032,11 @@ File: planning/images/debye_length.png Graphic file (type bmp)
 [19]
 
 [20]
+
+[21]
 File: planning/images/absorption.png Graphic file (type bmp)
 <planning/images/absorption.png>
 
-
-[21]
 
 [22]
 
@@ -1044,9 +1057,9 @@ File: planning/images/tnsa.PNG Graphic file (type bmp)
 [27]
 File: planning/images/acceleration_regimes.PNG Graphic file (type bmp)
 <planning/images/acceleration_regimes.PNG>
-)
 
-[28]
+
+[28])
 
 [29]
 \openout2 = `chap3.aux'.
@@ -1086,11 +1099,11 @@ File: planning/images/nn_basic.eps Graphic file (type eps)
 
 
 [38]
+
+[39]
 File: planning/images/nn_architecture2.eps Graphic file (type eps)
 <planning/images/nn_architecture2.eps>
 )
-
-[39]
 
 [40]
 \openout2 = `chap4.aux'.
@@ -1301,6 +1314,18 @@ File: planning/images/paper2/fig11.eps Graphic file (type eps)
  (chap6.tex
 Chapter 6.
 
+! Package glossaries Error: Glossary entry `eTNSA' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...amount of laser energy through \gls{eTNSA}.
+                                                   Even when the pulses are ...
+
+You need to define a glossary entry before you can use it.
+
+
 
 [81
 
@@ -1486,10 +1511,10 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 26258 strings out of 409049
- 498676 string characters out of 5757194
+ 26260 strings out of 409049
+ 498791 string characters out of 5757194
  1963560 words of memory out of 5000000
- 48461 multiletter control sequences out of 15000+600000
+ 48463 multiletter control sequences out of 15000+600000
  570002 words of font info for 95 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  91i,14n,116p,2382b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s

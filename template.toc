@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {1.1}Lasers}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Applications}{5}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Proton Therapy}{5}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Laser Fusion and Proton Radiography}{8}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.2}Laser Fusion and Proton Radiography}{7}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Materials Characterization}{9}{subsection.1.2.3}%
 \contentsline {section}{\numberline {1.3}Outline}{10}{section.1.3}%
 \contentsline {chapter}{\numberline {2}Physics Background}{12}{chapter.2}%
@@ -19,10 +19,10 @@
 \contentsline {subsection}{\numberline {2.1.2}Single Particle Motions}{14}{subsection.2.1.2}%
 \contentsline {subsubsection}{Quiver Energy}{14}{subsubsection*.16}%
 \contentsline {subsubsection}{Ponderomotive Force}{15}{subsubsection*.17}%
-\contentsline {section}{\numberline {2.2}Plasma Physics}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.2}Plasma Physics}{16}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Plasma Electron Oscillations}{16}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Fluid Model}{17}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Plasma Conditions}{19}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.3}Plasma Conditions}{18}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Absorption of Energy}{19}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Critical Density}{19}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Absorption Mechanisms}{20}{subsection.2.3.2}%
@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {4.1}Background}{41}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Spatially Aligned Pulses}{41}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Enhanced TNSA from Ferri et. al.}{43}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Other eTNSA Simulations}{45}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.3}Other Enhanced TNSA Simulations}{45}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}Recent Experiments}{45}{subsection.4.1.4}%
 \contentsline {section}{\numberline {4.2}Titan Experiment}{46}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Gold Simulations}{47}{subsection.4.2.1}%

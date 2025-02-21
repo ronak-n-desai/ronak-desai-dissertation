@@ -231,6 +231,12 @@ Derek~B. Schaeffer, Archie F.~A. Bott, Marco Borghesi, Kirk~A. Flippo, William
 \newblock Proton imaging of high-energy-density laboratory plasmas.
 \newblock {\em Rev. Mod. Phys.}, 95:045007, Dec 2023.
 
+\bibitem{LANL_PRAD}
+Los Alamos Neutron~Science Center.
+\newblock Proton radiography.
+\newblock \url{https://lansce.lanl.gov/facilities/pRad/index.php}, 2023.
+\newblock Accessed: 2025-01-31.
+
 \bibitem{Simpson_2021_PPCF}
 R~A Simpson, D~A Mariscal, J~Kim, G~G Scott, G~J Williams, E~Grace, C~McGuffey,
   S~Wilks, A~Kemp, N~Lemos, B~Z Djordjevic, E~Folsom, D~Kalantar, R~Zacharias,
@@ -248,12 +254,6 @@ A.~B. Zylstra, C.~K. Li, H.~G. Rinderknecht, F.~H. Séguin, R.~D. Petrasso,
 \newblock Using high-intensity laser-generated energetic protons to radiograph
   directly driven implosions.
 \newblock {\em Review of Scientific Instruments}, 83(1):013511, 01 2012.
-
-\bibitem{LANL_PRAD}
-Los Alamos Neutron~Science Center.
-\newblock Proton radiography.
-\newblock \url{https://lansce.lanl.gov/facilities/pRad/index.php}, 2023.
-\newblock Accessed: 2025-01-31.
 
 \bibitem{Passoni_2019_SciRep}
 M.~Passoni, L.~Fedeli, and F.~Mirani.

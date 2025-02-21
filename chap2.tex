@@ -31,14 +31,14 @@ In this chapter, laser fields and the physics of charged particles oscillating i
 In order to heat up a material with a laser efficiently, the energy would ideally be concentrated to a small point. Lasers are a coherent source of light that can be focused to narrow beams. The intended output of many lasers is the fundamental transverse electromagnetic mode \cite{Zangwill_2012} (TEM$_{00}$) described by the following electric field
 
 \begin{equation}
-	E(r, x) = E_0 \hat{y} \frac{w_0}{w(x)} \exp( - \frac{r^2}{w(x)^2}) \cos(k x - \arctan(\frac{x}{x_R}) + \frac{k r^2}{2 R(x)}) \label{eq:gaussian_beam}
+	\vec{E}(r, x) = \hat{y} E_0  \frac{w_0}{w(x)} \exp \left( - \frac{r^2}{w(x)^2} \right) \cos \left(k x - \omega t - \arctan \left(\frac{x}{x_R}\right) + \frac{k r^2}{2 R(x)}\right) \label{eq:gaussian_beam}
 \end{equation}
 where $\hat{x}$ is the propagation direction, $\hat{y}$ is the polarization direction, and $r = \sqrt{y^2 + z^2}$ is the radial distance away from the laser axis. The radius of curvature $R(x)$ is inversely related to how strongly the wavefronts are curved and is infinity at $x=0$ and minimum at $x=x_R$. The guoy phase $\arctan(x/x_R)$ is an observed phase of $\pi$ that is continuously picked up as the beam propagates from $x=-\infty \rightarrow x=+\infty$. Additionally, the beam radius $w$ is expressed as
 
 \begin{equation}
 	w(z) = w_0 \sqrt{1 + (x/x_R)^2} \label{eq:beam_radius}
 \end{equation}  
-and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. A beam with these properties is usually referred to as a gaussian beam\footnote{I've googled (actually bing'd unfortunately) more times than I can count ``gaussian beam wikipedia'' over the course of my studies. I don't know why I didn't bookmark that page.} and is depicted in \autoref{fig:gaussian_beam}.
+and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. A beam with these properties is usually referred to as a gaussian beam\footnote{I have googled (actually bing'd unfortunately) more times than I can count ``gaussian beam wikipedia'' over the course of my studies.} and is depicted in \autoref{fig:gaussian_beam}.
 
 \begin{figure}
 	\centering
@@ -56,7 +56,7 @@ where $\tau_\text{fwhm}$ is the full-width half-max (half the pulse duration for
 
 \subsection{Single Particle Motions}
 
-Electrostatics is governed by Maxwell's equations which describe the allowed wave-like solutions for electric and magnetic fields in both matter and vacuum. The most relevant equation in this section is Gauss' Law or Poisson's Equation which can be expressed as 
+Electromagnetism is governed by Maxwell's equations which describe the allowed wave-like solutions for electric and magnetic fields in both matter and vacuum. The most relevant equation in this section is Gauss' Law or Poisson's Equation which can be expressed as 
 
 \begin{equation}
 	- \nabla^2 \phi = \nabla \cdot \vec{E} \equiv \frac{\rho}{\epsilon_0} \label{eq:poisson}
@@ -68,7 +68,7 @@ which relates the electrostatic potential $\phi$ or electric field $E$ to the ch
 \end{equation}
 
 \subsubsection{Quiver Energy}
-To gain intuition about some quantities of interest for laser-matter interactions, let's consider the simple problem of an electron of charge $-e$ governed by \cref{eq:lorentz} with a negligible magnetic field $B$. Additionally, only consider 1D motion in the oscillating field $E = E_0 \cos(\omega t)$ for a laser field of frequency $\omega$. Then, the equation of motion is
+To gain intuition about some quantities of interest for laser-matter interactions, let's consider the simple problem of an electron of charge $-e$ governed by \cref{eq:lorentz} with a negligible magnetic field $B$. Additionally, only consider 1D motion in the oscillating field $E = E_0 \cos(\omega t)$ for a laser field of frequency $\omega$ (which can be considered a simplification of \autoref{eq:gaussian_beam} when $\lvert x \rvert \ll x_R$ and $r \ll w_0$). Then, the equation of motion is
 
 \begin{equation}
 	\frac{d v}{d t} = - \frac{e E_0}{m} \cos(\omega t)
@@ -84,15 +84,15 @@ where $v_\text{osc} \equiv (e E_0) / (m \omega)$ is defined as the \emph{quiver 
 \begin{equation}
 	a_0 \equiv v_\text{osc} / c = \frac{e E_0}{m \omega c} \label{eq:a0}
 \end{equation}
-Ultra-intense laser-matter interactions involve relativistic electrons which are produced when $a_0 \gtrsim 1$. In terms of the field, $a_0 \sim 1$ corresponds to a peak electric field $E_0 = \frac{2 \pi m c^2}{e \lambda} \simeq \SI{4}{\tera \volt \per \meter}$ (for a $\lambda \approx \SI{1}{\micro \meter}$ wavelength). For this electric field, the peak intensity is $I_0 = \frac{1}{2} c \epsilon_0 E_0^2 \simeq \SI{2e18}{\watt \per \centi \meter \squared}$ for this electric field. Consequently, the threshold for relativistic interactions is commonly understood as $I_0 \gtrsim \SI{1e18}{\watt \per \centi \meter \squared}$ for typical micron wavelength lasers. 
+Ultra-intense laser-matter interactions involve relativistic electrons\footnote{Although $v_\text{osc}$ can be greater than $c$, relativistic electrons are still limited by the speed of light.} which are produced when $a_0 \gtrsim 1$. In terms of the field, $a_0 \sim 1$ corresponds to a peak electric field $E_0 = \frac{2 \pi m c^2}{e \lambda} \simeq \SI{4}{\tera \volt \per \meter}$ (for a $\lambda \approx \SI{1}{\micro \meter}$ wavelength). For this electric field, the peak intensity is $I_0 = \frac{1}{2} c \epsilon_0 E_0^2 \simeq \SI{2e18}{\watt \per \centi \meter \squared}$ for this electric field. Consequently, the threshold for relativistic interactions is commonly understood as $I_0 \gtrsim \SI{1e18}{\watt \per \centi \meter \squared}$ for typical micron wavelength lasers. 
 
 \subsubsection{Ponderomotive Force}
-The above approach yields some important scales for laser-matter interactions, but only describes the interaction of a plane wave that is spatially homogeneous. A real laser field would be spatially inhomogeneous and we can express $E(x) \approx E_0 + x E_0'(x)$ to first order. This modifies the equation of motion as 
+The above approach yields some important scales for laser-matter interactions, but only describes the interaction of a plane wave that is spatially homogeneous. A real laser field would be spatially inhomogeneous and we can express $E(x) \approx E_0 + x E_0'(x)$ (where the prime denotes the derivative with respect to $x$) to first order. This modifies the equation of motion as 
 
 \begin{equation}
 	\frac{d v}{d t} = - \frac{e E_0}{m} \cos(\omega t) - \frac{e E_0'}{m} \cos(\omega t)[ \frac{v_\text{osc}}{\omega}(\cos(\omega t) - 1)]
 \end{equation}
-where we've inserted the expression for x from \cref{eq:x(t)} which should be approximately true for small $x$. This equation can be simplified and separated into oscillating and non-oscillating components as
+where we have inserted the expression for x from \cref{eq:x(t)} which should be approximately true for small $x$. This equation can be simplified and separated into oscillating and non-oscillating components as
 
 % should maybe cite arefiev notes, not sure how, because I can't find it online.
 \begin{equation}
@@ -130,9 +130,9 @@ which has the form of a restoring force that brings the charge imbalance back to
 \begin{equation}
 	\omega_{p,e} = \sqrt{\frac{n_e e^2}{m_e \epsilon_0}} \label{eq:omegape}
 \end{equation}
-that gives the timescale for electron motion in the plasma. This characteristic frequency shows why plasmas support collective motion (in opposition to a neutral gas in which collisions between individual particles only happen). To get a feeling for this timescale, let's assume a somewhat typical electron density \SI{1e29}{\per \meter \cubed} in laser-plasma interactions to yield a timescale of $\omega_{p,e}^{-1} \simeq \SI{0.1}{\femto \second}$.
+that gives the timescale for electron motion in the plasma. This characteristic frequency shows why plasmas support collective motion (in opposition to a neutral gas in which collisions between individual particles only happen). To get a feeling for this timescale, let's assume a somewhat typical electron density \SI{1e29}{\per \meter \cubed} in an ionized solid or liquid to yield a timescale of $\omega_{p,e}^{-1} \simeq \SI{0.1}{\femto \second}$.
 
-Naturally (without externally imposed forces), these fluctuations in charge would be caused by thermal motions of electrons with a characteristic speed $v_{th}$ 
+Naturally (without externally imposed forces), these fluctuations in charge could be caused by thermal motions of electrons with a characteristic speed $v_{th}$ 
 
 \begin{equation}
 	v_{th} = \sqrt{\frac{k_B T_e}{m}} \label{eq:vthermal}
@@ -148,14 +148,16 @@ Physically, $\lambda_D$ gives a length scale over which the electrostatic force 
 This description of a plasma as a sea of electrons with collective motion that allows wave-like motions naturally lends itself toward a fluid model. The first component of this model stems from \cref{eq:lorentz} whose explicit time and space dependence can be expressed through
 
 \begin{equation}
-\frac{d p}{d t} = m (\frac{\partial v}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial v}{\partial t}) = m (\frac{\partial v}{\partial t} + v \frac{\partial v}{\partial x})
+\frac{d p}{d t} = m \left( \frac{\partial v}{\partial x} \frac{\partial x}{\partial t} + \frac{\partial v}{\partial t} \right) = m \left(\frac{\partial v}{\partial t} + v \frac{\partial v}{\partial x} \right)
 \end{equation}
-which just considers one spatial dimension for simplicity. The second component of this model is the pressure gradient from thermal motions. Particles will tend to migrate from areas of higher pressure to lower pressure, where the thermal pressure is given by the ideal gas law equation of state $p = n_e k_B T_e$. Consequently, the equation of motion should have a term that is opposite to the pressure gradient direction (i.e. $- \nabla p$). Combining these two components together in a generalized 3D equation results in
+which just considers one spatial dimension for simplicity. The second component of this model is simply related to the pressure gradient from thermal motions. Particles tend to migrate from areas of higher pressure to lower pressure, where the thermal pressure is given by the ideal gas law equation of state $p = n_e k_B T_e$. Consequently, the equation of motion should have a term that is opposite to the pressure gradient direction (i.e. $- \nabla p$). Combining these two components together in a generalized 3D equation results in
 
 \begin{equation}
-	m n_e (\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u}) = -e n_e (\vec{E} + \vec{u} \times \vec{B}) - \nabla p \label{eq:fluid}
+	m n_e \left(\frac{\partial \vec{u}}{\partial t} + (\vec{u} \cdot \nabla) \vec{u} \right) = -e n_e (\vec{E} + \vec{u} \times \vec{B}) - \nabla p \label{eq:fluid}
 \end{equation}
-where we've changed the single particle velocity $\vec{v}$ to the fluid velocity $\vec{u}$ and multiplied by the electron density $n_e$ to ensure correct units with the pressure gradient term. Then, let's look for a simple radially symmetric solution where the fluid velocity $u = 0$, magnetic field $B$ is negligible, and the temperature is constant (isothermal).
+where we've changed the single particle velocity $\vec{v}$ to the fluid velocity $\vec{u}$ and multiplied by the electron density $n_e$ to ensure correct units with the pressure gradient term. 
+
+Using \autoref{eq:fluid}, we can determine the spatial extent of the electric field caused by a charge imbalance in a plasma by making some simplifications. Assuming radial symmetry where the fluid velocity $u = 0$, magnetic field $B$ is negligible, and the temperature is constant (isothermal), \autoref{eq:fluid} reduces to
 
 \begin{equation}
 	n_e e E = - k_B T_e \frac{\partial n_e}{\partial r}
@@ -163,22 +165,22 @@ where we've changed the single particle velocity $\vec{v}$ to the fluid velocity
 and by relating the electric field to the potential $E = - \frac{dV}{dx}$, this equation can be integrated from $n_{e,0} \rightarrow n_e$ and $0 \rightarrow \phi$ to obtain 
 
 \begin{equation}
-	n_e = n_{e,0} \exp(\frac{e \phi}{k_B T_e}) \label{eq:boltzmann}
+	n_e = n_{e,0} \exp \left(\frac{e \phi}{k_B T_e} \right) \label{eq:boltzmann}
 \end{equation}
-which is referred to as the \emph{Boltzmann relation} for electrons \cite{Chen_2015_Plasma}. We can get an approximate solution to this equation when the potential $\phi$ is only slightly larger than the equilibrium $\phi=0$, which can be found when $e \phi << k_B T_e$. We can Taylor expand the density to obtain 
+which is referred to as the \emph{Boltzmann relation} for electrons \cite{Chen_2015_Plasma}. We can get an approximate solution to this equation when the potential $\phi$ is only slightly larger than the equilibrium $\phi=0$, which can be found when $e \phi \ll k_B T_e$. Then, the density can be Taylor expanded to obtain 
 
 \begin{equation}
-	n_e \approx n_{e,0}(1 + \frac{e \phi}{k_B T_e})
+	n_e \approx n_{e,0} \left(1 + \frac{e \phi}{k_B T_e} \right)
 \end{equation} 
 and if we assume a fully ionized plasma with immobile ions of charge $Z$, the density of ions satisfies $n_{e,0} = Z n_i$ and \cref{eq:poisson} becomes 
 
 \begin{equation}
-	\epsilon_0 \nabla^2 \phi = - e n_{e,0} + e n_e = e n_{e,0} [1 + \frac{e \phi}{k_B T_e} - 1] = \frac{e^2 n_{e,0} \phi}{k_B T_e}
+	\epsilon_0 \nabla^2 \phi = - e n_{e,0} + e n_e = e n_{e,0} \left(1 + \frac{e \phi}{k_B T_e} - 1 \right) = \frac{e^2 n_{e,0} \phi}{k_B T_e}
 \end{equation}
 This equation admits solutions of an exponentially decaying potential
 
 \begin{equation}
-	\phi(r) = \frac{Q}{r} \exp(-\frac{r}{\lambda_{D}}) \label{eq:shielding}
+	\phi(r) = \frac{Q}{r} \exp \left(-\frac{r}{\lambda_{D}} \right) \label{eq:shielding}
 \end{equation}
 where $\lambda_D = \sqrt{\frac{\epsilon_0 k_B T_e}{n_{e,0} e^2}}$ is the Debye length from \cref{eq:debye}. A visualization of the decaying potential from \cref{eq:shielding} is shown in \cref{fig:debye}. Looking at the center panel, we can see the potential drop off much more quickly than the left panel's potential. The exponentially decaying potential is a feature of plasmas and highlights the ability of plasma electrons to shield fields in a distance $\lambda_D$. 
 
@@ -200,17 +202,17 @@ In order for a laser to couple energy to the plasma electrons, some absorption m
 First, we will look at how the electric field from an oscillating electric field penetrates a plasma. Using \cref{eq:faraday,eq:ampere} combined with the vector identity $\nabla \times (\nabla \times \vec{E}) = \nabla(\nabla \cdot \vec{E}) - \nabla^2 \vec{E}$ \cite{Zangwill_2012}, we can solve for the vector wave equation in terms of only $\vec{E}$. 
 
 \begin{equation}
-	(\nabla^2 - \frac{1}{c^2} \frac{\partial^2}{\partial t^2}) \vec{E} = \mu_0 \frac{\partial J}{\partial t} + \nabla(\nabla \cdot \vec{E}) \label{eq:vectorwave}
+	\left(\nabla^2 - \frac{1}{c^2} \frac{\partial^2}{\partial t^2} \right) \vec{E} = \mu_0 \frac{\partial \vec{J}}{\partial t} + \nabla(\nabla \cdot \vec{E}) \label{eq:vectorwave}
 \end{equation}
 We can look for solutions of $\vec{E} = E(x) \cos(\omega t) \hat{x}$ that vary spatially only in the x direction. We assume $E(0)$ is the amplitude of the electric field at the boundary between vacuum $x < 0$ and matter $x > 0$ and wish to understand the form of $E(x)$ when $x > 0$. To proceed, the current density can be related to the drift velocity \cite{Macchi_2013_Plasma} by $J = -n_e e u$ where $u$ is the electron fluid velocity that satisfies \cref{eq:fluid}. Ignoring $B$ and thermal pressure, this relationship becomes 
 
 \begin{equation}
-	\frac{\partial \vec{J}}{\partial t} = \frac{n_e e^2}{m} E = \omega_p^2 \epsilon_0 \vec{E}
+	\frac{\partial \vec{J}}{\partial t} = \frac{n_e e^2}{m} \vec{E} = \omega_p^2 \epsilon_0 \vec{E}
 \end{equation}
 using \cref{eq:omegape} which can be combined with \cref{eq:vectorwave} to obtain a differential equation for the electric field
 
 \begin{equation}
-	[\nabla^2 + \frac{\omega^2}{c^2}(1 - \frac{\omega_p^2}{\omega^2})] \vec{E} = 0
+	\left( \nabla^2 + \frac{\omega^2}{c^2}(1 - \frac{\omega_p^2}{\omega^2}) \right) \vec{E} = 0
 \end{equation}
 By just focusing on the x-dependence, we can simplify this equation to 
 
@@ -220,12 +222,12 @@ By just focusing on the x-dependence, we can simplify this equation to
 where $l_s^2 \equiv \frac{c^2}{\omega^2 - \omega_p^2}$ defines the \emph{skin depth} $l_s$. In the case where $\omega < \omega_p$, $l_s^2$ is negative and the solution has a sinusoidal dependence
 
 \begin{equation}
-	E(x) = E(0) \cos(x / l_s)
+	E(x) = E(0) \cos \left( \frac{x}{l_s} \right)
 \end{equation}
 On the other hand, when $\omega > \omega_p$, $l_s^2$ is positive and the solution has an exponential dependence
 
 \begin{equation}
-	E(x) = E(0) \exp(-x / l_s)
+	E(x) = E(0) \exp \left(-\frac{x}{l_s} \right)
 \end{equation}
 This ``evanescent'' behavior when $\omega > \omega_p$ occurs because the electrons cannot respond fast enough to the higher frequency $\omega$. Since the field cannot propagate effectively for $x > 0$, the plasma ends up reflecting a significant portion of the light. The critical density $n_c$ is defined as the electron density where $\omega = \omega_{p}$. Using \cref{eq:omegape}, this can be expressed as
 
@@ -239,16 +241,16 @@ A typical Ti:Sapphire laser has a wavelength of $\SI{0.8}{\micro \meter}$ which 
 
 \subsubsection{Resonance Absorption}
 
-The discussion in \autoref{sec:critical_density} applied to an electric field directed in the x-direction. For gaussian laser beams, the electric field is always perpendicular to the direction of propagation. So, if the laser beam is to be directed toward a target at $x = 0$, normal incidence would imply that the electric field $E_x = 0$. Additionally, an s-polarized beam would have an electric field only in the z direction. As a result, the typical model of a laser beam depositing energy into a plasma involves a p-polarized laser beam traveling obliquely in the $x-y$ plane with some angle of incidence $\theta_i$ measured with respect to the normal direction of the target. Physically, plasma oscillations occur through fluctuations in density which are going to be the strongest in the x direction due to the interface between vacuum and matter.
+The discussion in \autoref{sec:critical_density} applied to an electric field directed in the target normal or $x$ direction. Due to simplicity, we will again consider a plane wave whose electric field is always directed in the transverse direction. This electric field can either be s-polarized (directed in $\hat{z}$) or p-polarized (directed in the $x-y$ plane). Since s-polarization has no component in $\hat{x}$, the typical model of a laser beam depositing energy into a plasma involves a p-polarized laser beam traveling obliquely in the $x-y$ plane. This beam makes an angle of incidence $\theta_i$ measured with respect to the normal direction of a target at $x=0$. Physically, plasma oscillations occur through density fluctuations which are strongest in the $\hat{x}$ direction due to the vacuum-matter interface.
 
-Kruer \cite{Kruer_2003_Plasma} argues that the reflection of light at oblique incidence occurs at a density $n_e = n_c \cos^2(\theta_i)$ by enforcing momentum conservation of the electric field component in the $y$ direction. Even though we've discussed density profile as an abrupt step (from 0 to $n_e$ from crossing $x = 0$), an actual experiment would see some pre-heating of the target before the target becomes ionized and behaves as a mirror at the critical density. This can be characterized by some scale length $L_p \equiv n_e (\frac{\partial n_e}{\partial x})^{-1}$ which is smaller for steeper density profiles. As a result, at higher incidence angles, the evanescent portion of the electric field has to travel further into the underdense region of the target to reach the critical density. 
+Kruer \cite{Kruer_2003_Plasma} argues that the reflection of light at oblique incidence occurs at a density $n_e = n_c \cos^2(\theta_i)$ by enforcing momentum conservation of the electric field component in the $y$ direction. Even though we've discussed the density profile as an abrupt step (from 0 to $n_e$ when crossing $x = 0$), an experiment would see some pre-heating of the target before ionizing and behaving like a mirror at the critical density. This can be characterized by some scale length $L_p \equiv n_e (\frac{\partial n_e}{\partial x})^{-1}$ which is smaller for steeper density profiles. As a result, at higher incidence angles, the evanescent portion of the electric field has to travel further into the underdense region of the target to reach the critical density. 
 
-When the frequency of the laser $\omega \simeq \omega_p$, the laser light is in resonance with the plasma oscillations and the energy can be most efficiently absorbed. To maximize the amount of energy reaching the critical density surface in resonance, we would want $\theta_i$ to be large so that the electric field has a significant component in the $x$ direction, but also small enough so that the field doesn't diminish too much by traveling in the evanescent underdense region. Denisov \cite{Denisov_1957_JETP} and others \cite{Forslund_1975_PRA, Freidberg_1972_PRL, Estabrook_1975_PoF} address this question and develop a model for this so-called \emph{resonance absorption} An approximate version of this formula is given by Kruer \cite{Kruer_2003_Plasma}
+When the laser frequency $\omega \simeq \omega_p$, the laser light is in resonance with the plasma oscillations and the energy can be most efficiently absorbed. To maximize the amount of energy reaching the critical density surface in resonance, we would want $\theta_i$ to be large so that the electric field has a significant component in the $x$ direction, but also small enough so that the field doesn't diminish too much by traveling in the evanescent underdense region. Denisov \cite{Denisov_1957_JETP} and others \cite{Forslund_1975_PRA, Freidberg_1972_PRL, Estabrook_1975_PoF} address this question and develop a model for \emph{resonance absorption}. An approximate version of this formula is given by Kruer \cite{Kruer_2003_Plasma}
 
 \begin{equation}
 	\phi(\tau) \simeq 2.3 \tau \exp(-2 \tau^3 / 3)
 \end{equation}
-where $\tau \equiv (k L_p)^{1/3} \sin(\theta_i)$ takes into account both the scale length and incidence angle. \cref{fig:absorption} shows the fractional absorption $\phi(\tau)^2/2$ of the incident light from this model as a function of $\theta_i$ for various scale lengths.There is an optimal angle $\theta_{max} \approx \arcsin(0.8 (k L_p)^{-1/3})$ that maximizes the absorption fraction (although Kruer notes that his simple model overestimates the peak absorption -- the  fraction should peak at around 0.5 \cite{Kruer_2003_Plasma}). 
+where $\tau \equiv (k L_p)^{1/3} \sin(\theta_i)$ takes into account both the scale length and incidence angle. \autoref{fig:absorption} shows the fractional absorption $\phi(\tau)^2/2$ of the incident light from this model as a function of $\theta_i$ for various scale lengths.There is an optimal angle $\theta_\text{max} \approx \arcsin(0.8 (k L_p)^{-1/3})$ that maximizes the absorption fraction (although Kruer notes that his simple model overestimates the peak absorption -- the  fraction should peak at around 0.5 \cite{Kruer_2003_Plasma}). 
 
 \begin{figure}
 	\centering 
@@ -258,20 +260,20 @@ where $\tau \equiv (k L_p)^{1/3} \sin(\theta_i)$ takes into account both the sca
 \end{figure}
 
 \subsubsection{Brunel Heating}
-Resonance absorption only makes sense when the amplitude of the plasma oscillations $x_\text{osc} = v_\text{osc} / \omega = \frac{a_0 \lambda}{2 \pi}$ is less than the scale length $L_p$ \cite{Gibbon_2005_Plasma}. Otherwise there is not enough available space for the oscillations to take place. For $\lambda = \SI{0.8}{\mu \meter}$ and $a_0 = 1$, $x_\text{osc} = \SI{127}{\nano \meter}$. However, for extremely small scale-lengths, efficient electron heating can still be observed \cite{Grimes_1999_PRL}. Consequently, a different type of heating mechanism is responsible in this case (somewhat confusingly) called ``not so resonant, resonant absorption'' \cite{Brunel_1987_PRL}. This model, developed by Brunel, is also known as \emph{vacuum heating} and will be explained below. 
+Resonance absorption only makes sense when the amplitude of the plasma oscillations $x_\text{osc} = v_\text{osc} / \omega = \frac{a_0 \lambda}{2 \pi}$ is less than the scale length $L_p$ \cite{Gibbon_2005_Plasma}. Otherwise there is not enough available space for the oscillations to take place. For $\lambda = \SI{0.8}{\mu \meter}$ and $a_0 = 1$, $x_\text{osc} = \SI{127}{\nano \meter}$. However, for extremely small scale-lengths, efficient electron heating can still be observed \cite{Grimes_1999_PRL}. Consequently, a different type of heating mechanism is responsible (somewhat confusingly) called ``not so resonant, resonant absorption'' \cite{Brunel_1987_PRL}. This model, developed by Brunel, is also known as \emph{vacuum heating} and will be explained below. 
 
-Before explaining the Brunel mechanism, it is instructive to explain Corkum's 3-step model for \gls{HHG} \cite{Corkum_1993_PRL}\footnote{Readers may find this model more familiar due to the recent 2023 Nobel Physics Prize won by Ohio State's Pierre Agostini \cite{Nobel_2023} which utilized the ideas of this model to produce attosecond pulses}. This model involves a strong oscillating electric field $E(x) = E_0 \cos(\omega t)$ incident on an atom that ionizes an electron at time $t=t^*$. Under the influence of the oscillating field, the (initially stationary) electron will gain  and lose energy by moving away from the atom and returning back toward the atom. When $t^* \neq n \pi$ for integer $n$, it is actually possible for the electron to return back to the atom with non-zero energy. In fact, when $\omega t^* \approx 17^\circ + n \cdot 180^\circ$, the electron returns with an energy peaking at $3.17 U_p$ where $U_p$ is the ponderomotive potential given by \cref{eq:pond_potential}. Furthermore, modeling the ionization rate through quantum-mechanical tunneling of an electron through a Coulomb potential warped by the oscillating laser field, we also determine that the most probable energy for an electron is strongly peaked at the $3.17 U_p$ cutoff. In short, this model shows how a laser field can produce electrons with energy on the scale of the ponderomotive potential with high probability at a frequency of twice per optical cycle. 
+Before explaining the Brunel mechanism, it is instructive to explain Corkum's 3-step model for \gls{HHG} \cite{Corkum_1993_PRL}\footnote{Readers may find this model more familiar due to the recent 2023 Nobel Physics Prize won by Ohio State's Pierre Agostini \cite{Nobel_2023} which utilized the ideas of this model to produce attosecond pulses}. This model involves a strong oscillating electric field $E(x) = E_0 \cos(\omega t)$ incident on an atom that ionizes an electron at time $t=t^*$. Under the influence of the oscillating field, the (initially stationary) electron will gain  and lose energy by moving away from the atom and returning back toward the atom. When $t^* \neq n \pi$ for integer $n$, it is possible for the electron to return back to the atom with non-zero energy. In fact, when $\omega t^* \approx 17^\circ + n \cdot 180^\circ$, the electron returns with an energy peaking at $3.17 U_p$ where $U_p$ is the ponderomotive potential given by \cref{eq:pond_potential}. Furthermore, modeling the ionization rate through quantum-mechanical tunneling of an electron through a Coulomb potential warped by the oscillating laser field, we also determine that the most probable energy for an electron is strongly peaked at the $3.17 U_p$ cutoff. In short, this model shows how a laser field can produce electrons with energy on the scale of the ponderomotive potential with high probability at a frequency of twice per optical cycle. 
 
 The Brunel mechanism \cite{Brunel_1987_PRL} considers a laser field incident on a planar target at $x > 0$ and vacuum at $x < 0$. In order for the electrons to escape the target, there needs to be some component of the electric field in the $x$ direction. Thus, we need to consider oblique incidence and p-polarization just like with resonance absorption. When the plasma scale length is small, the electrons will be able to travel far enough in the $x < 0$ region to escape the plasma entirely and gain energy on the order of $U_p$ in a similar fashion to Corkum's model \cite{Corkum_1993_PRL}. Electrons returning to the target at just the right time will penetrate deeper than the skin depth $l_s \approx c / \omega_p$ and be inaccessible to the laser field \cite{Gibbon_2005_Plasma}. These \emph{hot electrons}, generated primarily on the front surface of the target, will provide the energy to heat the remainder of the overdense target region that the laser field cannot directly access. 
 
-The optimal angle would appear to be for grazing incidence ($\theta_i = 90^\circ$), but Gibbon notes that accounting for imperfect reflection of the laser field and relativistic energies of the electrons, the efficiency no longer diverges at $\theta = 90^\circ$ \cite{Gibbon_2005_Plasma}. In \cref{fig:absorption}, some estimates for the absorption efficiency are plotted according to a simplified model developed by Gibbon \cite{Gibbon_2005_Plasma} based on Brunel \cite{Brunel_1987_PRL}.
+The optimal angle would appear to be grazing incidence ($\theta_i = 90^\circ$), but Gibbon notes that accounting for imperfect reflection of the laser field and relativistic energies of the electrons, the efficiency no longer diverges at $\theta = 90^\circ$ \cite{Gibbon_2005_Plasma}. In \cref{fig:absorption}, some estimates for the absorption efficiency are plotted according to a simplified model developed by Gibbon \cite{Gibbon_2005_Plasma} based on Brunel \cite{Brunel_1987_PRL}.
 
 \subsubsection{Other Mechanisms}
 When the laser field penetrates a distance $l_s \approx c / \omega_p$ into the overdense region of the target, the electrons heat up through collisions at an absorption rate $\eta \propto \frac{\nu_{ei}}{\omega_p,i}$ \cite{Gibbon_2005_Plasma} where $\nu_{ei}$ is the electron-ion collision frequency. This type of absorption is called the \emph{skin effect}. In this case, we see Fresnel-like reflection and absorption \cite{Griffiths_2017} that is effective for large incidence angles. Even when the collision frequency is low, we can still get efficient absorption as long as the thermal electron motions are large compared to the skin depth (i.e. $v_{th}/\omega > l_s$) \cite{Gibbon_2005_Plasma}. This phenomena is called the \emph{anomalous skin effect} that is also most effective at large incidence angles. 
 
-All of the mentioned phenomena work best at oblique incidence in p-polarization. But, for relativistic intensities, additional heating mechanisms arise. When $a_0 \gtrapprox 1$, the magnetic portion of \cref{eq:lorentz} becomes significant. At normal incidence, the electric and magnetic field components both fall in the $y-z$ plane. The electric fields move the electrons strongly causing a current $\vec{J}$ which in turn will interact with the laser magnetic field $\vec{B}$ in the direction perpendicular to both. As a result, this type of heating is known as $\vec{J} \times \vec{B}$ heating \cite{Gibbon_2005_Plasma,Kruer_1985_PoF}. Because $\vec{J} \times \vec{B}$ is in the direction of propagation, this effect is most pronounced at normal incidence.
+All of the mentioned phenomena work best at oblique incidence in p-polarization. But, for relativistic intensities, additional heating mechanisms arise. When $a_0 \gtrapprox 1$, the magnetic portion of \cref{eq:lorentz} becomes significant. At normal incidence, the electric and magnetic field components both fall in the $y-z$ plane. The electric fields strongly perturb the electrons causing a current $\vec{J}$ that interacts with the laser magnetic field $\vec{B}$ in the direction perpendicular to both. As a result, this type of heating is known as $\vec{J} \times \vec{B}$ heating \cite{Gibbon_2005_Plasma,Kruer_1985_PoF}. Because $\vec{J} \times \vec{B}$ is in the direction of propagation, this effect is most pronounced at normal incidence.
 
-At even higher intensities, the laser can directly impart energy to the electrons through radiation pressure \cite{Macchi_2013_RevModPhys} because photons themselves carry momentum. These mechanisms are explored further in \cref{sec:acceleration}. In reality, all experiments involve a combination of several different electron heating mechanisms. Consequently, many experiments and simulations have been devoted to parametric studies that show how parameters ($L_p$, $\theta_i$, polarization, $a_0$, etc.) affect electron absorption \cite{Sheng_2015_CPB}.
+At even higher intensities, the laser can directly impart energy to the electrons through radiation pressure \cite{Macchi_2013_RevModPhys} because photons carry momentum. These mechanisms are explored further in \cref{sec:acceleration}. In reality, all experiments involve a combination of several different electron heating mechanisms. Consequently, many experiments and simulations have been devoted to parametric studies that show how parameters ($L_p$, $\theta_i$, polarization, $a_0$, etc.) affect electron absorption \cite{Sheng_2015_CPB}.
 
 \section{Ion Acceleration} \label{sec:acceleration}
 
@@ -280,12 +282,12 @@ The previous section gave an overview of the laser-plasma interactions and how t
 \begin{equation}
 	\gamma \simeq \sqrt{1 + a_0^2} = \sqrt{1 + \frac{I_{18} \lambda_{\mu m}^2}{1.37}} \label{eq:gamma}
 \end{equation}
-where $I_{18}$ is the peak intensity of the laser pulse in $\SI{1e18}{\watt \per \centi \meter \squared}$ and $\lambda_{\mu m}$ is the wavelength in $\mu m$. In 1992, Wilks \cite{Wilks_1992_PRL} conducted simulations to show that $T_h$ is on the order of $U_p$. 
+where $I_{18}$ is the peak intensity of the laser pulse in $10^{18}$ $\unit{\watt \per \centi \meter \squared}$ and $\lambda_{\mu m}$ is the wavelength in $\mu$m. In 1992, Wilks \cite{Wilks_1992_PRL} conducted simulations to show that $T_h$ is on the order of $U_p$. 
 
 \begin{equation}
 	k_B T_h \approx m c^2 (\gamma - 1) \label{eq:wilks}
 \end{equation}
-In \cref{fig:electron_scaling}, we can see that the \emph{Wilks scaling} (pink) closely matches ultra-intense laser experiments. The other scalings in the figure are similarly validated by computational simulations and are all proportional to $(I \lambda^2)^\alpha$, where $0 < \alpha \leq 1$. As a result, the product $I \lambda^2$ is an important quantity in laser-plasma experiments and is called the \emph{irradiance}. Wilks also outlines a way to measure the hot electron temperature in his simulations \cite{Wilks_1992_PRL} by taking the slope of $\frac{dN_e}{dE}$ in the $MeV$ regime\footnote{For example, the slopes in \autoref{fig:sim_spectrum}(b) yield a $T_h$ between 2 and 3 MeV}.
+In \autoref{fig:electron_scaling}, we can see that the \emph{Wilks scaling} (pink) closely matches ultra-intense laser experiments. The other scalings in the figure are similarly validated by computational simulations and are all proportional to $(I \lambda^2)^\alpha$, where $0 < \alpha \leq 1$. As a result, the product $I \lambda^2$ is an important quantity in laser-plasma experiments and is called the \emph{irradiance}. Wilks also outlines a way to measure the hot electron temperature in his simulations \cite{Wilks_1992_PRL} by taking the slope of $\frac{dN_e}{dE}$ in the MeV regime\footnote{For example, the slopes in \autoref{fig:sim_spectrum}(b) yield a $T_h$ between 2 and 3 MeV}.
 
 \begin{figure}
 	\centering 
@@ -293,7 +295,6 @@ In \cref{fig:electron_scaling}, we can see that the \emph{Wilks scaling} (pink) 
 	\caption{Experimentally recorded hot electron temperatures as a function of irradiance $I \lambda^2$ are plotted as red squares. The empirical scaling models are given by Wilks \cite{Wilks_1992_PRL}(pink, solid), Gibbon and Bell \cite{Gibbon_1992_PRL}(blue, ashed), Forslund et. al. \cite{Forslund_1977_PRL}(green, dash-dot), and Brunel \cite{Brunel_1987_PRL}(black, dotted). Figure is taken from Gibbon \cite{Gibbon_2005_Plasma}}
 	\label{fig:electron_scaling}
 \end{figure}
-
 Since protons are 1836 times as massive as electrons, they are much harder to accelerate and (on the scale of femtosecond pulse interactions) are essentially immobile. Despite this, ultra-intense laser experiments have demonstrated proton acceleration is possible. This section will explain the \gls{TNSA} mechanism for accelerating protons and light ions which is heavily dependent on $T_h$. Then, we will discuss alternative acceleration mechanisms. Finally, we'll overview some important applications.
 
 \subsection{Target Normal Sheath Acceleration}
@@ -317,9 +318,9 @@ With efficient MeV proton acceleration demonstrated through multiple studies, a 
 	\caption{The target normal sheath acceleration process is depicted. First, an intense laser pulse irradiates the front side of a target foil of few $\mu m$ thickness. This generates hot electrons that stream through the foil and re-emerge in a cloud on the rear side. The charge separation of the hot electrons and positively charged target creates intense longitudinal fields ($\sim$ TV/m) that accelerate light ions in the mostly target normal direction. This figure was taken from Roth \cite{Roth_2016_CERN_TNSA}}
 	\label{fig:tnsa}
 \end{figure}
-A visual of the \gls{TNSA} process can be seen in \cref{fig:tnsa}. Although Wilks \cite{Wilks_2001_PoP} provided a physical picture of the \gls{TNSA} process, existing models didn't always match up to experiments. For this reason, the ensuing decade saw much progress in the development of models to describe the spectrum of \gls{TNSA} accelerated protons. Perego \cite{Perego_2011_NIaMiP} gives a good review of some of the leading models developed and tested against experiments in the 2000s and these models will be summarized below. 
+A visual of the \gls{TNSA} process can be seen in \cref{fig:tnsa}. Although Wilks \cite{Wilks_2001_PoP} provided a physical picture of the \gls{TNSA} process, existing models did not always match up to experiments. For this reason, the ensuing decade saw much progress in the development of models to describe the spectrum of \gls{TNSA} accelerated protons. Perego \cite{Perego_2011_NIaMiP} provides a good review of some of the leading models developed and tested against experiments in the 2000s and these models will be summarized below. 
 
-First, are the isothermal expansion (fluid) models which include Mora's ``Plasma Expansion into a Vacuum'' \cite{Mora_2003_PRL} (2003) that combine \cref{eq:poisson,eq:boltzmann} with fluid \cref{eq:continuity,eq:lorentz_mora}. This model underlies the work done in \cref{ch:5}, where it is explained in more detail, and has the issue of predicting proton energies that can go up to arbitrarily high values. As a remedy, Mora introduces a finite acceleration time $\tau$ which is of the order of the pulse duration. Mora \cite{Mora_2005_PRE} addresses this in a different way (2005) by instead assuming an adiabatic model and limiting the target to be a thin foil (instead of a semi-infinite target). 
+First, are the isothermal expansion (fluid) models which include Mora's ``Plasma Expansion into a Vacuum'' \cite{Mora_2003_PRL} (2003) that combine Equations \eqref{eq:poisson} and \eqref{eq:boltzmann} with fluid Equations \eqref{eq:continuity} and \eqref{eq:lorentz_mora}. This model underlies the work done in \cref{ch:5}, where it is explained in more detail, and has the issue of predicting proton energies that can go up to arbitrarily high values. As a remedy, Mora introduces a finite acceleration time $\tau$ which is of the order of the pulse duration. Mora \cite{Mora_2005_PRE} addresses this in a different way (2005) by instead assuming an adiabatic model and limiting the target to be a thin foil (instead of a semi-infinite target). 
 
 Alternatively, Passoni and Lontano \cite{Passoni_2004_LaPB} introduces an upper limit to the integration range of the electric potential instead of using the fluid equations. In this approach, the electric fields determined from the potential are considered static, and the ensuing ion dynamics is determined by placing a test ion in the field. Further iterations incorporate some distribution of speeds for the electrons (non-relativistic Maxwell-Boltzmann \cite{Lontano_2006_PoP} or relativistic Maxwell-Juttner \cite{Passoni_2008_PRL}) and use an empirically determined scaling for the peak energy of electrons (as a function of laser energy) that do not escape the system \cite{Perego_2012_RevSci}.
 
@@ -329,7 +330,7 @@ Furthermore, some hybrid models include elements of both fluid and quasistatic m
 
 Since the \gls{TNSA} process is intimately related to hot electron generation at the front of the target and a flat density gradient at the back, many efforts have been taken to design targets that optimize ion acceleration. Patel \cite{Patel_2003_PRL} used spherically shaped targets to act as a lens that focus the proton beam. MacKinnon \cite{Mackinnon_2002_PRL} showed lower target thickness leads to higher proton energy due to a higher mean density of hot electrons at the surface. More recent experiments have even used nanowires \cite{Vallieres_2021_Nature} and microtubes \cite{Strehlow_2022_Nature}. Many experiments generally find that there is an optimal level of pre-expansion of the target that enhances hot electron generation and ion acceleration (e.g. McKenna \cite{McKenna_2008_LaPB}).
 
-Another way to increase the peak proton energy of the emitted spectrum is to use two spatially aligned pulses. If one pulse has a delay with respect to the other, the first pulse could pre-expand the target to provide an optimal electron density at the front surface \cite{Ferri_2018_PoP}. If the pulses are also temporally aligned, the constructive interfere at the target front surface may prove beneficial \cite{Ferri_2019_Nat_Comm}. The second approach is called \gls{eTNSA} and \cref{ch:4} is devoted to this phenomenon. 
+Another way to increase the peak proton energy of the emitted spectrum is to use two spatially aligned pulses. If one pulse has a delay with respect to the other, the first pulse could pre-expand the target to provide an optimal electron density at the front surface \cite{Ferri_2018_PoP}. If the pulses are also temporally aligned, the constructive interfere at the target front surface may prove beneficial \cite{Ferri_2019_Nat_Comm}. The second approach is called double pulse enhanced \gls{TNSA} and \cref{ch:4} is devoted to this phenomenon. 
 
 See the review article by Roth \cite{Roth_2016_CERN_TNSA} for a more comprehensive list of the different approaches to enhance TNSA.
 
@@ -339,9 +340,9 @@ See the review article by Roth \cite{Roth_2016_CERN_TNSA} for a more comprehensi
 \begin{equation}
 	a_0 = n_e \lambda r_e l_0 = 224 \left(\frac{n_e}{\SI{1e29}{\per \meter \cubed}}\right) \left(\frac{l_0}{\SI{1}{\micro \meter}} \right) \label{eq:acc_regime}
 \end{equation}
-Lezhnin \cite{Lezhnin_2015_PoP} uses this equation as a dividing line to differentiate \gls{TNSA} from two other mechanisms: \gls{RPA} and Coulomb Explosions; this can be seen in \cref{fig:regimes}. If the laser intensity is sufficiently high and density is low enough to be transparent, the laser can quickly sweep away most electrons to leave behind a strongly positive target. The repelling coulomb force will cause the protons to expand outwards in all directions.
+Lezhnin \cite{Lezhnin_2015_PoP} uses this equation as a dividing line to differentiate \gls{TNSA} from two other mechanisms: \gls{RPA} and Coulomb Explosions; this can be seen in \autoref{fig:regimes}. If the laser intensity is sufficiently high and density is low enough to be transparent, the laser can quickly sweep away most electrons to leave behind a strongly positive target. The repelling coulomb force will cause the protons to expand outwards in all directions.
 
-When the radiation pressure $P_\text{rad} \approx 2 I_0 / c$ is significant enough to overcome the thermal expanding pressure $n_e k_B T_e$, ions can accelerate directly through the transfer of momentum. \cite{Macchi_2013_RevModPhys}. In this regime, laser absorption into hot electrons by traditional mechanisms would be detrimental. By shooting the laser at normal incidence with circular polarization, resonance absorption and $\vec{J} \times \vec{B}$ heating can be minimized as seen in \cref{sec:absorption}.
+When the radiation pressure $P_\text{rad} \approx 2 I_0 / c$ is significant enough to overcome the thermal expanding pressure $n_e k_B T_e$, ions can accelerate directly through the transfer of momentum. \cite{Macchi_2013_RevModPhys}. In this regime, laser absorption into hot electrons by traditional mechanisms would be detrimental. By shooting the laser at normal incidence with circular polarization, resonance absorption and $\vec{J} \times \vec{B}$ heating can be minimized as seen in \autoref{sec:absorption}.
 
 For thick targets, this immense pressure can impart a parabolic deformation that allows the laser to penetrate further. This is the regime of \emph{hole boring}. Targets thin enough where the hole boring process reaches the target rear in a time less than the pulse duration are in the \emph{light sail} regime. \cite{Macchi_2013_RevModPhys}. 
 
