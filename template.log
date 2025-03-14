@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  21 FEB 2025 13:47
+This is XeTeX, Version 3.141592653-2.6-0.999996 (MiKTeX 24.4) (preloaded format=xelatex 2024.6.25)  14 MAR 2025 16:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -867,12 +867,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-])
+]
+
+[6])
 \openout2 = `template-vita.aux'.
 
  (template-vita.tex
 
-[6
+[7
 
 
 
@@ -880,74 +882,61 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 
-[7]) (template.toc
-Overfull \hbox (0.67888pt too wide) detected at line 7
- []\TU/lmr/m/n/10.95 xvii
+[8]) (template.toc
+Overfull \hbox (3.72298pt too wide) detected at line 7
+ []\TU/lmr/m/n/10.95 xviii
  []
 
 
 
-[8
+[9
 
 
 ]
 
-[9])
+[10])
 \tf@toc=\write6
 \openout6 = `template.toc'.
 
 
 
-[10] (template.lof
+[11] (template.lof
 
-[11
+[12
 
 ]
-
-[12]
 
 [13]
 
 [14]
 
-[15])
+[15]
+
+[16])
 \tf@lof=\write7
 \openout7 = `template.lof'.
 
 
 
-[16] (template.lot)
+[17] (template.lot)
 \tf@lot=\write8
 \openout8 = `template.lot'.
 
 
 
-[17
+[18
 
 ] (template.acr
 
-Package glossaries Warning: Glossary entry `eTNSA' has not been defined on inpu
-t line 40.
-
-
-Package glossaries Warning: Glossary entry `eTNSA' has not been defined on inpu
-t line 40.
-
-
-Package glossaries Warning: Glossary entry `eTNSA' has not been defined on inpu
-t line 40.
-
-
-
-[18
+[19
 
 
 
 ]
 
-[19])
+[20])
 
-[20]
+[21]
 \openout2 = `chap1.aux'.
 
  (chap1.tex
@@ -1142,73 +1131,74 @@ File: planning/images/yao_exp_stacks.PNG Graphic file (type bmp)
 
 
 [46]
-File: planning/images/titan/target_area_JLF.pdf Graphic file (type pdf)
-<use planning/images/titan/target_area_JLF.pdf>
+File: planning/images/titan/target_area_JLF.png Graphic file (type bmp)
+<planning/images/titan/target_area_JLF.png>
 
 
 [47]
+
+[48]
 File: planning/images/titan/efield_800fs.eps Graphic file (type eps)
 <planning/images/titan/efield_800fs.eps>
+
+
+[49]
 File: planning/images/titan/proton_angular_density_2100fs.eps Graphic file (typ
 e eps)
 <planning/images/titan/proton_angular_density_2100fs.eps>
-
-
-[48]
-
-[49]
 File: planning/images/titan/spectrum_2100fs.eps Graphic file (type eps)
 <planning/images/titan/spectrum_2100fs.eps>
 File: planning/images/titan/conversion_efficiency.eps Graphic file (type eps)
 <planning/images/titan/conversion_efficiency.eps>
 
-Overfull \hbox (1.70573pt too wide) in paragraph at lines 152--152
+
+[50]
+Overfull \hbox (1.70573pt too wide) in paragraph at lines 150--150
 []|$[][]$ 
  []
 
 
-Overfull \hbox (0.76173pt too wide) in paragraph at lines 152--152
+Overfull \hbox (0.76173pt too wide) in paragraph at lines 150--150
 []|$[][]$ 
  []
 
 
-Overfull \hbox (3.97011pt too wide) in paragraph at lines 149--168
+Overfull \hbox (3.97011pt too wide) in paragraph at lines 147--166
  [][] 
  []
 
 
 
-[50]
-
 [51]
-File: planning/images/titan/rcf.png Graphic file (type bmp)
-<planning/images/titan/rcf.png>
-
 
 [52]
+File: planning/images/titan/rcf.png Graphic file (type bmp)
+<planning/images/titan/rcf.png>
 File: planning/images/titan/50JRCFcompNew.png Graphic file (type bmp)
 <planning/images/titan/50JRCFcompNew.png>
 
 
-[53])
+[53]
 
-[54]
+[54])
+
+[55]
 \openout2 = `chap5.aux'.
 
  (chap5.tex
 Chapter 5.
 
 
-[55
+[56
 
 
 
 
 ]
 
-[56]
-
 [57]
+
+[58]
 File: planning/images/fig1_mora.PNG Graphic file (type bmp)
 <planning/images/fig1_mora.PNG>
 File: planning/images/fig2_mora.PNG Graphic file (type bmp)
@@ -1220,24 +1210,24 @@ Overfull \hbox (21.87807pt too wide) in paragraph at lines 90--95
 
 
 
-[58]
-
 [59]
 
 [60]
 
 [61]
+
+[62]
 File: planning/images/density_profile.png Graphic file (type bmp)
 <planning/images/density_profile.png>
 File: planning/images/energy_dip_morrison.png Graphic file (type bmp)
 <planning/images/energy_dip_morrison.png>
 
 
-[62]
-
 [63]
 
 [64]
+
+[65]
 File: planning/images/paper1/test_mape_3levels.eps Graphic file (type eps)
 <planning/images/paper1/test_mape_3levels.eps>
 File: planning/images/paper1/test_mape_points=2.0k.eps Graphic file (type eps)
@@ -1248,23 +1238,23 @@ File: planning/images/paper1/fuchs_optim.pdf Graphic file (type pdf)
 <use planning/images/paper1/fuchs_optim.pdf>
 
 
-[65]
-
 [66]
 
 [67]
+
+[68]
 File: planning/images/paper1/model_optim_noise=30_pts=2000.pdf Graphic file (ty
 pe pdf)
 <use planning/images/paper1/model_optim_noise=30_pts=2000.pdf>
 
-
-[68]
 
 [69]
 
 [70]
 
 [71]
+
+[72]
 File: planning/images/paper2/fig4.eps Graphic file (type eps)
 <planning/images/paper2/fig4.eps>
 File: planning/images/paper2/fig5.eps Graphic file (type eps)
@@ -1273,9 +1263,9 @@ File: planning/images/paper2/fig6.eps Graphic file (type eps)
 <planning/images/paper2/fig6.eps>
 
 
-[72]
-
 [73]
+
+[74]
 File: planning/images/paper2/fig7.eps Graphic file (type eps)
 <planning/images/paper2/fig7.eps>
 
@@ -1285,13 +1275,13 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 356--358
 
 
 
-[74]
-
 [75]
 
 [76]
 
 [77]
+
+[78]
 File: planning/images/paper2/fig10.eps Graphic file (type eps)
 <planning/images/paper2/fig10.eps>
 
@@ -1301,33 +1291,21 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 397--398
 
 
 
-[78]
+[79]
 File: planning/images/paper2/fig11.eps Graphic file (type eps)
 <planning/images/paper2/fig11.eps>
 
 
-[79])
+[80])
 
-[80]
+[81]
 \openout2 = `chap6.aux'.
 
  (chap6.tex
 Chapter 6.
 
-! Package glossaries Error: Glossary entry `eTNSA' has not been defined.
 
-See the glossaries package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.8 ...amount of laser energy through \gls{eTNSA}.
-                                                   Even when the pulses are ...
-
-You need to define a glossary entry before you can use it.
-
-
-
-[81
+[82
 
 
 
@@ -1337,14 +1315,14 @@ File: planning/images/daq/experimental_chamber.PNG Graphic file (type bmp)
 <planning/images/daq/experimental_chamber.PNG>
 
 
-[82]
-
 [83]
+
+[84]
 File: planning/images/daq/target.PNG Graphic file (type bmp)
 <planning/images/daq/target.PNG>
 
 
-[84]
+[85]
 File: planning/images/daq/pixel.png Graphic file (type bmp)
 <planning/images/daq/pixel.png>
 File: planning/images/daq/diode_trace.png Graphic file (type bmp)
@@ -1360,47 +1338,47 @@ File: planning/images/daq/energy_calibration.png Graphic file (type bmp)
 <planning/images/daq/energy_calibration.png>
 
 
-[85]
-
 [86]
 
 [87]
 
 [88]
+
+[89]
 File: planning/images/daq/optimization_gui.png Graphic file (type bmp)
 <planning/images/daq/optimization_gui.png>
 File: planning/images/daq/spectrum_gui.png Graphic file (type bmp)
 <planning/images/daq/spectrum_gui.png>
 
 
-[89]
-
 [90]
+
+[91]
 File: planning/images/daq/rf_beta_shift.jpg Graphic file (type bmp)
 <planning/images/daq/rf_beta_shift.jpg>
 
 
-[91])
-
-[92]
+[92])
 
 [93]
+
+[94]
 \openout2 = `chap7.aux'.
 
  (chap7.tex
 Chapter 7.
 
 
-[94
+[95
 
 
 
 
 ])
 
-[95] (template.bbl
+[96] (template.bbl
 
-[96
+[97
 
 
 
@@ -1413,13 +1391,7 @@ Smith, Alona
 
 
 
-[97]
-Underfull \hbox (badness 1009) in paragraph at lines 142--147
-[]\TU/lmr/m/n/10.95 John J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph R. 
-Smith, Alona
- []
-
-
+[98]
 Underfull \hbox (badness 6188) in paragraph at lines 178--184
 []\TU/lmr/m/n/10.95 Mayo Clinic Staff.  Radiation therapy.  [][]$[][][][][] [] 
 [] [] [][][] [] [][][][][][][][][][] [] [][][] []
@@ -1440,8 +1412,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
 
 
-[98]
-
 [99]
 
 [100]
@@ -1454,29 +1424,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
 [104]
 
-[105])
+[105]
 
-[106]
+[106])
+
+[107]
 \openout2 = `app1.aux'.
 
  (app1.tex
 Appendix A.
 
 
-[107
+[108
 
 
 
 ]
 
-[108]
+[109]
 File: planning/images/arber/Energy_Plot_2D.png Graphic file (type bmp)
 <planning/images/arber/Energy_Plot_2D.png>
 
 
-[109]
-
 [110]
+
+[111]
 Overfull \hbox (18.64594pt too wide) in paragraph at lines 100--149
  [][] 
  []
@@ -1488,9 +1460,9 @@ File: planning/images/arber/corr_matrix.png Graphic file (type bmp)
 <planning/images/arber/corr_matrix.png>
 
 
-[111]
-
 [112]
+
+[113]
 
 LaTeX Warning: Float too large for page by 6.76956pt on input line 218.
 
@@ -1498,11 +1470,11 @@ File: planning/images/arber/L-E_1param_eppc.png Graphic file (type bmp)
 <planning/images/arber/L-E_1param_eppc.png>
 
 
-[113]
+[114]
 
-[114])
+[115])
 
-[115] (template.aux (template-abstract.aux) (template-ack.aux)
+[116] (template.aux (template-abstract.aux) (template-ack.aux)
 (template-vita.aux) (chap1.aux) (chap2.aux) (chap3.aux) (chap4.aux) (chap5.aux)
 (chap6.aux) (chap7.aux) (app1.aux))
  ***********
@@ -1511,12 +1483,12 @@ L3 programming layer <2024-05-27>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 26260 strings out of 409049
- 498791 string characters out of 5757194
+ 26230 strings out of 409049
+ 498197 string characters out of 5757194
  1963560 words of memory out of 5000000
- 48463 multiletter control sequences out of 15000+600000
+ 48433 multiletter control sequences out of 15000+600000
  570002 words of font info for 95 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
- 91i,14n,116p,2382b,1344s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 91i,14n,116p,2382b,1342s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (136 pages).
+Output written on template.pdf (138 pages).

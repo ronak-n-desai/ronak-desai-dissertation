@@ -127,8 +127,8 @@ P.~Mora.
 \bibitem{Desai_2025_APL}
 John~J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph~R. Smith, Alona
   Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
-\newblock Towards automated learning with ultra-intense laser
-  systems\\operating in the khz repetition rate regime, 2025.
+\newblock Towards automated learning with ultra-intense laser systems operating
+  in the khz repetition rate regime, (in review).
 
 \bibitem{Morrison_2018_NJoP}
 John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
@@ -139,10 +139,10 @@ John~T. {Morrison}, Scott {Feister}, Kyle~D. {Frische}, Drake~R. {Austin},
 \newblock {\em New Journal of Physics}, 20(2):022001, February 2018.
 
 \bibitem{Desai_2024_CPP}
-John~J. Felice, Ronak Desai, Nathaniel Tamminga, Joseph~R. Smith, Alona
-  Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
-\newblock Towards automated learning with ultra-intense laser
-  systems\\operating in the khz repetition rate regime.
+Ronak Desai, Thomas Zhang, John~J. Felice, Ricky Oropeza, Joseph~R. Smith,
+  Alona Kryshchenko, Chris Orban, Michael~L. Dexter, and Anil~K. Patnaik.
+\newblock Applying machine-learning methods to laser acceleration of protons:
+  Lessons learned from synthetic data.
 \newblock {\em Contributions to Plasma Physics}, page e202400080, 2024.
 
 \bibitem{George_2019_HPLSE}

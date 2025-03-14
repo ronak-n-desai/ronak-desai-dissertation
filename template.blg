@@ -49,15 +49,15 @@ Database file #10: desai.bib
 Database file #11: exp.bib
 You've used 120 entries,
             1791 wiz_defined-function locations,
-            1226 strings with 30343 characters,
-and the built_in function-call counts, 30297 in all, are:
+            1229 strings with 30630 characters,
+and the built_in function-call counts, 30310 in all, are:
 = -- 2228
-> -- 2179
+> -- 2182
 < -- 5
-+ -- 776
-- -- 656
-* -- 2601
-:= -- 5211
++ -- 777
+- -- 657
+* -- 2603
+:= -- 5214
 add.period$ -- 368
 call.type$ -- 120
 change.case$ -- 108
@@ -65,8 +65,8 @@ chr.to.int$ -- 0
 cite$ -- 120
 duplicate$ -- 1080
 empty$ -- 2590
-format.name$ -- 656
-if$ -- 6375
+format.name$ -- 657
+if$ -- 6377
 int.to.chr$ -- 0
 int.to.str$ -- 120
 missing$ -- 115

@@ -38,7 +38,7 @@ where $\hat{x}$ is the propagation direction, $\hat{y}$ is the polarization dire
 \begin{equation}
 	w(z) = w_0 \sqrt{1 + (x/x_R)^2} \label{eq:beam_radius}
 \end{equation}  
-and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. A beam with these properties is usually referred to as a gaussian beam\footnote{I have googled (actually bing'd unfortunately) more times than I can count ``gaussian beam wikipedia'' over the course of my studies.} and is depicted in \autoref{fig:gaussian_beam}.
+and has a minimum value at the \emph{beam waist} $w(0) \equiv w_0$ at the focal position of the laser. The length scale over which the beam can propagate without diverging significantly is the \emph{Rayleigh range} $x_R \equiv \frac{\pi w_0^2}{\lambda}$. A beam with these properties is usually referred to as a gaussian beam and is depicted in \autoref{fig:gaussian_beam}.
 
 \begin{figure}
 	\centering
@@ -217,19 +217,19 @@ using \cref{eq:omegape} which can be combined with \cref{eq:vectorwave} to obtai
 By just focusing on the x-dependence, we can simplify this equation to 
 
 \begin{equation}
-	\frac{d^2 E}{d x^2} = \frac{1}{l_s^2}  E
+	\frac{d^2 E}{d x^2} = -\frac{1}{l_s^2}  E
 \end{equation}
-where $l_s^2 \equiv \frac{c^2}{\omega^2 - \omega_p^2}$ defines the \emph{skin depth} $l_s$. In the case where $\omega < \omega_p$, $l_s^2$ is negative and the solution has a sinusoidal dependence
+where $l_s^2 \equiv \frac{c^2}{\omega^2 - \omega_p^2}$ defines the \emph{skin depth} $l_s$. In the case where $\omega > \omega_p$, $l_s^2$ is positive and the solution has a sinusoidal dependence
 
 \begin{equation}
 	E(x) = E(0) \cos \left( \frac{x}{l_s} \right)
 \end{equation}
-On the other hand, when $\omega > \omega_p$, $l_s^2$ is positive and the solution has an exponential dependence
+On the other hand, when $\omega < \omega_p$, $l_s^2$ is negative and the solution has an exponential dependence
 
 \begin{equation}
 	E(x) = E(0) \exp \left(-\frac{x}{l_s} \right)
 \end{equation}
-This ``evanescent'' behavior when $\omega > \omega_p$ occurs because the electrons cannot respond fast enough to the higher frequency $\omega$. Since the field cannot propagate effectively for $x > 0$, the plasma ends up reflecting a significant portion of the light. The critical density $n_c$ is defined as the electron density where $\omega = \omega_{p}$. Using \cref{eq:omegape}, this can be expressed as
+This ``evanescent'' behavior when $\omega < \omega_p$ occurs because the electrons are able to respond to the lower frequency $\omega$ which causes the light to be reflected. When $\omega > \omega_{p}$, the electrons cannot keep up with the higher frequency $\omega$ and remain transparent to the light. The critical density $n_c$ is defined as the electron density where $\omega = \omega_{p}$. Using \cref{eq:omegape}, this can be expressed as
 
 \begin{equation}
 	n_c \equiv \frac{m \epsilon_0}{e^2} \omega^2 \label{eq:criticaldensity}
